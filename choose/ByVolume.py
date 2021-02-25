@@ -20,23 +20,24 @@ def SortValueByvolume(countDays,k):
 
             if(data['close'].iloc[0]<=k *(data['close'].mean())):
                 today=(todayData.loc[todayData['symbol']==i]).iloc[0]
-                if(today['per']<=50 and today['per']>0):
-                    todayvolume=today['volume']
+                if(today['per']<=20 and today['per']>0):
+                    todayvolume=data['volume'].iloc[0]
                     print('todayVolume',todayvolume)
                     roe=today['pb']/today['per']
                     print('roe',roe)
                     sel=todayvolume<data['volume']
                     values=sel.value_counts()
-                    rows.append({'symbol':i,'count':values.loc[True],'roe':roe})
+                    rows.append({'symbol':i,'count':values.loc[True],'roe':roe,'pe':today['per']})
         except:
             traceback.print_exc()
-        print(rows)
+        # print(rows)
     result=pd.DataFrame.from_dict(rows)
     # print(result)
     return result
 
 if __name__ == '__main__':
-    result=SortValueByvolume(21,1.2)
+    result=SortValueByvolume(440,0.7)
     print(result)
-    result.sort_values(by='count',inplace=True,ascending=False)
-    result.to_excel('result.xlsx')
+    result.sort_values(by=['count','pe'],inplace=True,ascending=[False,True])
+    date=datetime.date.today()
+    result.to_excel('result{}.xlsx'.format(date))

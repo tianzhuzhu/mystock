@@ -28,12 +28,14 @@ def getPe(code,date='19900101'):
     # print('BasicData')
     # BasicData.to_sql('pehistory', con=engine, if_exists='append')
 def insertTotalData(code,startDate,endate,engine):
+    if(pd.to_datetime(startDate)>=pd.to_datetime(endate)):
+        return
     pelist=[]
     print(startDate,endate)
     print('获取代码',code,'数据')
     try:
-        data=GetStockHistory(i,startDate,endate)
-        # data['code']=code
+        data=GetStockHistory(code,startDate,endate)
+        # data['code']=code 52126772
     except:
         try:
             data=GetStockHistory(code,startDate,endate)
@@ -41,7 +43,7 @@ def insertTotalData(code,startDate,endate,engine):
             time.sleep(random.randint(1,10))
             print('get',code,'except')
     try:
-        if(not data.empty):
+        if(data is None or not data.empty):
             print(data)
             data.to_sql('StockHistory',con=engine,if_exists='append')
 
@@ -76,10 +78,8 @@ def insertTodayValue(endDate):
             lastDate=pd.to_datetime(pd.to_datetime(lastDate)+datetime.timedelta(days=1))
             print(lastDate)
         except:
-            traceback.print_exc()
+            # traceback.print_exc()
             lastDate='19900101'
-
-
         print('下一天日期',lastDate)
         i=i+1
         print('开始第',i,'条数据')
