@@ -28,7 +28,7 @@ def getPe(code,date='19900101'):
     # print('BasicData')
     # BasicData.to_sql('pehistory', con=engine, if_exists='append')
 def insertTotalData(code,startDate,endate,engine):
-    if(pd.to_datetime(startDate)>=pd.to_datetime(endate)):
+    if(pd.to_datetime(startDate)>pd.to_datetime(endate)):
         return
     pelist=[]
     print(startDate,endate)
@@ -45,14 +45,14 @@ def insertTotalData(code,startDate,endate,engine):
     try:
         if(data is None or not data.empty):
             print(data)
-            data.to_sql('StockHistory',con=engine,if_exists='append')
+            data.to_sql('stockhistory',con=engine,if_exists='append')
 
     except Exception as ex:
 
         print('sql exception')
         traceback.print_exc()
     print(code,'finshed')
-    time.sleep(random.randint(1,3)*0.1)
+    time.sleep(random.randint(1,2)*0.1)
 
 def insertTodayValue(endDate):
     createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
@@ -63,14 +63,14 @@ def insertTodayValue(endDate):
         stockData = ak.stock_zh_a_spot()
         stockData.to_sql('todaystock',con=engine,if_exists='replace')
     else:
-        stockData=pd.read_sql(con=engine,sql='select * from todayStock')
+        stockData=pd.read_sql(con=engine,sql='select * from todaystock')
 
     i=0
     for code in stockData['symbol']:
         try:
             lastDate=pd.read_sql(con=engine,sql='select max(date) from stockhistory where symbol="{}"'.format(code))
             lastDate=lastDate.iloc[0,0]
-            print('lastdate',lastDate)
+            # print('lastdate',lastDate)
             if(pd.to_datetime(lastDate).date()==datetime.datetime.now().date()):
                 continue
                 print('重复数据')
@@ -80,7 +80,7 @@ def insertTodayValue(endDate):
         except:
             # traceback.print_exc()
             lastDate='19900101'
-        print('下一天日期',lastDate)
+        # print('下一天日期',lastDate)
         i=i+1
         print('开始第',i,'条数据')
         insertTotalData(code,lastDate,endDate,engine)

@@ -1,2 +1,4 @@
 .idea
 /choose/result2021-02-25.xlsx
+/venv/
+*.xlsx
