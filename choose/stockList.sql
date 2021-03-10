@@ -1,4 +1,4 @@
-select * from
+select code from
          (select tt.*
           from tb_stock_hisotry_detatil tt ,
                (select code, max(date) as date from tb_stock_hisotry_detatil group by code) t
