@@ -1,0 +1,1 @@
+SELECT * FROM `stock`.`tb_stock_hisotry_detatil`

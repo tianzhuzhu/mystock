@@ -1,0 +1,1 @@
+SELECT * FROM `stock`.`tb_growth`

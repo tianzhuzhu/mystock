@@ -1,4 +1,7 @@
+import _thread
 import datetime
+import math
+import threading
 import time
 import traceback
 
@@ -6,8 +9,8 @@ import baostock as bs
 import pandas as pd
 from sqlalchemy import create_engine
 
-import util
 #### 登陆系统 ####
+from data import util
 
 
 def importBycode(code,start_date,end_date,table,engine,lg):
@@ -41,7 +44,9 @@ def importHistory(data,table):
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     lg = bs.login()
     i=0
+    print(data['symbol'])
     for symbol in data['symbol']:
+
         i=i+1
         print('现在开始第',i,'条','代码为',symbol,'的数据')
         print(symbol)
@@ -60,17 +65,40 @@ def importHistory(data,table):
         print(start_date,end_date)
         if(start_date>end_date):
             print(code,start_date,'已存在')
-            return
+            continue
         importBycode(code,start_date,end_date,table,engine ,lg)
         if(i%200==0):
             bs.logout()
-            time.sleep(20)
+            time.sleep(5)
             bs.login()
     bs.logout()
 
-def mainProcess():
+def importTodayStockAndPE():
 
     data=util.todayStockData()
-    importHistory(data,'tb_stock_hisotry_detatil')
+    threadlist=[]
+    try:
+        # count= len(data)
+        # print('count',count)
+        # for i in range(0,10):
+        #     slice=count/10
+        #     low=math.floor(slice*i)
+        #     high=math.ceil(slice*(i+1))
+        #
+        #     high=count if high >=count else high
+        #     print(low, high,count)
+        #     tempdata=data.iloc[low:high]
+        #     t = threading.Thread(target=importHistory,args=(tempdata,'tb_stock_hisotry_detatil',))
+        #     threadlist.append(t)
+        # for t in threadlist:
+        #     t.setDaemon(True)  # 设置为守护线程，不会因主线程结束而中断
+        #     t.start()
+        #     # t.join()  # 子线程全部加入，主线程等所有子线程运行完毕
+        # time.sleep(1000)
+        # # _thread.start_new_thread(importHistory, (data,))
+        importHistory(data, 'tb_stock_hisotry_detatil')
+    except:
+        traceback.print_exc()
+
 if __name__ == '__main__':
-    mainProcess()
+    importTodayStockAndPE()

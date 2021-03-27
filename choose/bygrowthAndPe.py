@@ -1,25 +1,51 @@
+import datetime
+import os
+import myemail.send
 import data.util as util
 import pandas as pd
 from sqlalchemy import create_engine
+
+import utils.loadData
 
 
 def search(x,n):
     x=x[0:n]
     todayvolume=x['date'].max()
+    x['close']=    x['close'].apply(float)
+    avg=x['close'].mean()
 
     sumv=(x['volume']<todayvolume).apply(int).sum()
-    ser=pd.Series({'code':x['code'],'count':sumv})
-    return sumv
+    data=x.loc[x['date']==x['date'].max(),['YOYNI','peTTM','pbMRQ','close']]
+    data=data.iloc[0]
+    # return pd.Series({'sum':sumv,'增长率':data.iloc[0,0],'pe':data.iloc[0,1],'pb':data.iloc[0,2]})
+    data['count']=sumv
+    data['avg']=data['close']/avg
+    return data
+# ,'peTTM','pbMRQ'
 
-def getStockList():
+def getStockList( k=20,growth=0.4):
+    data=utils.loadData.loadData('config.yml')
+    sqlpath=data['sql']['peGrowth']
+    sqlpath=os.path.join(os.path.abspath(os.path.dirname(__file__)),sqlpath)
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
-    sqlTemplate=util.getsql('peGrowth.sql')
-    sql=sqlTemplate.format('0.5',15)
-    data=pd.read_sql(sql=sql,con=engine)
-    ser=data.groupby('code').apply(lambda x:search(x,220))
-    ser.to_excel('a.xlsx')
-        
+    sqlTemplate=util.getsql(sqlpath)
 
+    sql=sqlTemplate.format(k,growth)
+    data=pd.read_sql(sql=sql,con=engine)
+    print(data)
+    data=data.groupby('code').apply(lambda x:search(x,90))
+    data.sort_values(by='count',inplace=True,ascending=False)
+    date=datetime.datetime.now().date()
+
+    path=r'D:\onedrive\OneDrive - ncist.edu.cn\选股\{}'.format(date)
+    if(not os.path.exists(path)):
+        os.mkdir(path)
+    filepath=os.path.join(path,'结果{}-{}.xlsx'.format(str(k),str(growth)))
+    data=data[0:10]
+    data.to_excel(filepath)
+
+    # myemail.send.send_mail(filepath)
+    return filepath
 
 if __name__ == '__main__':
     getStockList()

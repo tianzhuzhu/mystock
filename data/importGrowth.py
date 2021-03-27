@@ -25,30 +25,47 @@ def getData(code,year,quater):
 def importData(stockData,engine):
 
     lg = bs.login()
-    year = datetime.datetime.now().year
+    toyear = datetime.datetime.now().year
+    toseason=int(datetime.datetime.now().month/4)+1
     for code in stockData['symbol']:
         data=pd.DataFrame()
         print(code)
         code=getCode(code)
         print(code)
-        for i in range(2015,year+1):
+        sql='select max(date) from tb_growth where  code="{}"'.format(code)
+
+        date=pd.read_sql(con=engine,sql=sql).iloc[0,0]
+        year,month=date.split('-')
+        year,month=int(year),int(month)
+        season=int(month/4) +1
+        season=season+1
+        year =year+1 if(season==5) else year
+        season =0 if(season==5) else season+1
+        print(year,season)
+        list=[]
+        for i in range(year,toyear+1):
             for j in range(1,5):
-                date=str(i)+'-'+str(j)
-                try:
-                    sql='select count(1) from tb_growth where date="{}" and code="{}"'.format(date,code)
-                    count=pd.read_sql(con=engine,sql=sql)
-                    if(count.iloc[0,0]==1):
-                        # print(count)
-                        continue
-                except:
-                    traceback.print_exc()
-                result=getData(code,i,j)
+                if(year==i and j>season):
+                    list.append(i*10+j)
+                elif(i>year and j<=toseason):
+                    list.append(i*10+j)
+        print(list)
+        for i in list:
+            date=str(int(i/10))+'-'+str(i%10)
+            print(date)
+            try:
+                result=getData(code,int(i/10),i%10)
                 result['code']=code
                 result['date']=date
 
                 if(data.empty):
                     data=pd.DataFrame(columns=result.columns)
+                    continue
                 data=data.append(result,ignore_index=True)
+                    # print(count)
+            except:
+                traceback.print_exc()
+
         time.sleep(0.5)
         print(data)
         data.to_sql('tb_growth',con=engine,if_exists='append')
@@ -56,7 +73,7 @@ def importData(stockData,engine):
 
 
 
-def mainProcess():
+def importGrowth():
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     createTimeSql = " SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
 
@@ -68,4 +85,4 @@ def mainProcess():
         stockData = pd.read_sql(con=engine, sql='select * from todayStock')
     importData(stockData,engine)
 if __name__=='__main__':
-    mainProcess()
+    importGrowth()

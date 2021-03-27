@@ -52,7 +52,7 @@ def insertTotalData(code,startDate,endate,engine):
         print('sql exception')
         traceback.print_exc()
     print(code,'finshed')
-    time.sleep(random.randint(1,2)*0.1)
+    # time.sleep(random.randint(1,2)*0.01)
 
 def insertTodayValue(endDate):
     createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
@@ -70,10 +70,12 @@ def insertTodayValue(endDate):
         try:
             lastDate=pd.read_sql(con=engine,sql='select max(date) from stockhistory where symbol="{}"'.format(code))
             lastDate=lastDate.iloc[0,0]
-            # print('lastdate',lastDate)
+            print('lastdate',lastDate,datetime.datetime.now().date())
+
             if(pd.to_datetime(lastDate).date()==datetime.datetime.now().date()):
-                continue
                 print('重复数据')
+                continue
+
 
             lastDate=pd.to_datetime(pd.to_datetime(lastDate)+datetime.timedelta(days=1))
             print(lastDate)
@@ -86,8 +88,9 @@ def insertTodayValue(endDate):
         insertTotalData(code,lastDate,endDate,engine)
         # lastDate.
         #
-
-if __name__ == '__main__':
+def importToday():
     today = datetime.datetime.now()
     endDate = today.strftime('%Y%m%d')
     insertTodayValue(endDate)
+if __name__ == '__main__':
+    importToday()
