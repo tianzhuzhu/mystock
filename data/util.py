@@ -37,3 +37,8 @@ def getsql(sql_path):
     sql = sql.readlines()
     sql = "".join(sql)
     return sql
+def getCode(code):
+    code=list(code)
+    code.insert(2,'.')
+    code=''.join(code)
+    return code

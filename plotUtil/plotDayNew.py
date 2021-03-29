@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec#分割子图
-import mpl_finance as mpf
+import mplfinance.original_flavor as mpf
 
 import utils.loadData
 from sqlalchemy import create_engine
@@ -18,7 +18,7 @@ def query(code,days):
     sql="	SELECT code, date, open, high,close,low ,volume from tb_stock_hisotry_detatil WHERE code ='{}' ORDER BY date desc limit 0,{}".format(code,days)
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     data = pd.read_sql(sql,engine)
-    data.sort_index(inplace=True, ascending=True)
+
     return data
 def queryName(code):
     sql="	SELECT name from todaystock WHERE code ='{}' ".format(code)
@@ -45,7 +45,7 @@ def plot_k(outputPath,ts_code,title):
     df_stockload['trade_date'] = pd.to_datetime(df_stockload['trade_date'])
     df_stockload=df_stockload.set_index('trade_date')
     df_stockload=pd.DataFrame(df_stockload,dtype=float)
-    # df_stockload.sort_index(inplace=True,ascending=True)
+    df_stockload.sort_index(inplace=True,ascending=True)
     print(df_stockload.dtypes)
 
 
@@ -99,7 +99,7 @@ def plot_k(outputPath,ts_code,title):
     bar_red = np.where(macd_bar > 0, 2 * macd_bar, 0)# 绘制BAR>0 柱状图
     bar_green = np.where(macd_bar < 0, 2 * macd_bar, 0)# 绘制BAR<0 柱状图
     graph_MACD.bar(np.arange(0, len(figData.index)), bar_red, facecolor='red')
-    graph_MACD.bar(np.arange(0, len(figData.index)), 12, facecolor='green')
+    graph_MACD.bar(np.arange(0, len(figData.index)), bar_green, facecolor='green')
 
     graph_MACD.legend(loc='best',shadow=True, fontsize ='10')
     graph_MACD.set_ylabel(u"MACD")

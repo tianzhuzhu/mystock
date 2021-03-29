@@ -19,6 +19,7 @@ def getData(code,year,quater):
     while (rs_growth.error_code == '0') & rs_growth.next():
         growth_list.append(rs_growth.get_row_data())
     result_growth = pd.DataFrame(growth_list, columns=rs_growth.fields)
+    print(result_growth)
     return  result_growth
 
 
@@ -33,10 +34,13 @@ def importData(stockData,engine):
         code=getCode(code)
         print(code)
         sql='select max(date) from tb_growth where  code="{}"'.format(code)
-
-        date=pd.read_sql(con=engine,sql=sql).iloc[0,0]
-        year,month=date.split('-')
-        year,month=int(year),int(month)
+        try:
+            date=pd.read_sql(con=engine,sql=sql).iloc[0,0]
+            year,month=date.split('-')
+            year,month=int(year),int(month)
+        except:
+            year=1989
+            month=12
         season=int(month/4) +1
         season=season+1
         year =year+1 if(season==5) else year
@@ -60,8 +64,8 @@ def importData(stockData,engine):
 
                 if(data.empty):
                     data=pd.DataFrame(columns=result.columns)
-                    continue
-                data=data.append(result,ignore_index=True)
+                else:
+                    data=data.append(result,ignore_index=True)
                     # print(count)
             except:
                 traceback.print_exc()

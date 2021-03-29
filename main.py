@@ -11,7 +11,7 @@ import myemail.send as send
 import _thread
 def process1(data):
 
-    importTodayStock.importToday()
+    # importTodayStock.importToday()
     print('process1 开始')
     list=[220]
     print(list)
@@ -23,7 +23,7 @@ def process1(data):
 def process2(data):
     time.sleep(60)
     print(data)
-    importStockAndPE.importTodayStockAndPE()
+    # importStockAndPE.importTodayStockAndPE()
     # importGrowth.importGrowth()
     pelist=[10,15,20,30]
     resultlist=[]
@@ -43,9 +43,9 @@ if __name__ == '__main__':
     try:
         _thread.start_new_thread( process1, (data,) )
         _thread.start_new_thread( process2, (data,) )
-        _thread.start_new_thread( process2, () )
+        _thread.start_new_thread( process3, () )
     except:
         traceback.print_exc()
 
-    time.sleep(1000)
+    time.sleep(7200)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

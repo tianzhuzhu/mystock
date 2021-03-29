@@ -106,14 +106,14 @@ def send_mail(filelist,namelist,data):
             # message.attach(part2)
             message.attach(content2)
             message.attach(picture)
-        msgRoot = MIMEMultipart('related')
-        msgText = MIMEText('<b>Some <i>HTML</i> text</b> and an image.'
-                           '<img src="cid:figPath">' \
-                           # '<img src="cid:figPath">' \
-                           # '<img src="cid:image3">' \
-                           'good!', 'html', 'utf-8')
-        msgRoot.attach(msgText)
-        message.attach(msgRoot)
+        # msgRoot = MIMEMultipart('related')
+        # msgText = MIMEText('<b>Some <i>HTML</i> text</b> and an image.'
+        #                    '<img src="cid:figPath">' \
+        #                    # '<img src="cid:figPath">' \
+        #                    # '<img src="cid:image3">' \
+        #                    'good!', 'html', 'utf-8')
+        # msgRoot.attach(msgText)
+        # message.attach(msgRoot)
     #登录并发送
     try:
         smtpObj = smtplib.SMTP()
