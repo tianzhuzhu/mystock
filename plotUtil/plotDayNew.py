@@ -1,164 +1,191 @@
-import datetime
-import os
-
-import talib
-import numpy as np
-
 import pandas as pd
+import pandas_datareader as web
+from datetime import datetime, timedelta
+import talib
 import matplotlib.pyplot as plt
-import matplotlib.gridspec as gridspec#分割子图
-import mplfinance.original_flavor as mpf
-
-import utils.loadData
+from mplfinance.original_flavor import candlestick_ohlc
+import matplotlib.ticker as ticker
+import mplfinance as mpf
+import numpy as np
 from sqlalchemy import create_engine
-
-fig = plt.figure(figsize=(20,12), dpi=100,facecolor="white") #创建fig对象
-
+def stock(stock_code): #stock_code是股票代码，例子：上市 "600036.ss", 深市 "000001.sz"
+    start_date = "2020-12-01"  #起始日期
+    today = datetime.date(datetime.now())  #截止日期
+    stock_info = web.get_data_yahoo(stock_code, start_date, today)  #获取行情数据，返回dataframe
+    stock_info = stock_info.reset_index()  #默认index是日期，这里要重置一下，为后面绘图做准备
+    stock_info = stock_info.astype({"Date": str})    #将Date列的类型设置为str，为绘图做准备
+    print(stock_info.columns)
+    return stock_info
 def query(code,days):
-    sql="	SELECT code, date, open, high,close,low ,volume from tb_stock_hisotry_detatil WHERE code ='{}' ORDER BY date desc limit 0,{}".format(code,days)
+    daydelay=50
+    sql="	SELECT date,  high,low ,open,close,volume from tb_stock_hisotry_detatil WHERE code ='{}' ORDER BY date desc limit 0,{}".format(code,days+daydelay)
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     data = pd.read_sql(sql,engine)
+    data.rename(columns={'date':'Date', 'open':'Open', 'high':'High','close':'Close','low':'Low' ,'volume':'Volume'},inplace=True)
+    data.set_index('Date',inplace=True)
+    data=pd.DataFrame(data,dtype=float)
+    data.sort_index(inplace=True, ascending=True)
 
+    data.reset_index(inplace=True)
+
+    data["macd"], data["macd_signal"], data["macd_hist"] = talib.MACD(data['Close'])
+    # 获取10日均线和30日均线
+    data["ma10"] = talib.MA(data["Close"], timeperiod=10)
+    data["ma30"] = talib.MA(data["Close"], timeperiod=30)
+    # 获取rsi
+    data["rsi"] = talib.RSI(data["Close"])
+
+
+    data['K'], data['D'] = talib.STOCH(data.High.values, data.Low.values,
+                                                       data.Close.values, \
+                                                       fastk_period=9, slowk_period=3, slowk_matype=0, slowd_period=3,
+                                                       slowd_matype=0)
+
+    data['J'] = 3 * data['K'] - 2 * data['D']
+
+    data = data.iloc[daydelay:daydelay + days]
+    data.reset_index(inplace=True)
+    data.drop(columns='index',inplace=True)
+    print(data)
     return data
-def queryName(code):
-    sql="	SELECT name from todaystock WHERE code ='{}' ".format(code)
-    engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
-    data = pd.read_sql(sql,engine)
-    return data.iloc[0,0]
-def plot_k(outputPath,ts_code,title):
-    np.seterr(divide='ignore',invalid='ignore') # 忽略warning
-    plt.rcParams['font.sans-serif']=['SimHei'] #用来正常显示中文标签
-    plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
-    print('绘图',ts_code)
-    name=queryName(ts_code[3:])+'-'+title
-    days=200
-    # y_color = mpf.make_marketcolors(up='red',  # 上涨时为红色
-    #                                 down='green',  # 下跌时为绿色
-    #                                 edge='i',  # 隐藏k线边缘
-    #                                 volume='in',  # 成交量用同样的颜色
-    #                                 inherit=True)
+def get_indicators(stock_code):
+    # 创建dataframe
 
-    df_stockload = query(ts_code,days=days)
-    df_stockload.rename(columns={'volume':'vol','date':'trade_date'},inplace=True)
-    # df_stockload.rename(columns={'volume':'volume','date':'Date','open':'opene','close':'close','high': 'high', 'low': 'low'},inplace=True)
-    df_stockload.drop(columns=['code'],inplace=True)
-    df_stockload['trade_date'] = pd.to_datetime(df_stockload['trade_date'])
-    df_stockload=df_stockload.set_index('trade_date')
-    df_stockload=pd.DataFrame(df_stockload,dtype=float)
-    df_stockload.sort_index(inplace=True,ascending=True)
-    print(df_stockload.dtypes)
+    data = stock(stock_code)
 
+    #获取macd
+    data["macd"], data["macd_signal"], data["macd_hist"] = talib.MACD(data['Close'])
 
-    gs = gridspec.GridSpec(4, 1, left=0.08, bottom=0.15, right=0.99, top=0.96, wspace=None, hspace=0, height_ratios=[3.5,1.5,1.5,1.5])
-    graph_KAV = fig.add_subplot(gs[0,:])
-    graph_VOL = fig.add_subplot(gs[1,:])
-    graph_MACD = fig.add_subplot(gs[2,:])
-    graph_KDJ = fig.add_subplot(gs[3,:])
+    #获取10日均线和30日均线
+    data["ma10"] = talib.MA(data["Close"], timeperiod=10)
+    data["ma30"] = talib.MA(data["Close"], timeperiod=30)
 
-    print(df_stockload)
-    #绘制K线图
-    t=100
-    n=days-t
-    figData=df_stockload.iloc[n:days].copy()
-    mpf.candlestick2_ochl(graph_KAV, figData.open, figData.close, figData.high, figData.low, width=0.5,
-                          colorup='r', colordown='g')  # 绘制K线走势
-    # graph_KAV=mpf.plot(figData)
-    #绘制移动平均线图
-    print(df_stockload.close.rolling(window=5).mean())
-    figData['Ma5'] = (df_stockload.close.rolling(window=5).mean().copy()).iloc[n:days]#pd.rolling_mean(df_stockload.close,window=20)
-    figData['Ma10'] = (df_stockload.close.rolling(window=10).mean()).copy().iloc[n:days]#pd.rolling_mean(df_stockload.close,window=30)
-    figData['Ma20'] = (df_stockload.close.rolling(window=20).mean().copy()).iloc[n:days]#pd.rolling_mean(df_stockload.close,window=60)
-    # df_stockload['Ma30'] = df_stockload.close.rolling(window=30).mean()#pd.rolling_mean(df_stockload.close,window=60)
-    # df_stockload['Ma60'] = df_stockload.close.rolling(window=60).mean()#pd.rolling_mean(df_stockload.close,window=60)
-    print(figData['Ma5'])
-    graph_KAV.plot(np.arange(0, len(figData.index)), figData['Ma5'],'black', label='M5',lw=1.0)
-    graph_KAV.plot(np.arange(0, len(figData.index)), figData['Ma10'],'green',label='M10', lw=1.0)
-    graph_KAV.plot(np.arange(0, len(figData.index)), figData['Ma20'],'blue',label='M20', lw=1.0)
-    # graph_KAV.plot(np.arange(0, len(df_stockload.index)), df_stockload['Ma30'],'pink', label='M30',lw=1.0)
-    # graph_KAV.plot(np.arange(0, len(df_stockload.index)), df_stockload['Ma60'],'yellow',label='M60', lw=1.0)
+    #获取rsi
+    data["rsi"] = talib.RSI(data["Close"])
+    return data
 
-    # 添加网格
-    graph_KAV.grid()
-    # graph_KAV.set_title(ts_code + '-' + name,fontsize=10)
-    graph_KAV.legend(loc='best')
+def plot_chart(outputpath,data, title):
+    data.to_excel(title+'.xlsx')
+    print(data)
+    fig = plt.figure()  #创建绘图区，包含四个子图
+    fig.set_size_inches((20, 16))
+    ax_candle = fig.add_axes((0, 0.75, 1, 0.25))   #蜡烛图子图
+    # left, bottom, width, height = 0.1, 0.1, 0.8, 0.8
+    ax_macd = fig.add_axes((0, 0.60, 1, 0.15), sharex=ax_candle)  #macd子图
+    ax_rsi = fig.add_axes((0, 0.45, 1, 0.15), sharex=ax_candle)  #rsi子图
+    ax_vol = fig.add_axes((0, 0.30, 1, 0.15), sharex=ax_candle)   #成交量子图
+    ax_kjd = fig.add_axes((0, 0.15, 1,0.15), sharex=ax_candle)
+    ax_candle.grid(True)
+    # ax_macd.grid(True)
+    # ax_rsi.grid(True)
+    # ax_vol.grid(True)
+    # ax_kjd.grid(True)
+    # print(data)
+    ohlc = []   #存放行情数据，candlestick_ohlc需要传入固定格式的数据
+    row_number = 0
+    for date, row in data.iterrows():
+        date, highp, lowp, openp, closep = row[:5]
+        ohlc.append([row_number, openp, highp, lowp, closep])
+        row_number = row_number+1
+    # print(ohlc)
+    date_tickers = data.Date.values #获取Date数据
+    # print(date_tickers)
+    #绘制蜡烛图
 
-    graph_KAV.set_ylabel=u"价格"
-    graph_KAV.set_xlim(0, len(figData.index))  # 设置一下x轴的范围
+    candlestick_ohlc(ax_candle, ohlc
+    , colorup = "r", colordown = "g"
+    )
+    def format_date(x, pos=None):
+        # 由于前面股票数据在 date 这个位置传入的都是int
+        # 因此 x=0,1,2,...
+        # date_tickers 是所有日期的字符串形式列表
+        if x < 0 or x > len(date_tickers) - 1:
+            return ''
+        return date_tickers[int(x)]
 
-    graph_VOL.bar(np.arange(0, len(figData.index)), figData.vol,color=['g' if figData.open[x] > figData.close[x] else 'r' for x in range(0,len(figData.index))])
-    graph_VOL.set_ylabel(u"成交量")
-    graph_VOL.set_xlim(0,len(figData.index)) #设置一下x轴的范围
-    graph_VOL.set_xticks(range(0,len(figData.index),15))#X轴刻度设定 每15天标一个日期
+    # ax_candle = fig.add_axes((0, 0.75, 1, 0.25))  # 蜡烛图子图
+    # stockData=data.copy()
+    # stockData['Date'] = pd.to_datetime(stockData['Date'])
+    # stockData.set_index('Date',inplace=True)
+    # mpf.plot(stockData, type='candle', figscale=0.9,ax=ax_candle)
+    ax_candle.plot(data.index, data["ma10"], label="MA10")
+    ax_candle.plot(data.index, data["ma30"], label="MA30")
+    ax_candle.xaxis.set_major_formatter(ticker.FuncFormatter(format_date))
+    ax_candle.xaxis.set_major_locator(ticker.MultipleLocator(2))  # 设置间隔为6个交易日
 
-    macd_dif, macd_dea, macd_bar = talib.MACD(df_stockload['close'].values, fastperiod=12, slowperiod=26, signalperiod=9)
-    macd_dif, macd_dea, macd_bar=macd_dif[n:days],macd_dea[n:days],macd_bar[n:days]
+    ax_candle.grid(True)
+    ax_candle.set_title(title, fontsize=20)
+    ax_candle.legend()
 
-    graph_MACD.plot(np.arange(0, len(figData.index)), macd_dif, 'red', label='macd dif')  # dif
-    graph_MACD.plot(np.arange(0, len(figData.index)), macd_dea, 'blue', label='macd dea')  # dea
-
-    bar_red = np.where(macd_bar > 0, 2 * macd_bar, 0)# 绘制BAR>0 柱状图
-    bar_green = np.where(macd_bar < 0, 2 * macd_bar, 0)# 绘制BAR<0 柱状图
-    graph_MACD.bar(np.arange(0, len(figData.index)), bar_red, facecolor='red')
-    graph_MACD.bar(np.arange(0, len(figData.index)), bar_green, facecolor='green')
-
-    graph_MACD.legend(loc='best',shadow=True, fontsize ='10')
-    graph_MACD.set_ylabel(u"MACD")
-    graph_MACD.set_xlim(0,len(figData.index)) #设置一下x轴的范围
-    graph_MACD.set_xticks(range(0,len(figData.index),15))#X轴刻度设定
-
-    #绘制KDJ
-    df_stockload['K'], df_stockload['D'] = talib.STOCH(df_stockload.high.values, df_stockload.low.values, df_stockload.close.values, \
-                                                       fastk_period=9, slowk_period=3, slowk_matype=0, slowd_period=3, slowd_matype=0)
-
-    df_stockload['J'] = 3 * df_stockload['K'] - 2 * df_stockload['D']
-    figData['K']=df_stockload['K'].iloc[n:days]
-    figData['D']=df_stockload['D'].iloc[n:days]
-    figData['J']=df_stockload['J'].iloc[n:days]
+    for label in ax_kjd.xaxis.get_ticklabels():
+        label.set_rotation(60)
 
 
-    graph_KDJ.plot(np.arange(0, len(figData.index)), figData['K'], 'blue', label='K')  # K
-    graph_KDJ.plot(np.arange(0, len(figData.index)), figData['D'], 'g--', label='D')  # D
-    graph_KDJ.plot(np.arange(0, len(figData.index)), figData['J'], 'r-', label='J')  # J
-    graph_KDJ.legend(loc='best', shadow=True, fontsize='10')
+    # 绘制MACD
+    ax_macd.plot(data.index, data["macd"], label="macd")
+    ax_macd.bar(data.index, data["macd_hist"] * 3, label="hist")
+    ax_macd.plot(data.index, data["macd_signal"], label="signal")
+    ax_macd.set_title('MACD')
+    ax_macd.legend()
 
-    graph_KDJ.set_ylabel(u"KDJ")
-    graph_KDJ.set_xlabel("日期")
-    graph_KDJ.set_xlim(0, len(figData.index))  # 设置一下x轴的范围
-    graph_KDJ.set_xticks(range(0, len(figData.index), 15))  # X轴刻度设定 每15天标一个日期
-    graph_KDJ.set_xticklabels(
-        [figData.index.strftime('%Y-%m-%d')[index] for index in graph_KDJ.get_xticks()])  # 标签设置为日期
+    #绘制RSI
+    ax_rsi.set_ylabel("(%)")
+    ax_rsi.plot(data.index, [70] * len(data.index), label="overbought")
+    ax_rsi.plot(data.index, [30] * len(data.index), label="oversold")
+    ax_rsi.plot(data.index, data["rsi"], label="rsi")
+    ax_rsi.set_title('RSI')
+    ax_rsi.legend()
 
-    # X-轴每个ticker标签都向右倾斜45度
-    for label in graph_KAV.xaxis.get_ticklabels():
-        label.set_visible(False)
+    #绘制成交量
+    ax_vol.bar(data.index, data["Volume"] / 1000000)
+    ax_vol.set_ylabel("(Million)")
 
-    for label in graph_VOL.xaxis.get_ticklabels():
-        label.set_visible(False)
 
-    for label in graph_MACD.xaxis.get_ticklabels():
-        label.set_visible(False)
 
-    for label in graph_KDJ.xaxis.get_ticklabels():
-        label.set_rotation(45)
-    label.set_fontsize(10)  # 设置标签字体
-    plt.savefig(outputPath)
-    print(outputPath)
+    #KDJ
+    ax_kjd.plot(data.index, data["K"],label="K",color='blue')
+    ax_kjd.plot(data.index, data["D"], label="D",color='g')
+    ax_kjd.plot(data.index, data["J"], label="J",color='r')
+    ax_kjd.set_title('KDJ')
+    # graph_KDJ.plot(np.arange(0, len(figData.index)), figData['K'], 'blue', label='K')  # K
+    # graph_KDJ.plot(np.arange(0, len(figData.index)), figData['D'], 'g--', label='D')  # D
+    # graph_KDJ.plot(np.arange(0, len(figData.index)), figData['J'], 'r-', label='J')  # J
+    ax_kjd.legend()
+    #这里个人选择不要plt.show()，因为保存图片到本地的
+    #plt.show()
+    # 保存图片到本地
+    fig.savefig(outputpath, bbox_inches="tight")
+    return outputpath
 
-    plt.cla()
-    graph_MACD.remove()
-    graph_KAV.remove()
-    graph_VOL.remove()
-    graph_KDJ.remove()
-    return outputPath
+def industry(dict):
+    np.seterr(divide='ignore', invalid='ignore') # 忽略warning
+    for key, value in dict.items():
+        # d.iteritems: an iterator over the (key, value) items
+        stock_info = get_indicators(key)
+        plot_chart(stock_info, value)
+def industryFromSQL(list):
+    # np.seterr(divide='ignore', invalid='ignore')  # 忽略warning
+    for i in list:
+        data=query(i,100)
+        print('finshed querry')
+        print(data)
+        # data=get_indicators(data)
+        plot_chart(data,i)
+def plotK(path,title,code):
+    data=query(code,100)
+    print('finshed querry')
+    print(data)
+    # data=get_indicators(data)
+    plot_chart(path,data,title)
 if __name__=='__main__':
-    # ouputpath=utils.loadData.loadData('config.yml')['path']['default-kLine']
-    # date=datetime.datetime.now().date()
-    #
-    # path=os.path.join(ouputpath,str(date))
-    # if(not os.path.exists(path)):
-    #     os.mkdir(path)
+    # finance_list = {
+    #     "600036.ss": "Zhaoshang Yinhang",
+    #     # "002142.sz": "Ningbo Yinhang",
+    #     # "000001.sz": "Pingan Yinhang",
+    #     # "601318.ss": "Zhongguo Pingan"
+    # }
+    # industry(finance_list)
     path='sh.600007'+'.jpg'
-    # print(path)
-    plot_k(path,ts_code='sh.600007',title='日线')
-    # path = 'sh.600006' + '.jpg'
-    # plot_k(path,ts_code='sh.600006',title='日线')
+    list=['sh.601398']
+    plotK('sh.600007'+'.jpg','sh.600007','sh.600007')
+

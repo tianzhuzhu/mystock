@@ -34,11 +34,17 @@ def query(code,days):
     # 获取rsi
     data["rsi"] = talib.RSI(data["Close"])
 
+
+    data['K'], data['D'] = talib.STOCH(data.High.values, data.Low.values,
+                                                       data.Close.values, \
+                                                       fastk_period=9, slowk_period=3, slowk_matype=0, slowd_period=3,
+                                                       slowd_matype=0)
+
+    data['J'] = 3 * data['K'] - 2 * data['D']
+
     data = data.iloc[daydelay:daydelay + days]
     data.reset_index(inplace=True)
-
     data.drop(columns='index',inplace=True)
-
     print(data)
     return data
 def get_indicators(stock_code):
@@ -62,21 +68,22 @@ def plot_chart(data, title):
     print(data)
     fig = plt.figure()  #创建绘图区，包含四个子图
     fig.set_size_inches((20, 16))
-    ax_candle = fig.add_axes((0, 0.72, 1, 0.32))   #蜡烛图子图
+    ax_candle = fig.add_axes((0, 0.75, 1, 0.25))   #蜡烛图子图
     # left, bottom, width, height = 0.1, 0.1, 0.8, 0.8
-    ax_macd = fig.add_axes((0, 0.48, 1, 0.2), sharex=ax_candle)  #macd子图
-    ax_rsi = fig.add_axes((0, 0.24, 1, 0.2), sharex=ax_candle)  #rsi子图
-    ax_vol = fig.add_axes((0, 0, 1, 0.2), sharex=ax_candle)   #成交量子图
-    print(data)
+    ax_macd = fig.add_axes((0, 0.60, 1, 0.15), sharex=ax_candle)  #macd子图
+    ax_rsi = fig.add_axes((0, 0.45, 1, 0.15), sharex=ax_candle)  #rsi子图
+    ax_vol = fig.add_axes((0, 0.30, 1, 0.15), sharex=ax_candle)   #成交量子图
+    ax_kjd = fig.add_axes((0, 0.15, 1,0.15), sharex=ax_candle)
+    # print(data)
     ohlc = []   #存放行情数据，candlestick_ohlc需要传入固定格式的数据
     row_number = 0
     for date, row in data.iterrows():
         date, highp, lowp, openp, closep = row[:5]
         ohlc.append([row_number, openp, highp, lowp, closep])
         row_number = row_number+1
-    print(ohlc)
+    # print(ohlc)
     date_tickers = data.Date.values #获取Date数据
-    print(date_tickers)
+    # print(date_tickers)
     #绘制蜡烛图
 
     candlestick_ohlc(ax_candle, ohlc
@@ -90,7 +97,7 @@ def plot_chart(data, title):
             return ''
         return date_tickers[int(x)]
     ax_candle.grid(True)
-    ax_candle = fig.add_axes((0, 0.72, 1, 0.32))  # 蜡烛图子图
+    # ax_candle = fig.add_axes((0, 0.75, 1, 0.25))  # 蜡烛图子图
     # stockData=data.copy()
     # stockData['Date'] = pd.to_datetime(stockData['Date'])
     # stockData.set_index('Date',inplace=True)
@@ -98,12 +105,14 @@ def plot_chart(data, title):
     ax_candle.plot(data.index, data["ma10"], label="MA10")
     ax_candle.plot(data.index, data["ma30"], label="MA30")
     ax_candle.xaxis.set_major_formatter(ticker.FuncFormatter(format_date))
-    ax_candle.xaxis.set_major_locator(ticker.MultipleLocator(6))  # 设置间隔为6个交易日
+    ax_candle.xaxis.set_major_locator(ticker.MultipleLocator(2))  # 设置间隔为6个交易日
+
     ax_candle.grid(True)
     ax_candle.set_title(title, fontsize=20)
     ax_candle.legend()
 
-
+    for label in ax_kjd.xaxis.get_ticklabels():
+        label.set_rotation(60)
 
 
     # 绘制MACD
@@ -125,11 +134,21 @@ def plot_chart(data, title):
     ax_vol.bar(data.index, data["Volume"] / 1000000)
     ax_vol.set_ylabel("(Million)")
 
-    #保存图片到本地
-    fig.savefig(title + ".png", bbox_inches="tight")
 
+
+    #KDJ
+    ax_kjd.plot(data.index, data["K"],label="K",color='blue')
+    ax_kjd.plot(data.index, data["D"], label="D",color='g')
+    ax_kjd.plot(data.index, data["J"], label="J",color='r')
+    ax_kjd.set_title('KDJ')
+    # graph_KDJ.plot(np.arange(0, len(figData.index)), figData['K'], 'blue', label='K')  # K
+    # graph_KDJ.plot(np.arange(0, len(figData.index)), figData['D'], 'g--', label='D')  # D
+    # graph_KDJ.plot(np.arange(0, len(figData.index)), figData['J'], 'r-', label='J')  # J
+    ax_kjd.legend()
     #这里个人选择不要plt.show()，因为保存图片到本地的
     #plt.show()
+    # 保存图片到本地
+    fig.savefig(title + ".png", bbox_inches="tight")
 
 
 def industry(dict):
