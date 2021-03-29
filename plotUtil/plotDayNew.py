@@ -18,11 +18,14 @@ def stock(stock_code): #stock_code是股票代码，例子：上市 "600036.ss",
     return stock_info
 def query(code,days):
     daydelay=50
-    sql="	SELECT date,  high,low ,open,close,volume from tb_stock_hisotry_detatil WHERE code ='{}' ORDER BY date desc limit 0,{}".format(code,days+daydelay)
+    sql="SELECT date,high,low ,open,close,volume from tb_stock_hisotry_detatil WHERE code ='{}' ORDER BY date desc limit 0,{}".format(code,days+daydelay)
+    print(sql)
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     data = pd.read_sql(sql,engine)
+    print(data)
     data.rename(columns={'date':'Date', 'open':'Open', 'high':'High','close':'Close','low':'Low' ,'volume':'Volume'},inplace=True)
     data.set_index('Date',inplace=True)
+    print(data)
     data=pd.DataFrame(data,dtype=float)
     data.sort_index(inplace=True, ascending=True)
 
@@ -176,7 +179,8 @@ def plotK(path,title,code):
     print('finshed querry')
     print(data)
     # data=get_indicators(data)
-    plot_chart(path,data,title)
+    path=plot_chart(path,data,title)
+    return path
 if __name__=='__main__':
     # finance_list = {
     #     "600036.ss": "Zhaoshang Yinhang",
