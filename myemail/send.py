@@ -7,6 +7,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 import plotUtil.plotDay
+import plotUtil.plotDayNew
 def send(filepath):
     #第三方SMTP服务
     mail_host="smtp.163.com" #设置服务器
@@ -14,7 +15,7 @@ def send(filepath):
     mail_pass="SAQCPCVSXLCVKHDT"  #口令
     today=datetime.datetime.now().date()
     sender = 'lujin19950917@163.com' # 发送方
-    receivers = ['lujin19950917@163.com','532978773@qq.com','617970137@qq.com','893573580@qq.com'] # 接收方
+    receivers = ['lujin19950917@163.com','532978773@qq.com','617970137@qq.com','893573580@qq.com','3082872656@qq.com'] # 接收方
 
     # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
     message = MIMEMultipart()
@@ -59,7 +60,7 @@ def send_mail(filelist,namelist,data):
     path=os.path.join(klinePath,str(date))
     if(not os.path.exists(path)):
         os.mkdir(path)
-    klinePath=os.path.join(path,'SZ.000001'+'.jpg')
+
     mail_host="smtp.163.com" #设置服务器
     mail_user="lujin19950917@163.com"  #用户名
     mail_pass="SAQCPCVSXLCVKHDT"  #口令
@@ -85,7 +86,9 @@ def send_mail(filelist,namelist,data):
         print(name,filepath)
         data=pd.read_excel(filepath,sheet_name=0)
         code=data['code'].iloc[0]
-        figPath=plotUtil.plotDay.plot_k(klinePath,code,'日线')
+        print(code)
+        klinePath=os.path.join(path,code+'.jpg')
+        figPath=plotUtil.plotDayNew.plotK(klinePath,'日线',code)
 
         pdffile = MIMEApplication(open(filepath,'rb').read())
         pdffile.add_header('Content-Disposition','attachment',filename=name)

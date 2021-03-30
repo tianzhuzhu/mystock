@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec#分割子图
-import mpl_finance as mpf
+import mplfinance.original_flavor as mpf
 
 import utils.loadData
 from sqlalchemy import create_engine

@@ -7,8 +7,8 @@ print(sys.path[0] )
 
 def loadData(name):
     try:
-        cur_path = os.getcwd()
-
+        dirname, filename = os.path.split(os.path.abspath(__file__))
+        cur_path=dirname
         file = open(os.path.join(cur_path, name), 'r', encoding="utf-8")
         file_data = file.read()
         data = yaml.load(file_data, Loader=yaml.FullLoader)

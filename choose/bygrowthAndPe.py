@@ -10,8 +10,9 @@ import utils.loadData
 
 def search(x,n):
     x=x[0:n]
-    todayvolume=x['date'].max()
-    x['close']=    x['close'].apply(float)
+    todayvolume=x.loc[x['date'].max()==x['date'],'volume'].iloc[0]
+    print(todayvolume)
+    x['close']=  x['close'].apply(float)
     avg=x['close'].mean()
 
     sumv=(x['volume']<todayvolume).apply(int).sum()
@@ -23,7 +24,7 @@ def search(x,n):
     return data
 # ,'peTTM','pbMRQ'
 
-def getStockList( k=20,growth=0.4):
+def getStockList( k=20,growth=0.5,days=90):
     data=utils.loadData.loadData('config.yml')
     sqlpath=data['sql']['peGrowth']
     sqlpath=os.path.join(os.path.abspath(os.path.dirname(__file__)),sqlpath)
@@ -32,11 +33,16 @@ def getStockList( k=20,growth=0.4):
 
     sql=sqlTemplate.format(k,growth)
     data=pd.read_sql(sql=sql,con=engine)
+
+
     print(data)
-    data=data.groupby('code').apply(lambda x:search(x,90))
+    data=data.groupby('code').apply(lambda x:search(x,days))
+    data.sort_values(by='YOYNI',inplace=True,ascending=False)
+    data=data[0:20]
+    data.sort_values(by='peTTM',inplace=True,ascending=False)
+    data=data[0:15]
     data.sort_values(by='count',inplace=True,ascending=False)
     date=datetime.datetime.now().date()
-
     path=r'D:\onedrive\OneDrive - ncist.edu.cn\选股\{}'.format(date)
     if(not os.path.exists(path)):
         os.mkdir(path)

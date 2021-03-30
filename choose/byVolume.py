@@ -47,6 +47,7 @@ def choose(count=40,k=0.8):
         result.sort_values(by=['count','pe'],inplace=True,ascending=[False,True])
         date=datetime.date.today()
         result=result[0:10]
+
         path=r'D:\onedrive\OneDrive - ncist.edu.cn\选股\volume\{}'.format(date)
         if(not os.path.exists(path)):
             os.mkdir(path)

@@ -1,1 +1,1 @@
-__all__=['plotDay']
+__all__=['plotDay','plotDayNew']
