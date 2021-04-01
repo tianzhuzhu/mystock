@@ -43,7 +43,7 @@ def insertTotalData(code,startDate,endate,engine):
             time.sleep(random.randint(1,10))
             print('get',code,'except')
     try:
-        if(data is None or not data.empty):
+        if(not data is None or not data.empty):
             print(data)
             data.to_sql('stockhistory',con=engine,if_exists='append')
 

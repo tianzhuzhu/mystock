@@ -15,7 +15,7 @@ def search(x,n):
     x['close']=  x['close'].apply(float)
     avg=x['close'].mean()
 
-    sumv=(x['volume']<todayvolume).apply(int).sum()
+    sumv=(x['volume']>todayvolume).apply(int).sum()
     data=x.loc[x['date']==x['date'].max(),['YOYNI','peTTM','pbMRQ','close']]
     data=data.iloc[0]
     # return pd.Series({'sum':sumv,'增长率':data.iloc[0,0],'pe':data.iloc[0,1],'pb':data.iloc[0,2]})

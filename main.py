@@ -11,7 +11,7 @@ import myemail.send as send
 import _thread
 def process1(data):
     time.sleep(60)
-    # importTodayStock.importToday()
+    importTodayStock.importToday()
     print('process1 开始')
     list=[220]
     print(list)
@@ -23,7 +23,7 @@ def process1(data):
 def process2(data):
 
     print(data)
-    # importStockAndPE.importTodayStockAndPE()
+    importStockAndPE.importTodayStockAndPE()
     # importGrowth.importGrowth()
     pelist=[10,15,20,30]
     # pelist=[10]
@@ -31,22 +31,23 @@ def process2(data):
     namelist=[]
     for i in pelist:
         print('process2 开始')
-        resultlist.append(PE.getStockList(i,0.6,90))
+        resultlist.append(PE.getStockList(i,0.6,120))
         namelist.append('pe{}-growth{}.xlsx'.format(i,0.6))
 
     send.send_mail(resultlist,namelist,data)
 def process3():
+    time.sleep(1200)
     importGrowth.importGrowth()
 if __name__ == '__main__':
     data=utils.loadData.loadData('config.yml')
     print(data)
 
     try:
-        # _thread.start_new_thread( process1, (data,) )
+        _thread.start_new_thread( process1, (data,) )
         _thread.start_new_thread( process2, (data,) )
         # _thread.start_new_thread( process3, () )
     except:
         traceback.print_exc()
 
-    time.sleep(7200)
+    time.sleep(14400)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
