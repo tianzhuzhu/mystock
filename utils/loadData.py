@@ -11,7 +11,7 @@ def loadData(name):
         # print(dirname)
         cur_path=dirname
         file=os.path.join(cur_path, name)
-        print(file)
+        # print(file)
         file = open(file, 'r', encoding="utf-8")
 
         file_data = file.read()

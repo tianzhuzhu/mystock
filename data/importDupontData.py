@@ -28,7 +28,6 @@ def QuerryDupontData(data,table,engine):
     for code in data['symbol']:
         data=pd.DataFrame()
         print(code)
-        code=util.getCode(code)
         # print(code)
         sql='select max(date) from {} where  code="{}"'.format(table,code)
         try:
@@ -80,7 +79,7 @@ def QuerryDupontData(data,table,engine):
         data.to_sql(table,con=engine,if_exists='append')
     bs.logout()
 def importAllData():
-    data=util.todayStockData()
+    data=util.todayStock()
     threadlist=[]
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
 

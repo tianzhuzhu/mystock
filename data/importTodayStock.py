@@ -10,6 +10,7 @@ import pymysql
 # stock_df = ak.stock_zh_index_spot()
 # print(stock_df)
 import database
+from utils.util import removedotBysymbol, todayStock
 
 
 def importTodayStock():
@@ -17,6 +18,7 @@ def importTodayStock():
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     stockData.to_sql('todaystock',con=engine,if_exists='replace')
 def GetStockHistory(symbol,startdate,enddate):
+    symbol=removedotBysymbol(symbol)
     data = ak.stock_zh_a_daily(symbol=symbol, start_date=startdate, end_date=enddate, adjust="qfq")
     # stock_zh_a_daily_qfq_df = ak.stock_zh_a_daily(symbol="sz000002", start_date="20101103", end_date="20201116", adjust="qfq")
     data['symbol']=symbol
@@ -59,14 +61,7 @@ def insertTotalData(code,startDate,endate,engine):
 def insertTodayValue(endDate):
     database.init()
     engine=database.engine
-    createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
-    createTime=pd.read_sql(con=engine,sql=createTimeSql)
-    if(datetime.datetime.now().day!=createTime.iloc[0,0].day):
-        stockData = ak.stock_zh_a_spot()
-        stockData.to_sql('todaystock',con=engine,if_exists='replace')
-    else:
-        stockData=pd.read_sql(con=engine,sql='select * from todaystock')
-
+    stockData=todayStock()
     i=0
     for code in stockData['symbol']:
         try:

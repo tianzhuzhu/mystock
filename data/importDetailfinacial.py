@@ -65,7 +65,7 @@ def importByCode(code,engine):
 
 def mainProcess():
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
-    stockData= util.todayStockData()
+    stockData= utils.todayStock()
     importByCode('600519',engine)
     for code in stockData['code']:
         importByCode(code,engine)

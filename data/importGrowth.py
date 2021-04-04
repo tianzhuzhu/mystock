@@ -8,11 +8,9 @@ import pandas as pd
 import baostock as bs
 from sqlalchemy import create_engine
 #由600000到 sh.600000
-def getCode(code):
-    code=list(code)
-    code.insert(2,'.')
-    code=''.join(code)
-    return code
+from utils.util import todayStock
+
+
 def getData(code,year,quater):
     growth_list = []
     rs_growth = bs.query_growth_data(code=code, year=year, quarter=quater)
@@ -28,7 +26,7 @@ def importData(stockData,engine):
     for code in stockData['symbol']:
 
         print(code)
-        code=getCode(code)
+
         print(code)
         sql='select max(date) from tb_growth where  code="{}"'.format(code)
         try:
@@ -81,14 +79,7 @@ def importData(stockData,engine):
 
 def importGrowth():
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
-    createTimeSql = " SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
-
-    createTime = pd.read_sql(con=engine, sql=createTimeSql)
-    if (datetime.datetime.now().day != createTime.iloc[0, 0].day):
-        stockData = ak.stock_zh_a_spot()
-        stockData.to_sql('todaystock', con=engine, if_exists='replace')
-    else:
-        stockData = pd.read_sql(con=engine, sql='select * from todayStock')
+    stockData=todayStock()
     importData(stockData,engine)
 if __name__=='__main__':
     importGrowth()

@@ -8,7 +8,7 @@ import pandas as pd
 import baostock as bs
 import talib
 from sqlalchemy import create_engine
-
+import numpy as np
 import database
 
 
@@ -62,11 +62,11 @@ class util():
         sql = "".join(sql)
         return sql
 
-# @static_vars(engine=0)
-def todayStockData():
+def todayStock():
+    table='tb_today_stock'
     today = datetime.datetime.now()
     endDate = today.strftime('%Y%m%d')
-    createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
+    createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = '{}' ".format(table)
 
     database.init()
     engine=database.engine
@@ -74,13 +74,16 @@ def todayStockData():
     try:
         if(datetime.datetime.now().day!=createTime.iloc[0,0].day):
             stockData = ak.stock_zh_a_spot()
+            stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
             stockData.to_sql('todaystock',con=engine,if_exists='replace')
+
         else:
-            stockData=pd.read_sql(con=engine,sql='select * from todayStock')
+            stockData=pd.read_sql(con=engine,sql='select * from {}'.format(table))
     except:
         stockData = ak.stock_zh_a_spot()
-        stockData.to_sql('todaystock',con=engine,if_exists='replace')
-    stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
+        stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
+        stockData.to_sql(table,con=engine,if_exists='replace')
+
     return stockData
 def saveData(data,engine,table):
     try:
@@ -91,6 +94,13 @@ def getdotCodeBysymbol(code):
     code=list(code)
     code.insert(2,'.')
     code=''.join(code)
+    return code
+def removedotBysymbol(code):
+    try:
+        i=code.find('.')
+        code=code[0:i]+code[i+1:]
+    except:
+        pass
     return code
 def getsql(sql_path):
     sql = open(sql_path, "r", encoding="utf8")
@@ -128,3 +138,17 @@ def getMaBydata(data,MAlist):
         data["ma"+str(i)] = talib.MA(data[close], timeperiod=i)
     # print(data)
     return data
+def getMarketValueBySymbol(symbol):
+    database.init()
+    engine=database.engine
+    sql1="select totalShare from tb_profit WHERE code='{}' ORDER BY date desc limit 0,1".format(symbol)
+    sql1.format(symbol)
+    sql2="select close from tb_stock_hisotry_detatil WHERE code='{}' ORDER BY date desc limit 0,1".format(symbol)
+    sql2.format(symbol)
+
+    totalShare=np.float64(pd.read_sql(con=engine,sql=sql1).iloc[0,0])
+    price=np.float64(pd.read_sql(con=engine,sql=sql2).iloc[0,0])
+    print(totalShare)
+    print(price)
+    marketValue=totalShare*price
+    return  marketValue

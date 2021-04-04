@@ -29,7 +29,7 @@ def findSMAbySymbols(symbols,way='goldenCross',fast=5,slow=10,days=100):
             pass
     return list
 def bySMAMain():
-    data=util.todayStockData()
+    data=util.todayStock()
     symbols=data['symbol']
     list=findSMAbySymbols(symbols,'deathCross')
     return list

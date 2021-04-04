@@ -30,7 +30,6 @@ def getStockList( k=20,growth=0.5,days=90):
     sqlpath=os.path.join(os.path.abspath(os.path.dirname(__file__)),sqlpath)
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     sqlTemplate=util.getsql(sqlpath)
-
     sql=sqlTemplate.format(k,growth)
     data=pd.read_sql(sql=sql,con=engine)
 

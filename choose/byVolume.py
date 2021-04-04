@@ -22,7 +22,6 @@ def getVolumes(symbols,k,countDays):
         data=pd.read_sql(con=engine,sql=sql)
         try:
 
-
             if(data['close'].iloc[0]<=k *(data['close'].mean())):
                 today=(todayData.loc[todayData['symbol']==i]).iloc[0]
                 print(today)

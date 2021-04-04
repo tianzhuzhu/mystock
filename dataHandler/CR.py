@@ -18,7 +18,7 @@ def findCRBySymbols(symbols,days=100):
         except:
             traceback.print_exc()
 def byCRMain():
-    data=util.todayStockData()
+    data=util.todayStock()
     symbols=data['symbol']
     list=findCRBySymbols(symbols)
     return list

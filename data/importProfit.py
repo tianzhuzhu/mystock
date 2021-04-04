@@ -9,7 +9,9 @@ from tqdm import tqdm
 # 登陆系统
 from sqlalchemy import create_engine
 
+import database
 from utils import util
+from utils.util import todayStock
 
 
 def queryByCode(code,year,season):
@@ -31,14 +33,14 @@ def importData(stockData,engine):
     toseason=int(datetime.datetime.now().month/4)+1
     codes = tqdm(stockData['symbol'])
     for code in codes:
-
+        # print(code)
         data=pd.DataFrame()
         # print(code)
-        code=util.getCode(code)
         # print(code)
         now=datetime.datetime.now()
         sql='select max(updateTime) from tb_profit where  code="{}"'.format(code)
         try:
+
             updateTime=pd.read_sql(con=engine,sql=sql).iloc[0,0]
             if(now-updateTime).seconds>7200:
                 continue
@@ -99,14 +101,9 @@ def importData(stockData,engine):
         # i = i + 1
     bs.logout()
 def importProfit():
-    engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
-    createTimeSql = " SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
-    createTime = pd.read_sql(con=engine, sql=createTimeSql)
-    if (datetime.datetime.now().day != createTime.iloc[0, 0].day):
-        stockData = ak.stock_zh_a_spot()
-        stockData.to_sql('todaystock', con=engine, if_exists='replace')
-    else:
-        stockData = pd.read_sql(con=engine, sql='select * from todayStock')
+    database.init()
+    engine=database.engine
+    stockData=todayStock()
     importData(stockData,engine)
 if __name__ == '__main__':
     importProfit()

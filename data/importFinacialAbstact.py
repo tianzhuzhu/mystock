@@ -13,10 +13,6 @@ def importData(data,engine):
     lg = bs.login()
     end_date = datetime.datetime.now().date()
     for code in data['symbol']:
-        code=list(code)
-        code.insert(2,'.')
-        code=''.join(code)
-        print(code)
         # 显示登陆返回信息
         # print('login respond error_code:' + lg.error_code)
         # print('login respond  error_msg:' + lg.error_msg)

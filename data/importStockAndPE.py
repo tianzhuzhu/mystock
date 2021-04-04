@@ -88,7 +88,7 @@ def importHistory(data,table):
 
 def importTodayStockAndPE():
 
-    data=util.todayStockData()
+    data=util.todayStock()
     threadlist=[]
     try:
         # count= len(data)

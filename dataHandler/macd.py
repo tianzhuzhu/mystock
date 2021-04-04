@@ -33,7 +33,7 @@ def findMacdListBySymobls(symbols,way='goldenCross',days=100):
             pass
     return list
 def byMacdMain():
-    data=util.todayStockData()
+    data=util.todayStock()
     symbols=data['symbol']
     list=findMacdListBySymobls(symbols,'deathCross',days=100)
     return list
