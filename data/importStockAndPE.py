@@ -4,19 +4,19 @@ import math
 import threading
 import time
 import traceback
-
+from  tqdm import tqdm
 import baostock as bs
 import pandas as pd
 from sqlalchemy import create_engine
 
 #### 登陆系统 ####
-from data import util
+from utils import util
 
 
 def importBycode(code,start_date,end_date,table,engine,lg):
 
     # 显示登陆返回信息
-    print('import data',code,start_date,end_date)
+    # print('import data',code,start_date,end_date)
     #### 获取沪深A股历史K线数据 ####
     # 详细指标参数，参见“历史行情指标参数”章节；“分钟线”参数与“日线”参数不同。“分钟线”不包含指数。
     # 分钟线指标：date,time,code,open,high,low,close,volume,amount,adjustflag
@@ -27,7 +27,7 @@ def importBycode(code,start_date,end_date,table,engine,lg):
                                   frequency="d", adjustflag="3")
 
     # print('query_history_k_data_plus respond error_code:'+rs.error_code)
-    print('query_history_k_data_plus respond  error_msg:'+rs.error_msg)
+    # print('query_history_k_data_plus respond  error_msg:'+rs.error_msg)
 
     #### 打印结果集 ####
     data_list = []
@@ -37,20 +37,31 @@ def importBycode(code,start_date,end_date,table,engine,lg):
     result = pd.DataFrame(data_list, columns=rs.fields)
 
     #### 结果集输出到csv文件 ####
-    print(result)
+    # print(result)
+    result['updateTime']=datetime.datetime.now()
     result.to_sql(table,con=engine,if_exists='append',index=False)
+    updateDate=['']
+    return result
 def importHistory(data,table):
     today = datetime.datetime.now()
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     lg = bs.login()
     i=0
-    print(data['symbol'])
-    for symbol in data['symbol']:
+    symbols = tqdm(data['symbol'])
+    for symbol in symbols:
 
         i=i+1
-        print('现在开始第',i,'条','代码为',symbol,'的数据')
-        print(symbol)
         code=util.getdotCodeBysymbol(symbol)
+        nowtime=datetime.datetime.now()
+        try:
+            sql = 'select max(updateTime) from {} where code="{}"'.format(table, code)
+            updateTime = pd.read_sql(sql, con=engine).iloc[0, 0]
+            if((nowtime-updateTime).seconds<7200):
+                print(symbol,'数据已更新')
+                continue
+        except:
+            # traceback.print_exc()
+            pass
         try:
            sql='select max(date) from {} where code="{}"'.format(table,code)
 
@@ -62,15 +73,17 @@ def importHistory(data,table):
            start_date='1990-01-01'
            # traceback.print_exc()
         end_date=today.strftime('%Y-%m-%d')
-        print(start_date,end_date)
+        # print(start_date,end_date)
         if(start_date>end_date):
             print(code,start_date,'已存在')
             continue
-        importBycode(code,start_date,end_date,table,engine ,lg)
+        result=importBycode(code,start_date,end_date,table,engine ,lg)
         if(i%200==0):
             bs.logout()
-            time.sleep(5)
+            time.sleep(2)
             bs.login()
+
+        symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
     bs.logout()
 
 def importTodayStockAndPE():
@@ -97,6 +110,7 @@ def importTodayStockAndPE():
         # time.sleep(1000)
         # # _thread.start_new_thread(importHistory, (data,))
         importHistory(data, 'tb_stock_hisotry_detatil')
+        # importHistory(data, 'tb_test1')
     except:
         traceback.print_exc()
 

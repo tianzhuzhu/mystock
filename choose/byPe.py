@@ -21,7 +21,6 @@ if __name__ == '__main__':
     datalist2 = datalist2[:n]
     datalist3=todayList.loc[todayList['roe'] > 0]
     datalist3.sort_values(by='roe',ascending=False,inplace=True)
-
     datalist3 = datalist3[:n]
     print(datalist1['code'].isin(datalist2['code']))
     datalist1=datalist1.loc[datalist1['code'].isin(datalist2['code'])]

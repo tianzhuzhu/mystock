@@ -9,6 +9,8 @@ from sqlalchemy import create_engine
 import pymysql
 # stock_df = ak.stock_zh_index_spot()
 # print(stock_df)
+import database
+
 
 def importTodayStock():
     stockData = ak.stock_zh_a_spot()
@@ -31,7 +33,7 @@ def insertTotalData(code,startDate,endate,engine):
     if(pd.to_datetime(startDate)>pd.to_datetime(endate)):
         return
     pelist=[]
-    print(startDate,endate)
+    # print(startDate,endate)
     print('获取代码',code,'数据')
     try:
         data=GetStockHistory(code,startDate,endate)
@@ -44,7 +46,7 @@ def insertTotalData(code,startDate,endate,engine):
             print('get',code,'except')
     try:
         if(not data is None or not data.empty):
-            print(data)
+            # print(data)
             data.to_sql('stockhistory',con=engine,if_exists='append')
 
     except Exception as ex:
@@ -55,9 +57,9 @@ def insertTotalData(code,startDate,endate,engine):
     # time.sleep(random.randint(1,2)*0.01)
 
 def insertTodayValue(endDate):
+    database.init()
+    engine=database.engine
     createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
-
-    engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     createTime=pd.read_sql(con=engine,sql=createTimeSql)
     if(datetime.datetime.now().day!=createTime.iloc[0,0].day):
         stockData = ak.stock_zh_a_spot()
@@ -70,15 +72,14 @@ def insertTodayValue(endDate):
         try:
             lastDate=pd.read_sql(con=engine,sql='select max(date) from stockhistory where symbol="{}"'.format(code))
             lastDate=lastDate.iloc[0,0]
-            print('lastdate',lastDate,datetime.datetime.now().date())
-
+            # print('lastdate',lastDate,datetime.datetime.now().date())
             if(pd.to_datetime(lastDate).date()==datetime.datetime.now().date()):
                 print('重复数据')
                 continue
 
 
             lastDate=pd.to_datetime(pd.to_datetime(lastDate)+datetime.timedelta(days=1))
-            print(lastDate)
+            # print(lastDate)
         except:
             # traceback.print_exc()
             lastDate='19900101'

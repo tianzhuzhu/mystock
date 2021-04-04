@@ -1,7 +1,7 @@
 import datetime
 import os
-import myemail.send
-import data.util as util
+import myEmail.send
+import utils.util as util
 import pandas as pd
 from sqlalchemy import create_engine
 
@@ -50,7 +50,7 @@ def getStockList( k=20,growth=0.5,days=90):
     data=data[0:10]
     data.to_excel(filepath)
 
-    # myemail.send.send_mail(filepath)
+    # myEmail.send.send_mail(filepath)
     return filepath
 
 if __name__ == '__main__':

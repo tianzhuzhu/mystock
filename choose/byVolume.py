@@ -11,20 +11,21 @@ import traceback
 
 import utils.util
 
-
-def SortValueByvolume(countDays,k):
-    sql='select * from todayStock'
+def getVolumes(symbols,k,countDays):
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
-    rows=[]
+    sql='select * from todayStock'
     todayData=pd.read_sql(con=engine,sql=sql)
-    for i in todayData['symbol']:
+    rows=[]
+    for i in symbols:
         # print(i)
         sql='select * from stockHistory where symbol="{}"  order by date desc limit 0,{}'.format(i,countDays)
         data=pd.read_sql(con=engine,sql=sql)
         try:
 
+
             if(data['close'].iloc[0]<=k *(data['close'].mean())):
                 today=(todayData.loc[todayData['symbol']==i]).iloc[0]
+                print(today)
                 if(today['per']<=20 and today['per']>0):
                     todayvolume=data['volume'].iloc[0]
                     # print('todayVolume',todayvolume)
@@ -34,10 +35,19 @@ def SortValueByvolume(countDays,k):
                     values=sel.value_counts()
                     rows.append({'symbol':i,'count':values.loc[True],'roe':roe,'pe':today['per']})
         except:
-            # traceback.print_exc()
-            pass
+            traceback.print_exc()
         # print(rows)
     result=pd.DataFrame.from_dict(rows)
+    print(result)
+    return result
+
+def SortValueByvolume(countDays,k):
+    sql='select * from todayStock'
+    engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
+    todayData=pd.read_sql(con=engine,sql=sql)
+    rows=[]
+    symbols=todayData['symbol']
+    result=getVolumes(symbols,k=0.8,countDays=100)
     # print(result)
     return result
 def choose(count=40,k=0.8):
@@ -67,5 +77,23 @@ def choose(count=40,k=0.8):
     except:
         traceback.print_exc()
     return resultpath
+def toData(count=40,k=.8):
+    date=datetime.date.today()
+    path=r'D:\onedrive\OneDrive - ncist.edu.cn\选股\volume\{}'.format(date)
+    data=chooseToData(count=40,k=0.8,topn=10)
+    if(not os.path.exists(path)):
+        os.mkdir(path)
+    return data
+def chooseToData(count=40,k=0.8,topn=10):
+    try:
+        data=SortValueByvolume(count,k)
+        data.sort_values(by=['count','pe'],inplace=True,ascending=[False,True])
+        data.rename(columns={'symbol':'code'},inplace=True)
+        data['code']=data['code'].map(lambda x:utils.util.getdotCodeBysymbol(x))
+
+        data=data[0:topn]
+    except:
+        traceback.print_exc()
+    return data
 if __name__ == '__main__':
-    choose()
+    print(toData())

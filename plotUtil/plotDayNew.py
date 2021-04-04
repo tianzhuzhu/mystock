@@ -58,7 +58,6 @@ def get_indicators(stock_code):
 
     #获取macd
     data["macd"], data["macd_signal"], data["macd_hist"] = talib.MACD(data['Close'])
-
     #获取10日均线和30日均线
     data["ma10"] = talib.MA(data["Close"], timeperiod=10)
     data["ma30"] = talib.MA(data["Close"], timeperiod=30)

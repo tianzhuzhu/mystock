@@ -4,10 +4,10 @@ import baostock as bs
 import pandas as pd
 from sqlalchemy import create_engine
 # 登陆系统
-from data import util
+from utils import util
 import datetime
 if __name__ == '__main__':
-    # myemail.send.send_mail('a.txt')
+    # myEmail.send.send_mail('a.txt')
     lg = bs.login()
 # 显示登陆返回信息
     print('login respond error_code:'+lg.error_code)

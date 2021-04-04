@@ -1,8 +1,0 @@
-sql:
-  history: history.sql
-  growth: growth.sql
-  peGrowth: peGrowth.sql
-  stockList: stockList.sql
-path:
-  default-kLine: D:\onedrive\OneDrive - ncist.edu.cn\选股\kLine
-

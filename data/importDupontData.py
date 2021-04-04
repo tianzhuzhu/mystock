@@ -5,7 +5,7 @@ import baostock as bs
 import pandas as pd
 from sqlalchemy import create_engine
 # 登陆系统
-from data import util
+from utils import util
 import datetime
 def getData(code,year,quater):
 

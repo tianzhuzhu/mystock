@@ -3,6 +3,7 @@ import traceback
 
 import choose.byVolume as volume
 import choose.bygrowthAndPe  as PE
+import database
 from data import importStockAndPE as importStockAndPE
 import utils.loadData
 from data import importGrowth
@@ -19,7 +20,7 @@ def process1(data):
         result =volume.choose(i,1.2)
     results=[result]
     namelist=['根据成交量.xlsx']
-    send.send_mail(results,namelist,data)
+    # send.send_mail(results,namelist,data)
 def process2(data):
 
     print(data)
@@ -39,15 +40,15 @@ def process3():
     time.sleep(1200)
     importGrowth.importGrowth()
 if __name__ == '__main__':
+    database.init()
+
     data=utils.loadData.loadData('config.yml')
     print(data)
 
     try:
         _thread.start_new_thread( process1, (data,) )
-        _thread.start_new_thread( process2, (data,) )
         # _thread.start_new_thread( process3, () )
     except:
         traceback.print_exc()
-
-    time.sleep(14400)
+    process2(data)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

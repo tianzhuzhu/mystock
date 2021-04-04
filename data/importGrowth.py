@@ -19,60 +19,62 @@ def getData(code,year,quater):
     while (rs_growth.error_code == '0') & rs_growth.next():
         growth_list.append(rs_growth.get_row_data())
     result_growth = pd.DataFrame(growth_list, columns=rs_growth.fields)
-    print(result_growth)
+    # print(result_growth)
     return  result_growth
-
-
 def importData(stockData,engine):
-
     lg = bs.login()
     toyear = datetime.datetime.now().year
     toseason=int(datetime.datetime.now().month/4)+1
     for code in stockData['symbol']:
-        data=pd.DataFrame()
+
         print(code)
         code=getCode(code)
         print(code)
         sql='select max(date) from tb_growth where  code="{}"'.format(code)
         try:
-            date=pd.read_sql(con=engine,sql=sql).iloc[0,0]
-            year,month=date.split('-')
-            year,month=int(year),int(month)
+            Lastdate=pd.read_sql(con=engine,sql=sql).iloc[0,0]
+            year,season=Lastdate.split('-')
+            year,season=int(year),int(season)
         except:
             year=1989
-            month=12
-        season=int(month/4) +1
+            season=4
         season=season+1
         year =year+1 if(season==5) else year
-        season =0 if(season==5) else season+1
+        season =1 if(season==5) else season
         print(year,season)
         list=[]
         for i in range(year,toyear+1):
             for j in range(1,5):
-                if(year==i and j>season):
+                if(year==i and j>=season):
                     list.append(i*10+j)
                 elif(i>year and j<=toseason):
                     list.append(i*10+j)
         print(list)
         for i in list:
+            data = pd.DataFrame()
             date=str(int(i/10))+'-'+str(i%10)
             print(date)
             try:
                 result=getData(code,int(i/10),i%10)
                 result['code']=code
                 result['date']=date
-
-                if(data.empty):
-                    data=pd.DataFrame(columns=result.columns)
+                if(data is None or data.empty):
+                    data=result
+                    print('data')
+                    print(data)
                 else:
                     data=data.append(result,ignore_index=True)
+                    print('append')
+                    print(data)
                     # print(count)
+                data=data.loc[data['date']>Lastdate]
+                data.drop_duplicates(subset=['code','date'],inplace=True)
             except:
-                traceback.print_exc()
 
-        time.sleep(0.5)
+                traceback.print_exc()
         print(data)
         data.to_sql('tb_growth',con=engine,if_exists='append')
+
     bs.logout()
 
 
