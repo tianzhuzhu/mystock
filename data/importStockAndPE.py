@@ -10,10 +10,11 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 #### 登陆系统 ####
+import database
 from utils import util
 
 
-def importBycode(code,start_date,end_date,table,engine,lg):
+def importBycode(code,start_date,end_date):
 
     # 显示登陆返回信息
     # print('import data',code,start_date,end_date)
@@ -38,34 +39,29 @@ def importBycode(code,start_date,end_date,table,engine,lg):
 
     #### 结果集输出到csv文件 ####
     # print(result)
-    result['updateTime']=datetime.datetime.now()
-    result.to_sql(table,con=engine,if_exists='append',index=False)
-    updateDate=['']
+
+    # result.to_sql(table,con=engine,if_exists='append',index=False)
     return result
 def importHistory(data,table):
     today = datetime.datetime.now()
-    engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
+    database.init()
+    engine=database.engine
     lg = bs.login()
     i=0
     symbols = tqdm(data['symbol'])
+    now=datetime.datetime.now()
+    sql='select code,max(date) as date,max(updateTime)as updateTime from {}  GROUP BY code'.format(table)
+    try:
+        timeData=pd.read_sql(con=engine,sql=sql,index_col='code')
+    except:
+        timeData=pd.DataFrame()
     for code in symbols:
         i=i+1
-
         # code=util.getdotCodeBysymbol(symbol)
-        nowtime=datetime.datetime.now()
+        if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*24):
+            continue
         try:
-            sql = 'select max(updateTime) from {} where code="{}"'.format(table, code)
-            updateTime = pd.read_sql(sql, con=engine).iloc[0, 0]
-            if((nowtime-updateTime).seconds<7200):
-                # print(code,'数据已更新')
-                continue
-        except:
-            # traceback.print_exc()
-            pass
-        try:
-           sql='select max(date) from {} where code="{}"'.format(table,code)
-           start_date=pd.read_sql(sql,con=engine).iloc[0,0]
-           start_date=pd.to_datetime(start_date)+datetime.timedelta(days=1)
+           start_date= timeData.loc[code,'date'] + datetime.timedelta(days=1)
            start_date=start_date.strftime('%Y-%m-%d')
            # start_date=start_date.date()
         except:
@@ -76,7 +72,10 @@ def importHistory(data,table):
         if(start_date>end_date):
             # print(code,start_date,'已存在')
             continue
-        result=importBycode(code,start_date,end_date,table,engine ,lg)
+        result=importBycode(code,start_date,end_date)
+        result['updateTime']=now
+        print(result)
+        result.to_sql(table,con=engine,if_exists='append',index=False)
         symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
         if(i%200==0):
             bs.logout()
@@ -84,7 +83,6 @@ def importHistory(data,table):
             bs.login()
 
     bs.logout()
-
 def importTodayStockAndPE():
     data=util.todayStock()
     threadlist=[]

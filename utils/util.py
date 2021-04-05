@@ -180,3 +180,30 @@ def findDataBymarkevalueTH(totalMarketValuelowTh,totalMarketValueHighTh=0,liquid
 
     # myEmail.send.send_mail(filepath)
     return basicinformation
+def getRecentDataBydata(data):
+    database.init()
+    engine=data.engine
+    if(data.index.name!='code'):
+        data.set_index('code',inplace=True)
+    codes=data.index.tolist().join(',')
+    sql="select t.* from (" \
+        "SELECT max(date) as date,code  FROM tb_stock_hisotry_detatil  e where code in " \
+        "({}) GROUP BY code)o ,  tb_stock_hisotry_detatil t where t.code=o.code and t.date=o.date".format(codes)
+    result=pd.read_sql(sql=sql,con=engine,index_col='col')
+    result=pd.concat([data,result],axis=1)
+    print(result)
+
+def findGrowhBydata(data,grow=.3):
+    database.init()
+    engine=data.engine
+    if(data.index.name!='code'):
+        data.set_index('code',inplace=True)
+    codes=data.index.tolist().join(',')
+    sql='select t.* from tb_growth t,' \
+        '(select max(date) as date,code from tb_growth where code in ({}) GROUP BY code) o' \
+        'where t.code=o.code and t.date=o.date'.format(codes)
+    result=pd.read_sql(sql=sql,con=engine,index_col='col')
+    result=pd.concat([data,result],axis=1)
+    result=result.loc[result['YOYNI']>grow]
+    print(result)
+    return data

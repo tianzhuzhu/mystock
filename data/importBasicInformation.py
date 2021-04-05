@@ -9,6 +9,8 @@ from baostock import query_operation_data, query_balance_data, query_cash_flow_d
     query_forecast_report
 from tqdm import tqdm
 # 登陆系统
+import logging
+
 from sqlalchemy import create_engine
 
 import database
@@ -66,32 +68,39 @@ def queryForecastReport(code,year,quater):
 
 
 def importBasicData(table,fun):
+    logger = logging.getLogger(__name__)
+    logger.setLevel(level = logging.INFO)
+    handler = logging.FileHandler("log.txt")
+    handler.setLevel(logging.INFO)
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    logger.info(table+' start')
     database.init()
     engine=database.engine
     stockData=todayStock()
     i,count =0, len(stockData.index)
     lg = bs.login()
     toyear = datetime.datetime.now().year
-    toseason=int(datetime.datetime.now().month/4)+1
+    toseason=int(datetime.datetime.now().month/4)
+    now=datetime.datetime.now()
     codes = tqdm(stockData['symbol'])
+    sql='select code,max(updateTime) as updateTime,max(date) as date from {}  GROUP BY code '.format(table)
+    try:
+        timeData=pd.read_sql(con=engine,sql=sql,index_col='code')
+    except:
+        timeData=pd.DataFrame()
+    # print(timeData)
     for code in codes:
-        # print(code)
         data=pd.DataFrame()
-        # print(code)
-        # print(code)
-        now=datetime.datetime.now()
-        sql='select max(updateTime) from {} where  code="{}"'.format(table,code)
-        try:
 
-            updateTime=pd.read_sql(con=engine,sql=sql).iloc[0,0]
-            if(now-updateTime).seconds>7200:
-                continue
-        except:
-            pass
-        sql='select max(date) from {} where  code="{}"'.format(table,code)
+        if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*24):
+            # print(timeData.loc[code])
+            continue
+        # sql='select max(date) from {} where  code="{}"'.format(table,code)
         i=i+1
         try:
-            date=pd.read_sql(con=engine,sql=sql).iloc[0,0]
+            date=timeData.loc[code,'date']
             year,season=date.split('-')
             year,season=int(year),int(season)
         except:
@@ -128,24 +137,16 @@ def importBasicData(table,fun):
                     # print(count)
             except:
                 traceback.print_exc()
-        # time.sleep(0.5)
-        # print(data)
-        data['updateDate']=datetime.datetime.now()
+        data['updateTime']=now
         data.to_sql(table,con=engine,if_exists='append',index=False)
-        # print(stockData)
-        bar = stockData['symbol']
-        # progress_bar = tqdm(bar)
         os.system('cls')
-        if(i%200==0):
+        if(i%100==0):
             bs.logout()
             time.sleep(5)
             bs.login()
-        codes.set_description("导入{}中代码为{},条数为{}".format(table,code,len(data.index)))
-        # with tqdm(total=count) as pbar:
-        #     print(i)
 
-        #     pbar.update(i)
-        # i = i + 1
+        codes.set_description("导入{}中代码为{},条数为{}".format(table,code,len(data.index)))
+    logger.info(table+' finished')
     bs.logout()
 def mainProcess():
     database.init()

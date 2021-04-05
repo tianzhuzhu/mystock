@@ -9,7 +9,10 @@ from sqlalchemy import create_engine
 import pymysql
 # stock_df = ak.stock_zh_index_spot()
 # print(stock_df)
+from tqdm import tqdm
+
 import database
+from utils import util
 from utils.util import removedotBysymbol, todayStock
 
 
@@ -58,35 +61,58 @@ def insertTotalData(code,startDate,endate,engine):
     print(code,'finshed')
     # time.sleep(random.randint(1,2)*0.01)
 
-def insertTodayValue(endDate):
+def insertTodayValue(data,table):
+    today = datetime.datetime.now()
     database.init()
     engine=database.engine
-    stockData=todayStock()
+
     i=0
-    for code in stockData['symbol']:
-        try:
-            lastDate=pd.read_sql(con=engine,sql='select max(date) from stockhistory where symbol="{}"'.format(code))
-            lastDate=lastDate.iloc[0,0]
-            # print('lastdate',lastDate,datetime.datetime.now().date())
-            if(pd.to_datetime(lastDate).date()==datetime.datetime.now().date()):
-                print('重复数据')
-                continue
-
-
-            lastDate=pd.to_datetime(pd.to_datetime(lastDate)+datetime.timedelta(days=1))
-            # print(lastDate)
-        except:
-            # traceback.print_exc()
-            lastDate='19900101'
-        # print('下一天日期',lastDate)
+    symbols = tqdm(data['symbol'])
+    now=datetime.datetime.now()
+    sql='select code,max(date) as date,max(updateTime)as updateTime from {}  GROUP BY code'.format(table)
+    # print(sql)
+    try:
+        timeData=pd.read_sql(con=engine,sql=sql,index_col='code')
+    except:
+        timeData=pd.DataFrame()
+    # print(timeData)
+    for code in symbols:
+        code=util.removedotBysymbol(code)
         i=i+1
-        print('开始第',i,'条数据')
-        insertTotalData(code,lastDate,endDate,engine)
-        # lastDate.
-        #
+        # code=util.getdotCodeBysymbol(symbol)
+        try:
+            if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*24):
+                continue
+        except:
+            pass
+        try:
+            start_date=timeData.loc[code,'date']+ datetime.timedelta(days=1)
+            start_date=start_date.strftime('%Y%m%d')
+            # start_date=start_date.date()
+        except:
+            start_date='19900101'
+            # traceback.print_exc()
+        end_date=today.strftime('%Y-%m-%d')
+        # print(start_date,end_date)
+        if(start_date>end_date):
+            # print(code,start_date,'已存在')
+            continue
+        # print('star_Date')
+        # print(start_date)
+
+        result=ak.stock_zh_a_daily(symbol=code, start_date=start_date, end_date=end_date, adjust="qfq")
+        result.reset_index(inplace=True)
+        result['updateTime']=now
+        result['code']=code
+        print(result)
+
+        result.to_sql(table,con=engine,if_exists='append',index=False)
+        symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
+
 def importToday():
     today = datetime.datetime.now()
     endDate = today.strftime('%Y%m%d')
-    insertTodayValue(endDate)
+    data=util.todayStock()
+    insertTodayValue(data,'tb_stock_history')
 if __name__ == '__main__':
     importToday()
