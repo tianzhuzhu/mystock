@@ -18,8 +18,6 @@ def getData(code,year,quater):
     # print(code,year,quater)
     # print(result_profit)
     return result_profit
-
-
 def QuerryDupontData(data,table,engine):
 
     lg = bs.login()
@@ -49,9 +47,14 @@ def QuerryDupontData(data,table,engine):
         list=[]
         for i in range(year,toyear+1):
             for j in range(1,5):
-                if(year==i and j>season):
+                #最后一次数据的年
+                if(i==year and j>=season):
                     list.append(i*10+j)
-                elif(i>year and j<=toseason):
+                #今年
+                elif(i==toyear and j<=toseason):
+                    list.append(i*10+j)
+                #中间年
+                elif(i>year and i<toyear):
                     list.append(i*10+j)
         print(list)
         for i in list:

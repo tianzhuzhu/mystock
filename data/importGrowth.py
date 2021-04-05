@@ -8,6 +8,8 @@ import pandas as pd
 import baostock as bs
 from sqlalchemy import create_engine
 #由600000到 sh.600000
+from tqdm import tqdm
+
 from utils.util import todayStock
 
 
@@ -23,11 +25,10 @@ def importData(stockData,engine):
     lg = bs.login()
     toyear = datetime.datetime.now().year
     toseason=int(datetime.datetime.now().month/4)+1
-    for code in stockData['symbol']:
+    i=0
+    codes = tqdm(stockData['symbol'])
+    for code in codes:
 
-        print(code)
-
-        print(code)
         sql='select max(date) from tb_growth where  code="{}"'.format(code)
         try:
             Lastdate=pd.read_sql(con=engine,sql=sql).iloc[0,0]
@@ -39,40 +40,44 @@ def importData(stockData,engine):
         season=season+1
         year =year+1 if(season==5) else year
         season =1 if(season==5) else season
-        print(year,season)
+        # print(year,season)
         list=[]
         for i in range(year,toyear+1):
             for j in range(1,5):
-                if(year==i and j>=season):
+                #最后一次数据的年
+                if(i==year and j>=season):
                     list.append(i*10+j)
-                elif(i>year and j<=toseason):
+                #今年
+                elif(i==toyear and j<=toseason):
                     list.append(i*10+j)
-        print(list)
+                #中间年
+                elif(i>year and i<toyear):
+                    list.append(i*10+j)
+        # print(list)
+        data = pd.DataFrame()
         for i in list:
-            data = pd.DataFrame()
             date=str(int(i/10))+'-'+str(i%10)
-            print(date)
+            # print(date)
             try:
                 result=getData(code,int(i/10),i%10)
+                # print(result)
                 result['code']=code
                 result['date']=date
                 if(data is None or data.empty):
                     data=result
-                    print('data')
-                    print(data)
                 else:
                     data=data.append(result,ignore_index=True)
-                    print('append')
-                    print(data)
-                    # print(count)
-                data=data.loc[data['date']>Lastdate]
-                data.drop_duplicates(subset=['code','date'],inplace=True)
+
             except:
 
                 traceback.print_exc()
-        print(data)
         data.to_sql('tb_growth',con=engine,if_exists='append')
 
+        codes.set_description("导入成长表中代码为{},条数为{}".format(code,len(data.index)))
+        if(i%200==0):
+            bs.logout()
+            time.sleep(5)
+            bs.login()
     bs.logout()
 
 

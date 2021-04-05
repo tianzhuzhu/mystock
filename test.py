@@ -1,7 +1,8 @@
 import talib
-
+import baostock as bs
 import database
-from utils.util import getKBySymbol, todayStock, removedotBysymbol, getMarketValueBySymbol
+from data.importBasicInformation import queryDubpontByCode, queryGrowthByCode
+from utils.util import getKBySymbol, todayStock, removedotBysymbol, getMarketValueBySymbol, getAllMarketValue
 
 #
 # database.init()
@@ -9,7 +10,11 @@ from utils.util import getKBySymbol, todayStock, removedotBysymbol, getMarketVal
 #
 # data=talib.RSI(data['close'])
 # print(data)
-todayStock()
+# todayStock()
 # code='sh.600000'
 # print(removedotBysymbol(code))
 # print(getMarketValueBySymbol('sh.600519'))
+# print(getAllMarketValue())
+bs.login()
+print(queryGrowthByCode('sh.600000'))
+bs.logout()

@@ -8,7 +8,7 @@ from data import importStockAndPE as importStockAndPE
 import utils.loadData
 from data import importGrowth
 from data import importTodayStock
-import myemail.send as send
+import myEmail.send as send
 import _thread
 def process1(data):
     time.sleep(60)

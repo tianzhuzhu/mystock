@@ -7,7 +7,7 @@ import akshare as ak
 import pandas as pd
 import baostock as bs
 import talib
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, VARCHAR
 import numpy as np
 import database
 
@@ -29,23 +29,6 @@ class util():
         data.set_index('date',inplace=True)
         data.sort_index(ascending=True,inplace=True)
         return data
-    def todayStockData(self):
-        engine=self.engine
-        today = datetime.datetime.now()
-        endDate = today.strftime('%Y%m%d')
-        createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = 'todaystock' "
-        createTime=pd.read_sql(con=engine,sql=createTimeSql)
-        try:
-            if(datetime.datetime.now().day!=createTime.iloc[0,0].day):
-                stockData = ak.stock_zh_a_spot()
-                stockData.to_sql('todaystock',con=engine,if_exists='replace')
-            else:
-                stockData=pd.read_sql(con=engine,sql='select * from todayStock')
-        except:
-            stockData = ak.stock_zh_a_spot()
-            stockData.to_sql('todaystock',con=engine,if_exists='replace')
-        stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
-        return stockData
     def saveData(data,engine,table):
         try:
             data.to_sql(table,con=engine)
@@ -66,7 +49,7 @@ def todayStock():
     table='tb_today_stock'
     today = datetime.datetime.now()
     endDate = today.strftime('%Y%m%d')
-    createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = 'stock' and `information_schema`.`TABLES`.`TABLE_NAME` = '{}' ".format(table)
+    createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = '{}' and `information_schema`.`TABLES`.`TABLE_NAME` = '{}' ".format('stock',table)
 
     database.init()
     engine=database.engine
@@ -75,11 +58,12 @@ def todayStock():
         if(datetime.datetime.now().day!=createTime.iloc[0,0].day):
             stockData = ak.stock_zh_a_spot()
             stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
-            stockData.to_sql('todaystock',con=engine,if_exists='replace')
+            stockData.to_sql(table,con=engine,if_exists='replace')
 
         else:
             stockData=pd.read_sql(con=engine,sql='select * from {}'.format(table))
     except:
+        traceback.print_exc()
         stockData = ak.stock_zh_a_spot()
         stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
         stockData.to_sql(table,con=engine,if_exists='replace')
@@ -152,3 +136,47 @@ def getMarketValueBySymbol(symbol):
     print(price)
     marketValue=totalShare*price
     return  marketValue
+def getAllMarketValue():
+    database.init()
+    engine=database.engine
+    sqlCloseValue='select t.* from (' \
+                  'SELECT max(date) as date,code  FROM tb_stock_hisotry_detatil  GROUP BY code) o ,  tb_stock_hisotry_detatil t where t.code=o.code and t.date=o.date'
+    sqlShare='select t.* from ' \
+             '(SELECT max(date) as date,code  FROM tb_profit  GROUP BY code) o ,  tb_profit t where t.code=o.code and t.date=o.date'
+    priceData=pd.read_sql(con=engine,sql=sqlCloseValue,index_col='code')
+    ShareData=pd.read_sql(con=engine,sql=sqlShare,index_col='code')
+    marketData=pd.DataFrame(index=priceData.index)
+    nowdate=datetime.datetime.now().date()
+    marketData['totalMarketValue']=priceData['close']*ShareData['totalShare']
+    marketData['liquidMarketValue']=priceData['close']*ShareData['liqaShare']
+    marketData['roeAvg']=ShareData['roeAvg']
+    marketData['npMargin']=ShareData['npMargin']
+    marketData['netProfit']=ShareData['netProfit']
+    marketData['epsTTM']=ShareData['epsTTM']
+    marketData['MBRevenue']=ShareData['MBRevenue']
+    marketData['totalShare']=ShareData['totalShare']
+    marketData['liqaShare']=ShareData['liqaShare']
+    marketData['updateTime']=nowdate
+    marketData.to_sql(con=engine,name='tb_basic_information',if_exists='replace',dtype={'code':VARCHAR(32)})
+
+    return marketData
+def findDataBymarkevalueTH(totalMarketValuelowTh,totalMarketValueHighTh=0,liquidMarketValueLowTh=0,liquidMarketValueHighTh=0):
+    database.init()
+    engine=database.engine
+    sqlBasicInformation='select * from tb_basic_information'
+    basicinformation=pd.read_sql(sql=sqlBasicInformation,con=engine,index_col='code')
+    print(basicinformation)
+    totalMarketValuelowTh,totalMarketValueHighTh,liquidMarketValueHighTh,liquidMarketValueLowTh=totalMarketValuelowTh*100000000,totalMarketValueHighTh*100000000,liquidMarketValueHighTh*100000000,liquidMarketValueLowTh*100000000
+    basicinformation=basicinformation.loc[ \
+        basicinformation['totalMarketValue']>totalMarketValuelowTh]
+    if(totalMarketValueHighTh!=0):
+        basicinformation=basicinformation.loc[ \
+            basicinformation['totalMarketValue']<totalMarketValueHighTh]
+        # basicinformation['liquidMarketVAlue']>liquidMarketValueTh]
+    # path=r'D:\onedrive\OneDrive - ncist.edu.cn\选股\{}'.format(date)
+    # if(not os.path.exists(path)):
+    #     os.mkdir(path)
+    # filepath=os.path.join(path,'结果{}-{}.xlsx'.format(str(k),str(growth)))
+
+    # myEmail.send.send_mail(filepath)
+    return basicinformation

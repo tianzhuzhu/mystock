@@ -48,23 +48,22 @@ def importHistory(data,table):
     lg = bs.login()
     i=0
     symbols = tqdm(data['symbol'])
-    for symbol in symbols:
-
+    for code in symbols:
         i=i+1
-        code=util.getdotCodeBysymbol(symbol)
+
+        # code=util.getdotCodeBysymbol(symbol)
         nowtime=datetime.datetime.now()
         try:
             sql = 'select max(updateTime) from {} where code="{}"'.format(table, code)
             updateTime = pd.read_sql(sql, con=engine).iloc[0, 0]
             if((nowtime-updateTime).seconds<7200):
-                print(symbol,'数据已更新')
+                # print(code,'数据已更新')
                 continue
         except:
             # traceback.print_exc()
             pass
         try:
            sql='select max(date) from {} where code="{}"'.format(table,code)
-
            start_date=pd.read_sql(sql,con=engine).iloc[0,0]
            start_date=pd.to_datetime(start_date)+datetime.timedelta(days=1)
            start_date=start_date.strftime('%Y-%m-%d')
@@ -75,42 +74,23 @@ def importHistory(data,table):
         end_date=today.strftime('%Y-%m-%d')
         # print(start_date,end_date)
         if(start_date>end_date):
-            print(code,start_date,'已存在')
+            # print(code,start_date,'已存在')
             continue
         result=importBycode(code,start_date,end_date,table,engine ,lg)
+        symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
         if(i%200==0):
             bs.logout()
-            time.sleep(2)
+            time.sleep(5)
             bs.login()
 
-        symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
     bs.logout()
 
 def importTodayStockAndPE():
-
     data=util.todayStock()
     threadlist=[]
     try:
-        # count= len(data)
-        # print('count',count)
-        # for i in range(0,10):
-        #     slice=count/10
-        #     low=math.floor(slice*i)
-        #     high=math.ceil(slice*(i+1))
-        #
-        #     high=count if high >=count else high
-        #     print(low, high,count)
-        #     tempdata=data.iloc[low:high]
-        #     t = threading.Thread(target=importHistory,args=(tempdata,'tb_stock_hisotry_detatil',))
-        #     threadlist.append(t)
-        # for t in threadlist:
-        #     t.setDaemon(True)  # 设置为守护线程，不会因主线程结束而中断
-        #     t.start()
-        #     # t.join()  # 子线程全部加入，主线程等所有子线程运行完毕
-        # time.sleep(1000)
-        # # _thread.start_new_thread(importHistory, (data,))
         importHistory(data, 'tb_stock_hisotry_detatil')
-        # importHistory(data, 'tb_test1')
+
     except:
         traceback.print_exc()
 
