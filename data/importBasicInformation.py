@@ -93,10 +93,12 @@ def importBasicData(table,fun):
     # print(timeData)
     for code in codes:
         data=pd.DataFrame()
-
-        if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*24):
-            # print(timeData.loc[code])
-            continue
+        try:
+            if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*12):
+                # print(timeData.loc[code])
+                continue
+        except:
+            pass
         # sql='select max(date) from {} where  code="{}"'.format(table,code)
         i=i+1
         try:

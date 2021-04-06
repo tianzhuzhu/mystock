@@ -86,7 +86,7 @@ def insertTodayValue(data,table):
         except:
             pass
         try:
-            start_date=timeData.loc[code,'date']+ datetime.timedelta(days=1)
+            start_date= pd.to_datetime(timeData.loc[code,'date']) + datetime.timedelta(days=1)
             start_date=start_date.strftime('%Y%m%d')
             # start_date=start_date.date()
         except:

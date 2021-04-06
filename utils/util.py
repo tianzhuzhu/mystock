@@ -44,26 +44,59 @@ class util():
         sql = sql.readlines()
         sql = "".join(sql)
         return sql
+def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
+    # 2021-04-01 08:00:00	2021-04-02 00:00:00
+    #工作日判断尚未完成
+    if(isWorkDay==True):
+        #3天必更新
+        if(nowtime.hour<15):
+            nowtime= nowtime - datetime.timedelta(days=1)
+        if(lastUpdateTime.hour<15):
+            lastUpdateTime= lastUpdateTime - datetime.timedelta(days=1)
+        days=(nowtime.date()-lastUpdateTime.date()).days
+        if(days>=3):
+            return True
+        if(days==2):
+            if(nowtime.weekday()==6):
+                return False
+            else: return True
+        if(days==1):
+            if(nowtime.weekday()==6 or nowtime.weekday()==5):
+                return False
+            else: return True
+        return False
 
-def todayStock():
-    table='tb_today_stock'
-    today = datetime.datetime.now()
-    endDate = today.strftime('%Y%m%d')
+    else:
+        #非工作日判断
+        #隔了2天
+        if(nowtime.hour<15):
+            nowtime= nowtime - datetime.timedelta(days=1)
+        if(lastUpdateTime.hour<15):
+            lastUpdateTime= lastUpdateTime - datetime.timedelta(days=1)
+        days=(nowtime.date()-lastUpdateTime.date()).days
+        if(days>1):
+            return True
+
+def todayStock(table='tb_today_stock'):
+
+    nowtime = datetime.datetime.now()
+
+    endDate = nowtime.strftime('%Y%m%d')
     createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = '{}' and `information_schema`.`TABLES`.`TABLE_NAME` = '{}' ".format('stock',table)
 
     database.init()
     engine=database.engine
-    createTime=pd.read_sql(con=engine,sql=createTimeSql)
+    lastUpdateTime=pd.read_sql(con=engine,sql=createTimeSql).iloc[0,0]
     try:
-        if(datetime.datetime.now().day!=createTime.iloc[0,0].day):
+        ##排除五点后获取数据
+        if(needUpdate(lastUpdateTime,nowtime)):
             stockData = ak.stock_zh_a_spot()
             stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
             stockData.to_sql(table,con=engine,if_exists='replace')
-
         else:
             stockData=pd.read_sql(con=engine,sql='select * from {}'.format(table))
     except:
-        traceback.print_exc()
+        # traceback.print_exc()
         stockData = ak.stock_zh_a_spot()
         stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
         stockData.to_sql(table,con=engine,if_exists='replace')
@@ -132,8 +165,8 @@ def getMarketValueBySymbol(symbol):
 
     totalShare=np.float64(pd.read_sql(con=engine,sql=sql1).iloc[0,0])
     price=np.float64(pd.read_sql(con=engine,sql=sql2).iloc[0,0])
-    print(totalShare)
-    print(price)
+    # print(totalShare)
+    # print(price)
     marketValue=totalShare*price
     return  marketValue
 def getAllMarketValue():
@@ -165,7 +198,7 @@ def findDataBymarkevalueTH(totalMarketValuelowTh,totalMarketValueHighTh=0,liquid
     engine=database.engine
     sqlBasicInformation='select * from tb_basic_information'
     basicinformation=pd.read_sql(sql=sqlBasicInformation,con=engine,index_col='code')
-    print(basicinformation)
+    # print(basicinformation)
     totalMarketValuelowTh,totalMarketValueHighTh,liquidMarketValueHighTh,liquidMarketValueLowTh=totalMarketValuelowTh*100000000,totalMarketValueHighTh*100000000,liquidMarketValueHighTh*100000000,liquidMarketValueLowTh*100000000
     basicinformation=basicinformation.loc[ \
         basicinformation['totalMarketValue']>totalMarketValuelowTh]
@@ -181,29 +214,81 @@ def findDataBymarkevalueTH(totalMarketValuelowTh,totalMarketValueHighTh=0,liquid
     # myEmail.send.send_mail(filepath)
     return basicinformation
 def getRecentDataBydata(data):
+
     database.init()
-    engine=data.engine
+    engine=database.engine
     if(data.index.name!='code'):
         data.set_index('code',inplace=True)
-    codes=data.index.tolist().join(',')
+    list=data.index.tolist()
+    for i in range(len(list)):
+        list[i]="'"+list[i]+"'"
+
+    codes=','.join(list)
     sql="select t.* from (" \
         "SELECT max(date) as date,code  FROM tb_stock_hisotry_detatil  e where code in " \
         "({}) GROUP BY code)o ,  tb_stock_hisotry_detatil t where t.code=o.code and t.date=o.date".format(codes)
-    result=pd.read_sql(sql=sql,con=engine,index_col='col')
+    result=pd.read_sql(sql=sql,con=engine,index_col='code')
     result=pd.concat([data,result],axis=1)
-    print(result)
+    # print(result)
+    return result
 
 def findGrowhBydata(data,grow=.3):
     database.init()
-    engine=data.engine
+    engine=database.engine
     if(data.index.name!='code'):
         data.set_index('code',inplace=True)
-    codes=data.index.tolist().join(',')
+    list=data.index.tolist()
+    for i in range(len(list)):
+        list[i]="'"+list[i]+"'"
+    codes=','.join(list)
     sql='select t.* from tb_growth t,' \
-        '(select max(date) as date,code from tb_growth where code in ({}) GROUP BY code) o' \
+        '(select max(date) as date,code from tb_growth where code in ({}) GROUP BY code) o ' \
         'where t.code=o.code and t.date=o.date'.format(codes)
-    result=pd.read_sql(sql=sql,con=engine,index_col='col')
+
+    result=pd.read_sql(sql=sql,con=engine,index_col='code')
+    # print(result['YOYNI'])
+
     result=pd.concat([data,result],axis=1)
+    result['YOYNI']=  result['YOYNI'].apply(float)
     result=result.loc[result['YOYNI']>grow]
-    print(result)
+    # print(result['YOYNI'])
+    # print(result)
+    result.index.name='code'
+    return result
+
+
+def fliterPeByData(data,peTh=30):
+    if('peTTM' in data.columns):
+        data=data.loc[data['peTTM']<=peTh]
+        data['peTTM']=  data['peTTM'].apply(float)
+        data=data.loc[data['peTTM']>0]
+    else:
+        data=getRecentDataBydata(data)
+        data['peTTM']=  data['peTTM'].apply(float)
+        data=data.loc[data['peTTM']<=0]
+    return data
+def findVolume(x,n):
+    x=x[0:n]
+
+    x['date']=pd.to_datetime(x['date'])
+    maxDate=x['date'].max()
+    todayvolume=x.loc[maxDate==x['date'],'volume'].iloc[0]
+    x['close']=  x['close'].apply(float)
+    avg=x['close'].mean()
+
+    sumv=(x['volume']>todayvolume).apply(int).sum()
+    # return pd.Series({'sum':sumv,'增长率':data.iloc[0,0],'pe':data.iloc[0,1],'pb':data.iloc[0,2]})
+
+    return sumv
+def findVolumeCountByData(data,days=100):
+    database.init()
+    engine=database.engine
+    list=data.index.tolist()
+    for i in range(len(list)):
+        list[i]="'"+list[i]+"'"
+    codes=','.join(list)
+    sql="select * from tb_stock_hisotry_detatil WHERE code in ({})".format(codes)
+    volumes=pd.read_sql(sql=sql,con=engine,index_col='code')
+    data['count']=volumes.groupby(['code']).apply(lambda x:findVolume(x,days))
+    data.sort_values(by=['YOYNI','count'])
     return data

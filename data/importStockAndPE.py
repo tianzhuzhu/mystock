@@ -58,23 +58,25 @@ def importHistory(data,table):
     for code in symbols:
         i=i+1
         # code=util.getdotCodeBysymbol(symbol)
-        if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*24):
+        if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*12):
             continue
         try:
-           start_date= timeData.loc[code,'date'] + datetime.timedelta(days=1)
+           start_date= pd.to_datetime(timeData.loc[code,'date']) + datetime.timedelta(days=1)
            start_date=start_date.strftime('%Y-%m-%d')
            # start_date=start_date.date()
         except:
+           traceback.print_exc()
            start_date='1990-01-01'
-           # traceback.print_exc()
+
         end_date=today.strftime('%Y-%m-%d')
         # print(start_date,end_date)
         if(start_date>end_date):
             # print(code,start_date,'已存在')
             continue
+        # print(start_date,end_date)
         result=importBycode(code,start_date,end_date)
         result['updateTime']=now
-        print(result)
+        # print(result)
         result.to_sql(table,con=engine,if_exists='append',index=False)
         symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
         if(i%200==0):
@@ -85,7 +87,7 @@ def importHistory(data,table):
     bs.logout()
 def importTodayStockAndPE():
     data=util.todayStock()
-    threadlist=[]
+    print(data)
     try:
         importHistory(data, 'tb_stock_hisotry_detatil')
 

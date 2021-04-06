@@ -9,6 +9,7 @@ import utils.loadData
 
 
 def search(x,n):
+    # print(x.columns)
     x=x[0:n]
     todayvolume=x.loc[x['date'].max()==x['date'],'volume'].iloc[0]
     print(todayvolume)
@@ -21,6 +22,7 @@ def search(x,n):
     # return pd.Series({'sum':sumv,'增长率':data.iloc[0,0],'pe':data.iloc[0,1],'pb':data.iloc[0,2]})
     data['count']=sumv
     data['avg']=data['close']/avg
+
     return data
 # ,'peTTM','pbMRQ'
 
@@ -48,7 +50,6 @@ def getStockList( k=20,growth=0.5,days=90):
     filepath=os.path.join(path,'结果{}-{}.xlsx'.format(str(k),str(growth)))
     data=data[0:10]
     data.to_excel(filepath)
-
     # myEmail.send.send_mail(filepath)
     return filepath
 
