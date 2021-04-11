@@ -8,12 +8,15 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 import utils.loadData
+from dataHandler.macd import findMacdListBySymobls
+from dataHandler.sma import findSMAbySymbols
 
-def getResultFile(th=1000,growth=0.3,pe=20):
+
+def getResultFile(th=1000,growth=0.3,pe=20,ByMACD=False,BySMA=False):
     database.init()
     path=database.path
     date=database.date
-    data=findStockList(100,th,growth,pe)
+    data=findStockList(100,th,growth,pe,ByMACD,BySMA)
     if(not os.path.exists(path)):
         os.mkdir(path)
     filepath=os.path.join(path,'市值{}市盈率{}增长率{}.xlsx'.format('500亿','25','25%'))
@@ -21,7 +24,7 @@ def getResultFile(th=1000,growth=0.3,pe=20):
     print(filepath)
     # myEmail.send.send_mail(filepath)
     return filepath
-def findStockList(days=100,th=1000,growth=0.3,pe=20):
+def findStockList(days=100,th=1000,growth=0.3,pe=20,macd=False,SMA=False):
 
     data=util.findDataBymarkevalueTH(th)
     data= util.findGrowhBydata(data,growth)
@@ -30,7 +33,14 @@ def findStockList(days=100,th=1000,growth=0.3,pe=20):
     result=util.fliterPeByData(result,pe)
     # print(result)
     result=util.findVolumeCountByData(result)
+    if(macd==True):
+        list=findMacdListBySymobls(result.index,days=100)
+        result=result.iloc[result.index.isin(list)]
+    if(SMA==True):
+        list=findSMAbySymbols(result.index,days=100)
+        result=result.iloc[result.index.isin(list)]
     return result
+
 
 # ,'peTTM','pbMRQ'
 #阈值单位亿

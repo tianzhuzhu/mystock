@@ -35,7 +35,7 @@ def findMacdListBySymobls(symbols,way='goldenCross',days=100):
 def byMacdMain():
     data=util.todayStock()
     symbols=data['symbol']
-    list=findMacdListBySymobls(symbols,'deathCross',days=100)
+    list=findMacdListBySymobls(symbols,'goldenCross',days=100)
     return list
 if __name__ == '__main__':
     print(byMacdMain())

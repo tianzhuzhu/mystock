@@ -47,13 +47,13 @@ class util():
 def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
     # 2021-04-01 08:00:00	2021-04-02 00:00:00
     #工作日判断尚未完成
+    if(nowtime.hour<15):
+        nowtime= nowtime - datetime.timedelta(days=1)
+    if(lastUpdateTime.hour<15):
+        lastUpdateTime= lastUpdateTime - datetime.timedelta(days=1)
+    days=(nowtime.date()-lastUpdateTime.date()).days
     if(isWorkDay==True):
-        #3天必更新
-        if(nowtime.hour<15):
-            nowtime= nowtime - datetime.timedelta(days=1)
-        if(lastUpdateTime.hour<15):
-            lastUpdateTime= lastUpdateTime - datetime.timedelta(days=1)
-        days=(nowtime.date()-lastUpdateTime.date()).days
+        #3天必更
         if(days>=3):
             return True
         if(days==2):
@@ -69,14 +69,10 @@ def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
     else:
         #非工作日判断
         #隔了2天
-        if(nowtime.hour<15):
-            nowtime= nowtime - datetime.timedelta(days=1)
-        if(lastUpdateTime.hour<15):
-            lastUpdateTime= lastUpdateTime - datetime.timedelta(days=1)
-        days=(nowtime.date()-lastUpdateTime.date()).days
-        if(days>1):
+        if(days>=1):
             return True
-
+        else:
+            return False
 def todayStock(table='tb_today_stock'):
 
     nowtime = datetime.datetime.now()
@@ -89,6 +85,7 @@ def todayStock(table='tb_today_stock'):
     lastUpdateTime=pd.read_sql(con=engine,sql=createTimeSql).iloc[0,0]
     try:
         ##排除五点后获取数据
+        # print(needUpdate(lastUpdateTime,nowtime,isWorkDay=True))
         if(needUpdate(lastUpdateTime,nowtime)):
             stockData = ak.stock_zh_a_spot()
             stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))

@@ -11,6 +11,9 @@ from data import importGrowth
 from data import importTodayStock
 import myEmail.send as send
 import _thread
+def init():
+    global data
+    data=utils.loadData.loadData('config.yml')
 def process1(data):
     time.sleep(60)
     importTodayStock.importToday()
@@ -39,20 +42,25 @@ def process2(data):
     send.send_mail(resultlist,namelist,data)
 def process4(data):
     result=getResultFile()
-
     send.send_mail([result],['结果.xlsx'],data)
+def process5(data):
+    result=getResultFile(th=200,growth=0.2,pe=25,ByMACD=True)
+    send.send_mail([result],['MACD结果.xlsx'],data)
+def process6(data):
+    result=getResultFile(th=200,growth=0.2,pe=25,ByMACD=False,bySMA=True)
+    send.send_mail([result],['SMA结果.xlsx'],data)
+
 if __name__ == '__main__':
+
     database.init()
-
     data=utils.loadData.loadData('config.yml')
-
     try:
         _thread.start_new_thread( process1, (data,) )
         # _thread.start_new_thread( process3, () )
     except:
         traceback.print_exc()
-
-    # process4(data)
+    process5(data)
+    process4(data)
     process2(data)
     process4(data)
 

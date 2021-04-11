@@ -6,7 +6,7 @@ import akshare as ak
 import baostock as bs
 import pandas as pd
 from baostock import query_operation_data, query_balance_data, query_cash_flow_data, query_performance_express_report, \
-    query_forecast_report
+    query_forecast_report, query_hs300_stocks
 from tqdm import tqdm
 # 登陆系统
 import logging
@@ -44,30 +44,73 @@ def queryGrowthByCode(code,year=None,quater=None):
     return  result_growth
 
 def queryOperationByCode(code,year,quater):
-    query_operation_data(code,year,quater)
+    list=[]
+    data=query_operation_data(code,year,quater)
+    while (data.error_code == '0') & data.next():
+        list.append(data.get_row_data())
+    data = pd.DataFrame(list, columns=data.fields)
+    return  data
 
 def queryBalanceByCode(code,year,quater):
-    query_balance_data(code,year,quater)
+    list=[]
+    data=query_balance_data(code,year,quater)
+    while (data.error_code == '0') & data.next():
+        list.append(data.get_row_data())
+    data = pd.DataFrame(list, columns=data.fields)
+    return data
 
 def queryCashFlowByCode(code,year,quater):
-    query_cash_flow_data(code,year,quater)
+    list=[]
+    data=query_cash_flow_data(code,year,quater)
+    while (data.error_code == '0') & data.next():
+        list.append(data.get_row_data())
+    data = pd.DataFrame(list, columns=data.fields)
+    return data
 
-def queryPerformanceExpressReportByCode(code,year,quater):
-    query_performance_express_report(code,year,quater)
-def queryForecastReport(code,year,quater):
-    query_forecast_report(code,year,quater)
 
-# query_hs300_stocks()
-# query_sz50_stocks()
-# query_zz500_stocks()
-# query_stock_industry(code,date
+
+
+def querHS300Stocks(date=''):
+    rs = bs.query_hs300_stocks(date=date)
+    # 打印结果集
+    hs300_stocks = []
+    while (rs.error_code == '0') & rs.next():
+        # 获取一条记录，将记录合并在一起
+        hs300_stocks.append(rs.get_row_data())
+    result = pd.DataFrame(hs300_stocks, columns=rs.fields)
+def querySZ50Stocks(date=''):
+    rs = bs.query_sz50_stocks(date)
+    # 打印结果集
+    sz50_stocks = []
+    while (rs.error_code == '0') & rs.next():
+        # 获取一条记录，将记录合并在一起
+        sz50_stocks.append(rs.get_row_data())
+    result = pd.DataFrame(sz50_stocks, columns=rs.fields)
+def queryZZ500Stocks(date):
+    rs = bs.query_zz500_stocks(date=date)
+    # 打印结果集
+    zz500_stocks = []
+    while (rs.error_code == '0') & rs.next():
+        # 获取一条记录，将记录合并在一起
+        zz500_stocks.append(rs.get_row_data())
+    result = pd.DataFrame(zz500_stocks, columns=rs.fields)
+    return result
+def queryStockIndustry(code,date=''):
+    rs = bs.query_stock_industry(code=code,date=date)
+    # 打印结果集
+    industry_list = []
+    while (rs.error_code == '0') & rs.next():
+        # 获取一条记录，将记录合并在一起
+        industry_list.append(rs.get_row_data())
+    result = pd.DataFrame(industry_list, columns=rs.fields)
+    return result
 # query_history_k_data_plus
 
     # 结果集输出到csv文件
 
 
 
-def importBasicData(table,fun):
+def importBasicData(table,fun,if_exists='append'):
     logger = logging.getLogger(__name__)
     logger.setLevel(level = logging.INFO)
     handler = logging.FileHandler("log.txt")
@@ -94,7 +137,7 @@ def importBasicData(table,fun):
     for code in codes:
         data=pd.DataFrame()
         try:
-            if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*12):
+            if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).days<1):
                 # print(timeData.loc[code])
                 continue
         except:
@@ -131,7 +174,8 @@ def importBasicData(table,fun):
                 result=fun(code,int(i/10),i%10)
                 result['code']=code
                 result['date']=date
-
+                if(result.empty):
+                    continue
                 if(data is None or data.empty):
                     data=result
                 else:
@@ -140,7 +184,8 @@ def importBasicData(table,fun):
             except:
                 traceback.print_exc()
         data['updateTime']=now
-        data.to_sql(table,con=engine,if_exists='append',index=False)
+        # print(data)
+        data.to_sql(table,con=engine,if_exists=if_exists,index=False)
         os.system('cls')
         if(i%100==0):
             bs.logout()

@@ -12,6 +12,7 @@ from sqlalchemy import create_engine
 #### 登陆系统 ####
 import database
 from utils import util
+from utils.util import needUpdate
 
 
 def importBycode(code,start_date,end_date):
@@ -58,7 +59,7 @@ def importHistory(data,table):
     for code in symbols:
         i=i+1
         # code=util.getdotCodeBysymbol(symbol)
-        if(not timeData.empty and code in timeData.index and (now-timeData.loc[code,'updateTime']).seconds<3600*12):
+        if(not timeData.empty and code in timeData.index and needUpdate(timeData.loc[code,'updateTime'],now,isWorkDay=True)==False):
             continue
         try:
            start_date= pd.to_datetime(timeData.loc[code,'date']) + datetime.timedelta(days=1)
@@ -79,7 +80,7 @@ def importHistory(data,table):
         # print(result)
         result.to_sql(table,con=engine,if_exists='append',index=False)
         symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
-        if(i%200==0):
+        if(i%1000==0):
             bs.logout()
             time.sleep(5)
             bs.login()
