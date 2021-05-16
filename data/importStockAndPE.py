@@ -11,7 +11,7 @@ from sqlalchemy import create_engine
 
 #### 登陆系统 ####
 import database
-from utils import util
+from utils import util, timeUtil
 from utils.util import needUpdate
 
 
@@ -86,14 +86,17 @@ def importHistory(data,table):
             bs.login()
 
     bs.logout()
-def importTodayStockAndPE():
+def importTodayStockAndPE(tablename='tb_stock_hisotry_detatil'):
     try:
         data=util.todayStock()
         print(data)
     except:
         print('error')
     try:
-        importHistory(data, 'tb_stock_hisotry_detatil')
+        if(timeUtil.tableNeedUpdate(tablename)):
+            importHistory(data,tablename )
+            timeUtil.saveOperationTime(tablename)
+
 
     except:
         traceback.print_exc()

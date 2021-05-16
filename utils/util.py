@@ -10,6 +10,7 @@ import talib
 from sqlalchemy import create_engine, VARCHAR
 import numpy as np
 import database
+from utils import timeUtil
 
 
 class util():
@@ -74,6 +75,8 @@ def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
         else:
             return False
 def todayStock(table='tb_today_stock'):
+    if(timeUtil.tableNeedUpdate(table)==False):
+        return
 
     nowtime = datetime.datetime.now()
 
@@ -98,7 +101,7 @@ def todayStock(table='tb_today_stock'):
         stockData = ak.stock_zh_a_spot()
         stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
         stockData.to_sql(table,con=engine,if_exists='replace')
-
+    timeUtil.saveOperationTime(table)
     return stockData
 def saveData(data,engine,table):
     try:
