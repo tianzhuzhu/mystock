@@ -91,22 +91,22 @@ def send_mail(filelist,namelist,data,contentlist=['{}您好！根据pe和增长�
         for code in data['code']:
             klinePath=os.path.join(path,code+'.jpg')
             figPath=plotUtil.plotDayNew.plotK(klinePath,'日线',code)
-
-    #附件设置内容类型，方便起见，设置为二进制流
-            content2 = MIMEText(namelist[i])
-        # part2 = MIMEText(content2,'plain','utf-8')
-        # part2['Content-Type'] = 'application/octet-stream'
-        #设置附件头，添加文件名
-        # part2['Content-Disposition'] = 'attachment;filename="abc.txt"'
             with open(figPath,'rb') as fp:
                 picture = MIMEImage(fp.read())
                 #与txt文件设置相似
                 picture['Content-Type'] = 'application/octet-stream'
                 picture['Content-Disposition'] = 'attachment;filename={}.jpg'.format(code)
-    #将内容附加到邮件主体中
+                #将内容附加到邮件主体中
                 # message.attach(part2)
-                message.attach(content2)
                 message.attach(picture)
+    #附件设置内容类型，方便起见，设置为二进制流
+        content2 = MIMEText(namelist[i])
+        message.attach(content2)
+        # part2 = MIMEText(content2,'plain','utf-8')
+        # part2['Content-Type'] = 'application/octet-stream'
+        #设置附件头，添加文件名
+        # part2['Content-Disposition'] = 'attachment;filename="abc.txt"'
+
         # msgRoot = MIMEMultipart('related')
         # msgText = MIMEText('<b>Some <i>HTML</i> text</b> and an image.'
         #                    '<img src="cid:figPath">' \

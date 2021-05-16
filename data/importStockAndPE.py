@@ -87,8 +87,11 @@ def importHistory(data,table):
 
     bs.logout()
 def importTodayStockAndPE():
-    data=util.todayStock()
-    print(data)
+    try:
+        data=util.todayStock()
+        print(data)
+    except:
+        print('error')
     try:
         importHistory(data, 'tb_stock_hisotry_detatil')
 

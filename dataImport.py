@@ -14,19 +14,28 @@ if __name__ == '__main__':
 
     importToday()
 
+
     importTodayStockAndPE()
+    main.init()
+    main.process5(main.data)
+    main.process4(main.data)
+    main.process6(main.data)
+
     tabledict={
-        'tb_performance_Express_Report':queryPerformanceExpressReportByCode,
-        'tb_forecast_Report':queryForecastReport,
-    }
+            'tb_performance_Express_Report':queryPerformanceExpressReportByCode,
+            'tb_forecast_Report':queryForecastReport,
+        }
     for k,v in tabledict.items():
         importReport(k,v)
     time.sleep(60)
 
     main.init()
-    main.process5(main.data)
-    main.process4(main.data)
-    main.process6(main.data)
+    try:
+        main.process5(main.data)
+        main.process4(main.data)
+        main.process6(main.data)
+    except:
+        pass
 
     tabledict={
      'tb_growth':queryGrowthByCode,

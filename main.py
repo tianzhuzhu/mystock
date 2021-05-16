@@ -47,7 +47,7 @@ def process5(data):
     result=getResultFile(th=200,growth=0.2,pe=25,ByMACD=True)
     send.send_mail([result],['MACD结果.xlsx'],data)
 def process6(data):
-    result=getResultFile(th=200,growth=0.2,pe=25,ByMACD=False,bySMA=True)
+    result=getResultFile(th=200,growth=0.2,pe=25,ByMACD=False,BySMA=True)
     send.send_mail([result],['SMA结果.xlsx'],data)
 
 if __name__ == '__main__':

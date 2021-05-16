@@ -58,7 +58,7 @@ def importReport(table,fun,if_exists='append'):
         if(not timeData.empty and code in timeData.index and needUpdate(timeData.loc[code,'updateTime'],now,isWorkDay=True)==False):
             continue
         try:
-            start_date= pd.to_datetime(timeData.loc[code,'date']) + datetime.timedelta(days=1)
+            start_date= pd.to_datetime(timeData.loc[code,'date']) + datetime.timedelta(days=90)
             start_date=start_date.strftime('%Y-%m-%d')
             # start_date=start_date.date()
         except:

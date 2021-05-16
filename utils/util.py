@@ -85,7 +85,8 @@ def todayStock(table='tb_today_stock'):
     lastUpdateTime=pd.read_sql(con=engine,sql=createTimeSql).iloc[0,0]
     try:
         ##排除五点后获取数据
-        # print(needUpdate(lastUpdateTime,nowtime,isWorkDay=True))
+        print('needUpdate')
+        print(needUpdate(lastUpdateTime,nowtime,isWorkDay=True))
         if(needUpdate(lastUpdateTime,nowtime)):
             stockData = ak.stock_zh_a_spot()
             stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))

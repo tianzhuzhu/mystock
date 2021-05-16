@@ -40,8 +40,8 @@ def getVolumes(symbols,k,countDays):
     print(result)
     return result
 
-def SortValueByvolume(countDays,k):
-    sql='select * from todayStock'
+def SortValueByvolume(countDays,k,table='tb_today_stock'):
+    sql='select * from {}'.format(table)
     engine = create_engine('mysql+pymysql://root:root@localhost:3306/stock')
     todayData=pd.read_sql(con=engine,sql=sql)
     rows=[]
