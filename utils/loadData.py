@@ -3,7 +3,6 @@ import sys
 import traceback
 
 import yaml
-print(sys.path[0] )
 
 def loadData(name):
     try:

@@ -14,7 +14,7 @@ import logging
 from sqlalchemy import create_engine
 
 import database
-from utils import util
+from utils import util, timeUtil
 from utils.util import todayStock
 
 
@@ -108,9 +108,7 @@ def queryStockIndustry(code,date=''):
 
     # 结果集输出到csv文件
 
-
-
-def importBasicData(table,fun,if_exists='append'):
+def dataimport(table,fun,if_exists='append'):
     logger = logging.getLogger(__name__)
     logger.setLevel(level = logging.INFO)
     handler = logging.FileHandler("log.txt")
@@ -141,36 +139,42 @@ def importBasicData(table,fun,if_exists='append'):
                 # print(timeData.loc[code])
                 continue
         except:
+            traceback.print_exc()
             pass
         # sql='select max(date) from {} where  code="{}"'.format(table,code)
         i=i+1
         try:
+            # print('timeData',timeData)
             date=timeData.loc[code,'date']
+            # print('date',date)
             year,season=date.split('-')
             year,season=int(year),int(season)
         except:
+
             year=1989
             season=4
 
         season=season+1
         year =year+1 if(season==5) else year
         season =0 if(season==5) else season
+        # print('update',year,season)
         # print(year,season)
         list=[]
         for i in range(year,toyear+1):
             for j in range(1,5):
-                #最后一次数据的年
-                if(i==year and j>=season):
-                    list.append(i*10+j)
-                #今年
-                elif(i==toyear and j<=toseason):
-                    list.append(i*10+j)
-                #中间年
-                elif(i>year and i<toyear):
+                #在之前
+                if(i==year and j<season) or i < year:
+                    continue
+                #在以后
+                elif(i==toyear and j>toseason) or i>toyear:
+                    continue
+                #更新
+                else:
                     list.append(i*10+j)
         for i in list:
             date=str(int(i/10))+'-'+str(i%10)
             try:
+                # print(i)
                 result=fun(code,int(i/10),i%10)
                 result['code']=code
                 result['date']=date
@@ -181,11 +185,13 @@ def importBasicData(table,fun,if_exists='append'):
                 else:
                     data=data.append(result,ignore_index=True)
                     # print(count)
+                # print(data)
             except:
                 traceback.print_exc()
         data['updateTime']=now
         # print(data)
         data.to_sql(table,con=engine,if_exists=if_exists,index=False)
+        # print(data)
         os.system('cls')
         if(i%100==0):
             bs.logout()
@@ -195,6 +201,11 @@ def importBasicData(table,fun,if_exists='append'):
         codes.set_description("导入{}中代码为{},条数为{}".format(table,code,len(data.index)))
     logger.info(table+' finished')
     bs.logout()
+def importBasicData(table,fun,if_exists='append'):
+    if(timeUtil.tableNeedUpdate(table)):
+        dataimport(table,fun,if_exists='append')
+    timeUtil.saveOperationTime(table)
+
 def mainProcess():
     database.init()
     engine=database.engine

@@ -34,8 +34,6 @@ def getStockList( k=20,growth=0.5,days=90):
     sqlTemplate=util.getsql(sqlpath)
     sql=sqlTemplate.format(k,growth)
     data=pd.read_sql(sql=sql,con=engine)
-
-
     print(data)
     data=data.groupby('code').apply(lambda x:search(x,days))
     data.sort_values(by='YOYNI',inplace=True,ascending=False)
@@ -52,7 +50,9 @@ def getStockList( k=20,growth=0.5,days=90):
     data.to_excel(filepath)
     # myEmail.send.send_mail(filepath)
     return filepath
-
+def searchByLongPE():
+    sql="select code,count(1) from tb_history_stock groupby code where ppNNi>0.3 and date>='2018-1-1'"
+    pass
 if __name__ == '__main__':
     getStockList()
 

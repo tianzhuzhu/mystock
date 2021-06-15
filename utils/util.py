@@ -75,16 +75,17 @@ def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
         else:
             return False
 def todayStock(table='tb_today_stock'):
+    database.init()
+    engine=database.engine
     if(timeUtil.tableNeedUpdate(table)==False):
-        return
+        return  pd.read_sql(con=engine,sql='select * from {}'.format(table))
 
     nowtime = datetime.datetime.now()
 
     endDate = nowtime.strftime('%Y%m%d')
     createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = '{}' and `information_schema`.`TABLES`.`TABLE_NAME` = '{}' ".format('stock',table)
 
-    database.init()
-    engine=database.engine
+
     lastUpdateTime=pd.read_sql(con=engine,sql=createTimeSql).iloc[0,0]
     try:
         ##排除五点后获取数据
@@ -120,11 +121,7 @@ def removedotBysymbol(code):
     except:
         pass
     return code
-def getsql(sql_path):
-    sql = open(sql_path, "r", encoding="utf8")
-    sql = sql.readlines()
-    sql = "".join(sql)
-    return sql
+
 def getKBySymbol(symobl,days=None):
     database.init()
     engine=database.engine

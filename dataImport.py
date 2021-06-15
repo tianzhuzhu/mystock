@@ -16,27 +16,16 @@ if __name__ == '__main__':
 
 
     importTodayStockAndPE()
-    main.init()
-    main.process5(main.data)
-    main.process4(main.data)
-    main.process6(main.data)
+    # main.init()
+    # main.process5(main.data)
+    # main.process4(main.data)
+    # main.process6(main.data)
 
-    tabledict={
-            'tb_performance_Express_Report':queryPerformanceExpressReportByCode,
-            'tb_forecast_Report':queryForecastReport,
-        }
-    for k,v in tabledict.items():
-        importReport(k,v)
-    time.sleep(60)
+
 
     main.init()
-    try:
-        main.process5(main.data)
-        main.process4(main.data)
-        main.process6(main.data)
-    except:
-        pass
 
+    getAllMarketValue()
     tabledict={
      'tb_growth':queryGrowthByCode,
      'tb_profit':queryProfitByCode,
@@ -45,6 +34,7 @@ if __name__ == '__main__':
     'tb_balance':queryBalanceByCode,
     'tb_cash_Flow':queryCashFlowByCode,
      }
+
     #  'tb_performance_Express_Report':queryPerformanceExpressReportByCode,
     # #  'tb_forecast_Report':queryForecastReport,
     l=len(tabledict)
@@ -53,7 +43,19 @@ if __name__ == '__main__':
         importBasicData(k,v)
         time.sleep(60)
     getAllMarketValue()
-
+    try:
+        main.process5(main.data)
+        main.process4(main.data)
+        main.process6(main.data)
+    except:
+        pass
+    tabledict={
+        'tb_performance_Express_Report':queryPerformanceExpressReportByCode,
+        'tb_forecast_Report':queryForecastReport,
+    }
+    for k,v in tabledict.items():
+        importReport(k,v)
+    time.sleep(60)
 
 
 

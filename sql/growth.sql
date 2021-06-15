@@ -1,1 +1,1 @@
-SELECT * FROM `stock`.`tb_growth`
+select t.code,t.date,t.YOYNI as '净利润',t.YOYEquity '净资产',t.YOYAsset '总资产' from tb_growth t

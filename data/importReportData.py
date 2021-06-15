@@ -12,7 +12,7 @@ from tqdm import tqdm
 import logging
 from sqlalchemy import create_engine
 import database
-from utils import util
+from utils import util, timeUtil
 from utils.util import todayStock, needUpdate
 
 
@@ -30,8 +30,7 @@ def queryForecastReport(code,starDate):
         list.append(data.get_row_data())
     data = pd.DataFrame(list, columns=data.fields)
     return data
-def importReport(table,fun,if_exists='append'):
-    today = datetime.datetime.now()
+def dataimport(table,fun,if_exists='append'):
     logger = logging.getLogger(__name__)
     logger.setLevel(level = logging.INFO)
     handler = logging.FileHandler("log.txt")
@@ -75,3 +74,8 @@ def importReport(table,fun,if_exists='append'):
             time.sleep(5)
             bs.login()
     bs.logout()
+def importReport(table,fun,if_exists='append'):
+    if(timeUtil.tableNeedUpdate(table)):
+        dataimport(table,fun,if_exists='append')
+    timeUtil.saveOperationTime(table)
+

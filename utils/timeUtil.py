@@ -15,9 +15,7 @@ def saveOperationTime(name):
 def tableNeedUpdate(tableName):
     database.init()
     # 显示登陆返回信息
-
     # 结果集输出到csv文件
-
     con=database.engine
     try:
         sql=database.lastOperateTimeSql.format(tableName)
@@ -30,19 +28,16 @@ def tableNeedUpdate(tableName):
         lastTime=pd.to_datetime('1990-1-1 00:00:00')
         return True
     if(needUpdate(lastTime,datetime.datetime.now(),isWorkDay=True)==False):
-        print('{tableName}数据已经更新')
+        print('{}数据已经更新'.format(tableName))
     return needUpdate(lastTime,datetime.datetime.now(),isWorkDay=True)
 
 
 def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
     print(lastUpdateTime)
     print(nowtime)
-    # 2021-04-01 08:00:00	2021-04-02 00:00:00
-    #工作日判断尚未完成
     if(nowtime.hour<15):
         nowtime= nowtime - datetime.timedelta(days=1)
     if(lastUpdateTime.hour<15):
-
         lastUpdateTime= lastUpdateTime - datetime.timedelta(days=1)
     days=(nowtime.date()-lastUpdateTime.date()).days
     if(isWorkDay==True):

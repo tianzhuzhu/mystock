@@ -12,7 +12,7 @@ import pymysql
 from tqdm import tqdm
 
 import database
-from utils import util
+from utils import util, timeUtil
 from utils.util import removedotBysymbol, todayStock
 
 
@@ -99,20 +99,25 @@ def insertTodayValue(data,table):
             continue
         # print('star_Date')
         # print(start_date)
+        try:
+            result=ak.stock_zh_a_daily(symbol=code, start_date=start_date, end_date=end_date, adjust="qfq")
+            result.reset_index(inplace=True)
+            result['updateTime']=now
+            result['code']=code
+            print(result)
+            result.to_sql(table,con=engine,if_exists='append',index=False)
+            symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
+        except:
+            traceback.print_exc()
 
-        result=ak.stock_zh_a_daily(symbol=code, start_date=start_date, end_date=end_date, adjust="qfq")
-        result.reset_index(inplace=True)
-        result['updateTime']=now
-        result['code']=code
-        print(result)
-
-        result.to_sql(table,con=engine,if_exists='append',index=False)
-        symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
 
 def importToday():
     today = datetime.datetime.now()
     endDate = today.strftime('%Y%m%d')
     data=util.todayStock()
-    insertTodayValue(data,'tb_stock_history')
+    if(timeUtil.tableNeedUpdate('tb_stock_history')):
+        insertTodayValue(data,'tb_stock_history' )
+        timeUtil.saveOperationTime('tb_stock_history')
+
 if __name__ == '__main__':
     importToday()
