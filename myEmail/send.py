@@ -48,8 +48,66 @@ def send(filepath):
         smtpObj.quit()
     except smtplib.SMTPException as e:
         print('error',e)
-def send_growth_email(filelist,namelist,data,contentlist=['{}增长率:请看如下附件','这是{}所有的股票列表，请查收！']):
+def send_growth_email(filelist,namelist,data,title='今日股票推荐数据',content='这是{}所有的股票列表数据，请查收！'):
     print('send','邮件开始')
+    klinePath=data['path']['default-kLine']
+    date=datetime.datetime.now().date()
+
+    path=os.path.join(klinePath,str(date))
+    if(not os.path.exists(path)):
+        os.mkdir(path)
+
+    mail_host="smtp.163.com" #设置服务器
+    mail_user="lujin19950917@163.com"  #用户名
+    mail_pass="SAQCPCVSXLCVKHDT"  #口令
+    today=datetime.datetime.now().date()
+    sender = 'lujin19950917@163.com' # 发送方
+    receivers = ['lujin19950917@163.com','532978773@qq.com','617970137@qq.com','893573580@qq.com'] # 接收方
+
+    # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
+    message = MIMEMultipart()
+    message['From'] = sender
+    message['To'] = receivers[0]
+    message['Subject'] = title.format(today)
+    #推荐使用html格式的正文内容，这样比较灵活，可以附加图片地址，调整格式等
+    # 邮件内容
+    txt = MIMEText(content.format(today), 'plain', 'utf-8')
+    message.attach(txt)
+
+    for i in range(len(filelist)):
+        filepath=filelist[i]
+        name=namelist[i]
+        # pfile = '结果{}.xlsx'.format(today)
+        print(name,filepath)
+        data=pd.read_excel(filepath,sheet_name=0)
+        pdffile = MIMEApplication(open(filepath,'rb').read())
+        pdffile.add_header('Content-Disposition','attachment',filename=name)
+        #将附件内容插入邮件中
+        message.attach(pdffile)
+        for code in data['code']:
+            klinePath=os.path.join(path,code+'.jpg')
+            figPath=plotUtil.plotDayNew.plotK(klinePath,'日线',code)
+            with open(figPath,'rb') as fp:
+                picture = MIMEImage(fp.read())
+                #与txt文件设置相似
+                picture['Content-Type'] = 'application/octet-stream'
+                picture['Content-Disposition'] = 'attachment;filename={}.jpg'.format(code)
+                #将内容附加到邮件主体中
+                # message.attach(part2)
+                message.attach(picture)
+        #附件设置内容类型，方便起见，设置为二进制流
+        content2 = MIMEText(namelist[i])
+        message.attach(content2)
+    try:
+        smtpObj = smtplib.SMTP()
+        smtpObj.connect(mail_host,25)
+        smtpObj.login(mail_user,mail_pass)
+        smtpObj.sendmail(
+            sender,receivers,message.as_string())
+        print('success')
+        smtpObj.quit()
+    except smtplib.SMTPException as e:
+        print('error',e)
 
 def send_mail(filelist,namelist,data,contentlist=['{}您好！根据pe和增长结果如下:请看如下附件','这是{}所有的股票列表，请查收！']):
     #第三方SMTP服务

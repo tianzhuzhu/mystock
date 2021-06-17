@@ -10,6 +10,7 @@ import pandas as pd
 from tqdm import tqdm
 import database
 from dataHandler import market
+import byIndustry
 from utils.pdUtil import deleteNullColumn, fillNullColumn
 def getRecnetN(x,n):
     x.reset_index(inplace=True)
@@ -125,8 +126,14 @@ def constantGrowth(codes='all',times=8,allAbove=True,accumulate=False,WeightAccu
     result.sort_values(by=['above','weightAverage'],inplace=True,ascending=False)
 
     return result
-if __name__=='__main__':
+def chooseByInDustry():
     res=constantGrowth(codes='all')
-    marketvalue=market.getmarketValue(lowTh=200,highTh=1000)
+    marketvalue=market.getmarketValue(lowTh=100,highTh=1000)
     res=res.loc[res.index.isin(marketvalue.index)]
-    res.to_excel('a.xlsx')
+    industry=byIndustry.getIndustryData()[['code','行业']]
+    res=pd.merge(left=res,right=industry,left_index=True,right_on='code')
+    res.set_index('code',inplace=True)
+    return res
+if __name__=='__main__':
+    res=chooseByInDustry()
+    print(res)

@@ -1,1 +1,1 @@
-__all__=['macd','growth','market']
+__all__=['macd','growth','market', 'byIndustry']

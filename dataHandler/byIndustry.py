@@ -3,7 +3,7 @@ import pandas as pd
 
 import database
 from data.importIndustry import UpdateIndustryData
-from dataHandler.growth import getRecentGrowth
+from growth import getRecentGrowth
 from utils import timeUtil
 from utils.timeUtil import tableNeedUpdate, saveOperationTime
 
@@ -29,20 +29,26 @@ def findMax(x):
     data.index.name='code'
     # print(data)
     return data
-if __name__=='__main__':
+def chooseByindustry():
     indutry=getIndustryData()
     print(indutry)
     growth=getRecentGrowth(n=1)
     data=pd.merge(left=growth,right=indutry,on='code')
     print(data)
+
     data['净利润']=data['净利润'].astype(float)
+    res=[]
     result=data.groupby('行业')['净利润'].agg('mean')
     result.name='净利润增长率均值'
     print(result)
     result.sort_values(ascending=False,inplace=True)
     print(result)
+    res.append(result)
 
     data.reset_index(inplace=True)
     result2=data.groupby('行业').apply(lambda x:findMax(x))
     print(result2)
-    result2.to_excel('result2.xlsx')
+    res.append(result2)
+
+if __name__=='__main__':
+    chooseByindustry()
