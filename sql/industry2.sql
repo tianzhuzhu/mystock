@@ -1,0 +1,1 @@
+select * from tb_industry_information where code = "{}" ORDER BY updatedate desc limit 0,1

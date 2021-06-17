@@ -3,6 +3,8 @@ sql:
   growth: sql/growth.sql
   peGrowth: peGrowth.sql
   stockList: /stockList.sql
+  industrySQL: sql/industry.sql
+  industrySQL2: sql/industry2.sql
 
 path:
   default-kLine: D:\onedrive\OneDrive - ncist.edu.cn\选股\kLine

@@ -11,15 +11,23 @@ from tqdm import tqdm
 import database
 from dataHandler import market
 from utils.pdUtil import deleteNullColumn, fillNullColumn
-
-
-def getRecentN(x,n=12):
+def getRecnetN(x,n):
     x.reset_index(inplace=True)
-    # print(x)
     x.drop(columns=['code'],inplace=True)
     x.sort_values(by=['date'],ascending=False,inplace=True)
     x=x[0:n]
+    fillNullColumn(x,'净利润',0)
     return x
+def getRecentGrowth(code='',n=1):
+    database.init()
+    growthSQl=database.growthSQl
+    data=pd.read_sql(sql=growthSQl,con=database.mysql,index_col='code')
+    print(data)
+    data=data.groupby(data.index).apply(lambda x:getRecnetN(x,n))
+    data.index.names=['code','index']
+    data.reset_index(inplace=True)
+    data.set_index('code',drop=True,inplace=True)
+    return data
 
 def findAverage(x,n=12):
     # print(x)
@@ -27,9 +35,8 @@ def findAverage(x,n=12):
     x.sort_values(by=['date'],ascending=False,inplace=True)
     x=x[0:n]
     result=pd.Series(dtype=float)
-
     x.dropna(subset=['净利润'],inplace=True)
-    x=deleteNullColumn(x,'净利润')
+
 
     x['净利润']=x['净利润'].map(lambda x:float(x))
     result['average']=x['净利润'].mean()
@@ -42,6 +49,7 @@ def findWeightAverage(x,n=12,t=1):
     # print('x')
     # print(x)
     x.sort_values(by=['date'],ascending=False,inplace=True)
+    # print(x)
     x=x[0:n]
     x.reset_index(inplace=True)
     fillNullColumn(x,'净利润',0)

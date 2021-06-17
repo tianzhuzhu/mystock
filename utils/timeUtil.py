@@ -29,6 +29,7 @@ def tableNeedUpdate(tableName):
         return True
     if(needUpdate(lastTime,datetime.datetime.now(),isWorkDay=True)==False):
         print('{}数据已经更新'.format(tableName))
+        return False
     return needUpdate(lastTime,datetime.datetime.now(),isWorkDay=True)
 
 

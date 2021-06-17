@@ -10,7 +10,7 @@ import talib
 from sqlalchemy import create_engine, VARCHAR
 import numpy as np
 import database
-from utils import timeUtil
+from utils import timeUtil, pdUtil
 
 
 class util():
@@ -174,10 +174,21 @@ def getAllMarketValue():
                   'SELECT max(date) as date,code  FROM tb_stock_hisotry_detatil  GROUP BY code) o ,  tb_stock_hisotry_detatil t where t.code=o.code and t.date=o.date'
     sqlShare='select t.* from ' \
              '(SELECT max(date) as date,code  FROM tb_profit  GROUP BY code) o ,  tb_profit t where t.code=o.code and t.date=o.date'
-    priceData=pd.read_sql(con=engine,sql=sqlCloseValue,index_col='code')
+    priceData=pd.read_sql(con=engine,sql=sqlCloseValue,index_col='code',)
     ShareData=pd.read_sql(con=engine,sql=sqlShare,index_col='code')
     marketData=pd.DataFrame(index=priceData.index)
     nowdate=datetime.datetime.now().date()
+    print('priceData')
+    print(priceData)
+    priceData['close']=priceData['close'].astype(float)
+    pdUtil.fillNullColumn(ShareData,'totalShare',0)
+    ShareData['totalShare']=ShareData['totalShare'].astype(float)
+    pdUtil.fillNullColumn(ShareData,'liqaShare',0)
+
+
+    ShareData['liqaShare']=ShareData['liqaShare'].astype(float)
+    print('shareData')
+    print(ShareData)
     marketData['totalMarketValue']=priceData['close']*ShareData['totalShare']
     marketData['liquidMarketValue']=priceData['close']*ShareData['liqaShare']
     marketData['roeAvg']=ShareData['roeAvg']

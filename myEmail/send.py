@@ -48,8 +48,8 @@ def send(filepath):
         smtpObj.quit()
     except smtplib.SMTPException as e:
         print('error',e)
-
-
+def send_growth_email(filelist,namelist,data,contentlist=['{}增长率:请看如下附件','这是{}所有的股票列表，请查收！']):
+    print('send','邮件开始')
 
 def send_mail(filelist,namelist,data,contentlist=['{}您好！根据pe和增长结果如下:请看如下附件','这是{}所有的股票列表，请查收！']):
     #第三方SMTP服务
@@ -102,20 +102,6 @@ def send_mail(filelist,namelist,data,contentlist=['{}您好！根据pe和增长�
     #附件设置内容类型，方便起见，设置为二进制流
         content2 = MIMEText(namelist[i])
         message.attach(content2)
-        # part2 = MIMEText(content2,'plain','utf-8')
-        # part2['Content-Type'] = 'application/octet-stream'
-        #设置附件头，添加文件名
-        # part2['Content-Disposition'] = 'attachment;filename="abc.txt"'
-
-        # msgRoot = MIMEMultipart('related')
-        # msgText = MIMEText('<b>Some <i>HTML</i> text</b> and an image.'
-        #                    '<img src="cid:figPath">' \
-        #                    # '<img src="cid:figPath">' \
-        #                    # '<img src="cid:image3">' \
-        #                    'good!', 'html', 'utf-8')
-        # msgRoot.attach(msgText)
-        # message.attach(msgRoot)
-    #登录并发送
     try:
         smtpObj = smtplib.SMTP()
         smtpObj.connect(mail_host,25)

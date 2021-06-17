@@ -2,7 +2,7 @@ import random
 import time
 
 import main
-from data.importBasicInformation import queryGrowthByCode, queryDubpontByCode, queryProfitByCode, queryOperationByCode, \
+from data.baseImport import queryGrowthByCode, queryDubpontByCode, queryProfitByCode, queryOperationByCode, \
     queryBalanceByCode, queryCashFlowByCode, importBasicData
 from data.importReportData import queryPerformanceExpressReportByCode, queryForecastReport, importReport
 
@@ -13,23 +13,19 @@ from utils.util import todayStock, getAllMarketValue
 if __name__ == '__main__':
 
     importToday()
-
-
     importTodayStockAndPE()
     # main.init()
     # main.process5(main.data)
     # main.process4(main.data)
     # main.process6(main.data)
 
-
-
     main.init()
 
     getAllMarketValue()
     tabledict={
-     'tb_growth':queryGrowthByCode,
-     'tb_profit':queryProfitByCode,
-     'tb_stock_dupont':queryDubpontByCode,
+    'tb_growth':queryGrowthByCode,
+    'tb_profit':queryProfitByCode,
+    'tb_stock_dupont':queryDubpontByCode,
     'tb_operation':queryOperationByCode,
     'tb_balance':queryBalanceByCode,
     'tb_cash_Flow':queryCashFlowByCode,
@@ -42,7 +38,6 @@ if __name__ == '__main__':
     for k,v in tabledict.items():
         importBasicData(k,v)
         time.sleep(60)
-    getAllMarketValue()
     try:
         main.process5(main.data)
         main.process4(main.data)

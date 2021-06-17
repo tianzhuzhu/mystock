@@ -66,8 +66,8 @@ def importHistory(data,table):
            start_date=start_date.strftime('%Y-%m-%d')
            # start_date=start_date.date()
         except:
-           traceback.print_exc()
            start_date='1990-01-01'
+           # traceback.print_exc()
 
         end_date=today.strftime('%Y-%m-%d')
         # print(start_date,end_date)
@@ -84,7 +84,6 @@ def importHistory(data,table):
             bs.logout()
             time.sleep(5)
             bs.login()
-
     bs.logout()
 def importTodayStockAndPE(tablename='tb_stock_hisotry_detatil'):
     try:

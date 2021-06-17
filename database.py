@@ -9,7 +9,7 @@ from utils.sqlUtil import getsql
 def init():
     global engine,path,date,data,mysql
     global lastOperateTimeSql,cur_path
-    global growthSQl,marketSQl
+    global growthSQl,marketSQl,industrySQL,industrySQL2
     dirname, filename = os.path.split(os.path.abspath(__file__))
     # print(dirname)
     cur_path=dirname
@@ -17,6 +17,8 @@ def init():
     lastOperateTimeSql="select max(updateTime) from tb_operation_time where name='{}'"
     data=utils.loadData.loadData('config.yml')
     growthSQl=getStrSQL('growth')
+    industrySQL=getStrSQL('industrySQL')
+    industrySQL2=getStrSQL('industrySQL2')
     date=datetime.datetime.now().date()
     engine=create_engine(data['db'])
     mysql=engine
