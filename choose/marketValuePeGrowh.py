@@ -8,15 +8,16 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 import utils.loadData
-from dataHandler.macd import findMacdListBySymobls
-from dataHandler.sma import findSMAbySymbols
+from dataHandler.macdHandler import findMacdListBySymobls
+from dataHandler.smaHandler import findSMAbySymbols
 
 
 def getResultFile(th=1000,growth=0.3,pe=20,ByMACD=False,BySMA=False):
     database.init()
-    path=database.path
+
     date=database.date
     data=findStockList(100,th,growth,pe,ByMACD,BySMA)
+    path=database.path
     if(not os.path.exists(path)):
         os.mkdir(path)
     filepath=os.path.join(path,'市值{}市盈率{}增长率{}.xlsx'.format('500亿','25','25%'))

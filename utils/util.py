@@ -13,38 +13,6 @@ import database
 from utils import timeUtil, pdUtil
 
 
-class util():
-    def __init__(self):
-        self.engine=create_engine('mysql+pymysql://root:root@localhost:3306/stock')
-    def __init__(self,engine=create_engine('mysql+pymysql://root:root@localhost:3306/stock')
-                 ):
-        self.engine=engine
-    def getKBySymbol(self,symobl,days=None):
-        engine=self.engine
-        if(days==None):
-            sql='select * from tb_stock_hisotry_detatil where code="{}"  order by date desc'.format(symobl)
-        else:
-            sql='select * from tb_stock_hisotry_detatil where code="{}"  order by date desc limit 0,{}'.format(symobl,days)
-        # print(sql)
-        data=pd.read_sql(sql,con=engine)
-        data.set_index('date',inplace=True)
-        data.sort_index(ascending=True,inplace=True)
-        return data
-    def saveData(data,engine,table):
-        try:
-            data.to_sql(table,con=engine)
-        except:
-            traceback.print_exc()
-    def getdotCodeBysymbol(code):
-        code=list(code)
-        code.insert(2,'.')
-        code=''.join(code)
-        return code
-    def getsql(sql_path):
-        sql = open(sql_path, "r", encoding="utf8")
-        sql = sql.readlines()
-        sql = "".join(sql)
-        return sql
 def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
     # 2021-04-01 08:00:00	2021-04-02 00:00:00
     #工作日判断尚未完成

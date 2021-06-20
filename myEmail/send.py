@@ -1,13 +1,18 @@
 import os
 import smtplib
 import datetime
+import traceback
+
 import pandas as pd
 from email.mime.application import MIMEApplication
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
+
+import database
 import plotUtil.plotDay
 import plotUtil.plotDayNew
+
 def send(filepath):
     #第三方SMTP服务
     mail_host="smtp.163.com" #设置服务器
@@ -48,7 +53,7 @@ def send(filepath):
         smtpObj.quit()
     except smtplib.SMTPException as e:
         print('error',e)
-def send_growth_email(filelist,namelist,data,title='今日股票推荐数据',content='这是{}所有的股票列表数据，请查收！'):
+def send_general_email(namelist,datalist,data,title='行业股票推荐',content='这是{}各个行业的股票统计列表数据，请查收！',filename='行业股票.xlsx'):
     print('send','邮件开始')
     klinePath=data['path']['default-kLine']
     date=datetime.datetime.now().date()
@@ -74,30 +79,40 @@ def send_growth_email(filelist,namelist,data,title='今日股票推荐数据',co
     txt = MIMEText(content.format(today), 'plain', 'utf-8')
     message.attach(txt)
 
-    for i in range(len(filelist)):
-        filepath=filelist[i]
+    for i in range(len(datalist)):
+        data=datalist[i]
         name=namelist[i]
         # pfile = '结果{}.xlsx'.format(today)
-        print(name,filepath)
-        data=pd.read_excel(filepath,sheet_name=0)
-        pdffile = MIMEApplication(open(filepath,'rb').read())
-        pdffile.add_header('Content-Disposition','attachment',filename=name)
-        #将附件内容插入邮件中
-        message.attach(pdffile)
-        for code in data['code']:
-            klinePath=os.path.join(path,code+'.jpg')
-            figPath=plotUtil.plotDayNew.plotK(klinePath,'日线',code)
-            with open(figPath,'rb') as fp:
-                picture = MIMEImage(fp.read())
-                #与txt文件设置相似
-                picture['Content-Type'] = 'application/octet-stream'
-                picture['Content-Disposition'] = 'attachment;filename={}.jpg'.format(code)
-                #将内容附加到邮件主体中
-                # message.attach(part2)
-                message.attach(picture)
+        path=database.path
+        if(not os.path.exists(path)):
+            os.mkdir(path)
+        path=os.path.join(path,filename)
+        if(i==0):
+            data.to_excel(path,sheet_name=namelist[i])
+        else:
+            with pd.ExcelWriter(path,mode='a') as writer:
+                data.to_excel(writer, sheet_name=namelist[i])
+        print(data)
+        try:
+            for code in data['code']:
+                klinePath=os.path.join(path,code+'.jpg')
+                figPath=plotUtil.plotDayNew.plotK(klinePath,'日线',code)
+                with open(figPath,'rb') as fp:
+                    picture = MIMEImage(fp.read())
+                    #与txt文件设置相似
+                    picture['Content-Type'] = 'application/octet-stream'
+                    picture['Content-Disposition'] = 'attachment;filename={}.jpg'.format(code)
+                    #将内容附加到邮件主体中
+                    # message.attach(part2)
+                    message.attach(picture)
+        except:
+            traceback.print_exc()
+            print('no code')
         #附件设置内容类型，方便起见，设置为二进制流
-        content2 = MIMEText(namelist[i])
-        message.attach(content2)
+    pdffile = MIMEApplication(open(path,'rb').read())
+    pdffile.add_header('Content-Disposition','attachment',filename=filename)
+#将附件内容插入邮件中
+    message.attach(pdffile)
     try:
         smtpObj = smtplib.SMTP()
         smtpObj.connect(mail_host,25)

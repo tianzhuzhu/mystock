@@ -9,7 +9,7 @@ from utils.sqlUtil import getsql
 def init():
     global engine,path,date,data,mysql
     global lastOperateTimeSql,cur_path
-    global growthSQl,marketSQl,industrySQL,industrySQL2
+    global growthSQl,marketSQl,industrySQL,industrySQL2,peSQL
     dirname, filename = os.path.split(os.path.abspath(__file__))
     # print(dirname)
     cur_path=dirname
@@ -19,6 +19,7 @@ def init():
     growthSQl=getStrSQL('growth')
     industrySQL=getStrSQL('industrySQL')
     industrySQL2=getStrSQL('industrySQL2')
+    peSQL=getStrSQL('peSQL')
     date=datetime.datetime.now().date()
     engine=create_engine(data['db'])
     mysql=engine

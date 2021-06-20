@@ -4,6 +4,8 @@ import traceback
 import choose.byVolume as volume
 import choose.bygrowthAndPe  as PE
 import database
+import myEmail
+from choose import chooseByIndustry
 from choose.marketValuePeGrowh import getResultFile
 from data import importStockAndPE as importStockAndPE
 import utils.loadData
@@ -51,17 +53,19 @@ def process6(data):
     send.send_mail([result],['SMA结果.xlsx'],data)
 
 if __name__ == '__main__':
+    res=chooseByIndustry.choose()
 
     database.init()
     data=utils.loadData.loadData('config.yml')
-    try:
-        _thread.start_new_thread( process1, (data,) )
-        # _thread.start_new_thread( process3, () )
-    except:
-        traceback.print_exc()
-    process5(data)
-    process4(data)
-    process2(data)
-    process4(data)
+    myEmail.send.send_general_email(namelist=['行业净利润增长率平均','行业龙头','加权行业龙头'],datalist=res,data=data,content='这是{}所有的股票列表数据，请查收！')
+    # try:
+    #     _thread.start_new_thread( process1, (data,) )
+    #     # _thread.start_new_thread( process3, () )
+    # except:
+    #     traceback.print_exc()
+    # process5(data)
+    # process4(data)
+    # process2(data)
+    # process4(data)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

@@ -54,8 +54,11 @@ def importData(stockData,engine):
                 elif(i>year and i<toyear):
                     list.append(i*10+j)
         # print(list)
+        list=list.reverse()
+        print(list)
         data = pd.DataFrame()
         for i in list:
+            j=0
             date=str(int(i/10))+'-'+str(i%10)
             # print(date)
             try:
@@ -63,6 +66,10 @@ def importData(stockData,engine):
                 # print(result)
                 result['code']=code
                 result['date']=date
+                if(result.empty):
+                    j=j+1
+                    if(j>3):
+                        continue
                 if(data is None or data.empty):
                     data=result
                 else:

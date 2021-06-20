@@ -4,10 +4,7 @@ import myEmail.send
 import utils.util as util
 import pandas as pd
 from sqlalchemy import create_engine
-
 import utils.loadData
-
-
 def search(x,n):
     # print(x.columns)
     x=x[0:n]

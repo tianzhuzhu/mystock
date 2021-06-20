@@ -171,6 +171,8 @@ def dataimport(table,fun,if_exists='append'):
                 #更新
                 else:
                     list.append(i*10+j)
+        list.reverse()
+        j = 0
         for i in list:
             date=str(int(i/10))+'-'+str(i%10)
             try:
@@ -178,7 +180,11 @@ def dataimport(table,fun,if_exists='append'):
                 result=fun(code,int(i/10),i%10)
                 result['code']=code
                 result['date']=date
+                ##判断无历史数据自动跳出
                 if(result.empty):
+                    j=j+1
+                    if(j>3):
+                        break
                     continue
                 if(data is None or data.empty):
                     data=result

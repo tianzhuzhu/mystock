@@ -28,7 +28,7 @@ if __name__ == '__main__':
     'tb_stock_dupont':queryDubpontByCode,
     'tb_operation':queryOperationByCode,
     'tb_balance':queryBalanceByCode,
-    'tb_cash_Flow':queryCashFlowByCode,
+    'tb_cash_flow':queryCashFlowByCode,
      }
 
     #  'tb_performance_Express_Report':queryPerformanceExpressReportByCode,
@@ -45,8 +45,8 @@ if __name__ == '__main__':
     except:
         pass
     tabledict={
-        'tb_performance_Express_Report':queryPerformanceExpressReportByCode,
-        'tb_forecast_Report':queryForecastReport,
+        'tb_performance_express_report':queryPerformanceExpressReportByCode,
+        'tb_forecast_report':queryForecastReport,
     }
     for k,v in tabledict.items():
         importReport(k,v)

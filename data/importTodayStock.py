@@ -102,6 +102,7 @@ def insertTodayValue(data,table):
         try:
             result=ak.stock_zh_a_daily(symbol=code, start_date=start_date, end_date=end_date, adjust="qfq")
             result.reset_index(inplace=True)
+            result.drop(columns='index',inplace=True)
             result['updateTime']=now
             result['code']=code
             print(result)

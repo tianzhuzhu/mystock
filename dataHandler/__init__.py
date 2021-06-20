@@ -1,1 +1,1 @@
-__all__=['macd','growth','market', 'byIndustry']
+__all__=['macdHandler.py', 'growthHandler.py', 'marketHandler.py', 'industryHandler.py']

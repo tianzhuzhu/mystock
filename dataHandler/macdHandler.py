@@ -9,8 +9,7 @@ def findMacdListBySymobls(symbols,way='goldenCross',days=100):
     list=[]
     for symbol in tqdm(symbols):
         try:
-            tools=util.util()
-            data=tools.getKBySymbol(symbol,days)
+            data=util.getKBySymbol(symbol,days)
 
             # print(data)
             if(len(data.index)<50):
