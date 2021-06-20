@@ -126,9 +126,9 @@ def constantGrowth(codes='all',times=8,allAbove=True,accumulate=False,WeightAccu
     result.sort_values(by=['above','weightAverage'],inplace=True,ascending=False)
 
     return result
-def chooseByInDustry():
-    res=constantGrowth(codes='all')
-    marketvalue=marketHandler.getmarketValue(lowTh=100, highTh=1000)
+def chooseByInDustry(times,lowTh=100,highTh=1000):
+    res=constantGrowth(codes='all',times=times)
+    marketvalue=marketHandler.getmarketValue(lowTh=lowTh, highTh=highTh)
     res=res.loc[res.index.isin(marketvalue.index)]
     industry=getIndustryData()[['code','行业']]
     res=pd.merge(left=res,right=industry,left_index=True,right_on='code')

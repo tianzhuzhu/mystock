@@ -10,11 +10,11 @@ def UpdateIndustryData(code='',date=''):
 # 登陆系统
     lg = bs.login()
     # 显示登陆返回信息
-
     # 获取行业分类数据
     rs = bs.query_stock_industry(code,date)
     # rs = bs.query_stock_basic(code_name="浦发银行")
     needUpdate=tableNeedUpdate('tb_industry_information')
+    print(needUpdate)
     if(needUpdate==True):
     # 打印结果集
         industry_list = []

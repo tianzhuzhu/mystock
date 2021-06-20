@@ -1,7 +1,7 @@
 mplfinance~=0.12.7a17
 baostock~=0.8.8
-pandas
-numpy
+pandas~=1.1.3
+numpy~=1.20.3
 tqdm~=4.46.1
 SQLAlchemy~=1.3.20
 PyMySQL~=0.10.1
@@ -11,3 +11,5 @@ cycler~=0.10.0
 tushare~=1.2.62
 ta-lib
 pandas-datareader
+
+akshare~=0.9.76

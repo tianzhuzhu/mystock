@@ -5,7 +5,7 @@ from dataHandler import growthHandler
 from dataHandler.industryHandler import getIndustryData, findMax
 
 
-def choose():
+def choose(times=8,lowTh=200,highTh=20000):
     indutry=getIndustryData()
     print(indutry)
     growth=growthHandler.getRecentGrowth(n=1)
@@ -21,13 +21,16 @@ def choose():
     print(result)
     res.append(result)
     data.reset_index(inplace=True)
+    print(data)
     result2=data.groupby('行业').apply(lambda x:findMax(x,'净利润'))
+    print(result2)
     result2.sort_values(by='净利润',ascending=False,inplace=True)
-    result2.drop(columns=['level_0','code','所属行业类别','行业','index'],axis=1   )
+    result2.rename(columns={'level_0':'index'},inplace=True)
+    result2.drop(columns=['index','code','所属行业类别','行业','index'],axis=1   )
     print(result2)
     res.append(result2)
 
-    result3= growthHandler.chooseByInDustry()
+    result3= growthHandler.chooseByInDustry(times=times,lowTh=lowTh,highTh=highTh)
     result3.reset_index(inplace=True)
     result3=result3.groupby('行业').apply(lambda x:findMax(x,'weightAverage'))
     result3.sort_values(by='weightAverage',ascending=False,inplace=True)

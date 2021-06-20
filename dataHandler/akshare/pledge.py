@@ -1,0 +1,9 @@
+import akshare as ak
+stock_em_gpzy_pledge_ratio_df = ak.stock_em_gpzy_pledge_ratio(trade_date="2020-08-14")
+print(stock_em_gpzy_pledge_ratio_df)
+
+stock_em_gpzy_pledge_ratio_detail_df = ak.stock_em_gpzy_pledge_ratio_detail()
+print(stock_em_gpzy_pledge_ratio_detail_df)
+
+stock_em_gpzy_distribute_statistics_company_df = ak.stock_em_gpzy_distribute_statistics_company()
+print(stock_em_gpzy_distribute_statistics_company_df)

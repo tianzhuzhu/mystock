@@ -23,7 +23,7 @@ def init():
     date=datetime.datetime.now().date()
     engine=create_engine(data['db'])
     mysql=engine
-    path=r'D:\onedrive\OneDrive - ncist.edu.cn\选股\{}'.format(date)
+    path=r'选股\KLine\{}'.format(date)
 def getStrSQL(sql):
     sql=data['sql'][sql]
     sql=os.path.join(cur_path,sql)

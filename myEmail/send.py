@@ -84,6 +84,7 @@ def send_general_email(namelist,datalist,data,title='行业股票推荐',content
         name=namelist[i]
         # pfile = '结果{}.xlsx'.format(today)
         path=database.path
+        klinebasepath=path
         if(not os.path.exists(path)):
             os.mkdir(path)
         path=os.path.join(path,filename)
@@ -95,7 +96,7 @@ def send_general_email(namelist,datalist,data,title='行业股票推荐',content
         print(data)
         try:
             for code in data['code']:
-                klinePath=os.path.join(path,code+'.jpg')
+                klinePath=os.path.join(klinebasepath,code+'.jpg')
                 figPath=plotUtil.plotDayNew.plotK(klinePath,'日线',code)
                 with open(figPath,'rb') as fp:
                     picture = MIMEImage(fp.read())

@@ -6,6 +6,8 @@ from data.importIndustry import UpdateIndustryData
 
 def getIndustryData(code='',date='',index=True):
     result=UpdateIndustryData()
+    print('result')
+    print(result)
     if(not result.empty and code!=''):
         return result
     if(code==''):
@@ -14,14 +16,14 @@ def getIndustryData(code='',date='',index=True):
         print(indutrysql)
 
         if(index):
-            data=pd.read_sql(sql=indutrysql,con=database.engine,index_col='code')
+            data=pd.read_sql(sql=indutrysql,con=database.engine)
         else:
             data=pd.read_sql(sql=indutrysql,con=database.engine)
     else:
         database.init()
         if(index):
             indutrysql=database.industrySQL2
-            data=pd.read_sql(sql=indutrysql.format(code),con=database.engine,index_col='code')
+            data=pd.read_sql(sql=indutrysql.format(code),con=database.engine,)
         else:
             indutrysql=database.industrySQL2
             data=pd.read_sql(sql=indutrysql.format(code),con=database.engine)

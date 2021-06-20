@@ -53,8 +53,7 @@ def process6(data):
     send.send_mail([result],['SMA结果.xlsx'],data)
 
 if __name__ == '__main__':
-    res=chooseByIndustry.choose()
-
+    res=chooseByIndustry.choose(times=8)
     database.init()
     data=utils.loadData.loadData('config.yml')
     myEmail.send.send_general_email(namelist=['行业净利润增长率平均','行业龙头','加权行业龙头'],datalist=res,data=data,content='这是{}所有的股票列表数据，请查收！')
