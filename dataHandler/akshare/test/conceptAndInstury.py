@@ -1,5 +1,6 @@
 import akshare as ak
 # 获取行业各个股票
+stock_board_industry_index_ths_df = ak.stock_board_industry_index_ths(symbol="半导体及元件")
 df=ak.stock_board_industry_name_ths()
 for i in df['name']:
     print(i)

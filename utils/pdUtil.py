@@ -21,3 +21,14 @@ def fillNullColumns(data,columns,value):
         data[column].fillna(value,inplace=True)
         data.loc[data[column]=='']=value
     return data
+#'600000'->'sh.600000'
+def get_code_by_number(data,column):
+    def apply_number_to_code(x):
+        x=str(x)
+        if(x.startswith('6')):
+            x='sh.'+x
+        elif(x.startswith('3') or x.startswith('0')):
+            x='sz.'+x
+        return x
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+    return data

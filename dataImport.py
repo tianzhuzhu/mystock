@@ -1,3 +1,4 @@
+import _thread
 import random
 import time
 
@@ -8,9 +9,16 @@ from data.importReportData import queryPerformanceExpressReportByCode, queryFore
 
 from data.importStockAndPE import importTodayStockAndPE
 from data.importTodayStock import importToday
+from dataHandler.akshare.industry_concept import save_data
+from dataHandler.akshare.yjbb import update_allow_basic_information
 from utils.util import todayStock, getAllMarketValue
+def save_industry_and_concept():
+    save_data()
 
 if __name__ == '__main__':
+
+    _thread.start_new_thread(save_industry_and_concept, ())
+    _thread.start_new_thread(update_allow_basic_information, ())
 
     importToday()
     importTodayStockAndPE()
@@ -18,9 +26,7 @@ if __name__ == '__main__':
     # main.process5(main.data)
     # main.process4(main.data)
     # main.process6(main.data)
-
     main.init()
-
     getAllMarketValue()
     tabledict={
     'tb_growth':queryGrowthByCode,

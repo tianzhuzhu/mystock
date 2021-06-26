@@ -113,12 +113,14 @@ def insertTodayValue(data,table):
 
 
 def importToday():
-    today = datetime.datetime.now()
-    endDate = today.strftime('%Y%m%d')
-    data=util.todayStock()
-    if(timeUtil.tableNeedUpdate('tb_stock_history')):
-        insertTodayValue(data,'tb_stock_history' )
-        timeUtil.saveOperationTime('tb_stock_history')
-
+    try:
+        today = datetime.datetime.now()
+        endDate = today.strftime('%Y%m%d')
+        data=util.todayStock()
+        if(timeUtil.tableNeedUpdate('tb_stock_history')):
+            insertTodayValue(data,'tb_stock_history' )
+            timeUtil.saveOperationTime('tb_stock_history')
+    except:
+        print('today stock error')
 if __name__ == '__main__':
     importToday()

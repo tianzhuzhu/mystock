@@ -13,6 +13,10 @@ from data import importGrowth
 from data import importTodayStock
 import myEmail.send as send
 import _thread
+
+from dataHandler.akshare.yjbb import update_allow_basic_information
+
+
 def init():
     global data
     data=utils.loadData.loadData('config.yml')
@@ -53,6 +57,7 @@ def process6(data):
     send.send_mail([result],['SMA结果.xlsx'],data)
 
 if __name__ == '__main__':
+
     res=chooseByIndustry.choose(times=8)
     database.init()
     data=utils.loadData.loadData('config.yml')

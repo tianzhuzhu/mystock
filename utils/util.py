@@ -12,7 +12,20 @@ import numpy as np
 import database
 from utils import timeUtil, pdUtil
 
-
+def data_need_update(tablename,time,keyname,key) ->bool:
+    database.init()
+    engine=database.engine
+    try:
+        sql='select max({}) from {} where {}="{}"'.format(time,tablename,keyname,key)
+        date=pd.read_sql(sql=sql,con=engine).iloc[0,0]
+        now=datetime.datetime.now().date()
+        date=pd.to_datetime(date).date()
+        if(now-date).days>0:
+            return True
+        else:
+            return False
+    except:
+        return True
 def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
     # 2021-04-01 08:00:00	2021-04-02 00:00:00
     #工作日判断尚未完成
@@ -47,13 +60,9 @@ def todayStock(table='tb_today_stock'):
     engine=database.engine
     if(timeUtil.tableNeedUpdate(table)==False):
         return  pd.read_sql(con=engine,sql='select * from {}'.format(table))
-
     nowtime = datetime.datetime.now()
-
     endDate = nowtime.strftime('%Y%m%d')
     createTimeSql=" SELECT CREATE_TIME from information_schema.`TABLES`  WHERE  `information_schema`.`TABLES`.`TABLE_SCHEMA` = '{}' and `information_schema`.`TABLES`.`TABLE_NAME` = '{}' ".format('stock',table)
-
-
     lastUpdateTime=pd.read_sql(con=engine,sql=createTimeSql).iloc[0,0]
     try:
         ##排除五点后获取数据
@@ -67,10 +76,10 @@ def todayStock(table='tb_today_stock'):
             stockData=pd.read_sql(con=engine,sql='select * from {}'.format(table))
     except:
         # traceback.print_exc()
-        stockData = ak.stock_zh_a_spot()
-        stockData['symbol']=stockData['symbol'].map(lambda x:getdotCodeBysymbol(x))
-        stockData.to_sql(table,con=engine,if_exists='replace')
+
+        stockData = pd.read_sql(con=engine, sql='select * from {}'.format(table))
     timeUtil.saveOperationTime(table)
+
     return stockData
 def saveData(data,engine,table):
     try:

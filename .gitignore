@@ -4,3 +4,5 @@
 *.xlsx
 *.jpg
 *.png
+/importdata.bat
+/log.txt

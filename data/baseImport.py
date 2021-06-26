@@ -203,7 +203,6 @@ def dataimport(table,fun,if_exists='append'):
             bs.logout()
             time.sleep(5)
             bs.login()
-
         codes.set_description("导入{}中代码为{},条数为{}".format(table,code,len(data.index)))
     logger.info(table+' finished')
     bs.logout()

@@ -27,7 +27,12 @@ def UpdateIndustryData(code='',date=''):
         result.rename(columns={'code_name':'名称','industry':'行业','industryClassification':'所属行业类别'},inplace=True)
         # 登出系统
         bs.logout()
-        result.to_sql(name='tb_industry_information',con=database.engine,if_exists='append',index=False)
-        saveOperationTime('tb_industry_information')
+    
+        print(result)
+        try:
+            result.to_sql(name='tb_industry_information',con=database.engine,if_exists='append',index=False)
+            saveOperationTime('tb_industry_information')
+        except:
+            print('industry 更新失败')
         return result
     return pd.DataFrame()

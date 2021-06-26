@@ -79,7 +79,7 @@ def importHistory(data,table):
         result['updateTime']=now
         # print(result)
         result.to_sql(table,con=engine,if_exists='append',index=False)
-        symbols.set_description("查询代码为：{},数据条数为{}".format(code,len(result.index)))
+        symbols.set_description("导入日K线：{},数据条数为{}".format(code,len(result.index)))
         if(i%1000==0):
             bs.logout()
             time.sleep(5)
@@ -95,8 +95,6 @@ def importTodayStockAndPE(tablename='tb_stock_hisotry_detatil'):
         if(timeUtil.tableNeedUpdate(tablename)):
             importHistory(data,tablename )
             timeUtil.saveOperationTime(tablename)
-
-
     except:
         traceback.print_exc()
 
