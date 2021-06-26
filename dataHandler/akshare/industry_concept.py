@@ -47,9 +47,10 @@ def query_indsutry_index(symbol='半导体及元件'):
 
 @retry(wait_exponential_multiplier=500, wait_exponential_max=500000,wrap_exception=False,stop_max_attempt_number=7)
 def retry(fun,name):
-    time.sleep(1)
+    time.sleep(3)
     data=fun(name)
     return data
+# @retry(stop_max_attempt_number=7)
 def save_data(seconds=100):
     database.init()
     engine = database.engine
