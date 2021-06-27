@@ -1,5 +1,7 @@
 import datetime
 import time
+import traceback
+
 from retrying import retry
 import akshare as ak
 import pandas as pd
@@ -45,7 +47,7 @@ def query_indsutry_index(symbol='半导体及元件'):
     data = delete_no_data(data, '日期')
     return data
 
-@retry(wait_exponential_multiplier=500, wait_exponential_max=500000,wrap_exception=False,stop_max_attempt_number=7)
+@retry(wait_exponential_multiplier=5000, wait_exponential_max=500000,wrap_exception=False,stop_max_attempt_number=10)
 def retry(fun,name):
     time.sleep(3)
     data=fun(name)
@@ -71,8 +73,17 @@ def save_data(seconds=100):
     for name in names['name']:
         if (data_need_update(indextable, 'update_time', '行业', name) == False):
             continue
+
         data = retry(query_indsutry_index,name)
-        data.to_sql(indextable, con=engine, if_exists='replace', index=False)
+        try:
+            sql='select * from {} where 行业="{}"'.format(infotable,name)
+            saved_data=pd.read_sql(sql=sql,con=engine)
+            data=data.loc[~data['日期'].isin(saved_data['日期'])]
+        except:
+            traceback.print_exc()
+
+
+        data.to_sql(indextable, con=engine, if_exists='append', index=False)
         print(data)
     utils.timeUtil.saveOperationTime('tb_ak_industry_names')
 
@@ -95,7 +106,14 @@ def save_data(seconds=100):
         if (data_need_update(indextable, 'update_time', '概念', name) == False):
             continue
         data = retry(query_concept_index, name)
-        data.to_sql(indextable, con=engine, if_exists='replace', index=False)
+        try:
+            sql = 'select * from {} where 概念="{}"'.format(infotable, name)
+            saved_data = pd.read_sql(sql=sql, con=engine)
+            data = data.loc[~data['日期'].isin(saved_data['日期'])]
+        except:
+            traceback.print_exc()
+
+        data.to_sql(indextable, con=engine, if_exists='append', index=False)
         print(data)
     utils.timeUtil.saveOperationTime('tb_ak_concpet_names')
 

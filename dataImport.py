@@ -10,6 +10,7 @@ from data.importReportData import queryPerformanceExpressReportByCode, queryFore
 from data.importStockAndPE import importTodayStockAndPE
 from data.importTodayStock import importToday
 from dataHandler.akshare.industry_concept import save_data
+from dataHandler.akshare.north_net_flow import save_north_data
 from dataHandler.akshare.yjbb import update_allow_basic_information
 from utils.util import todayStock, getAllMarketValue
 def save_industry_and_concept():
@@ -19,6 +20,7 @@ if __name__ == '__main__':
 
     _thread.start_new_thread(save_industry_and_concept, ())
     _thread.start_new_thread(update_allow_basic_information, ())
+    _thread.start_new_thread(save_north_data, ())
 
     importToday()
     importTodayStockAndPE()
