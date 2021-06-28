@@ -58,7 +58,7 @@ if __name__ == '__main__':
     }
     for k,v in tabledict.items():
         importReport(k,v)
-    time.sleep(7200)
+    time.sleep(10800)
 
 
 

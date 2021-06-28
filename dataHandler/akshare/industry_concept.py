@@ -1,4 +1,5 @@
 import datetime
+import random
 import time
 import traceback
 
@@ -47,9 +48,9 @@ def query_indsutry_index(symbol='半导体及元件'):
     data = delete_no_data(data, '日期')
     return data
 
-@retry(wait_exponential_multiplier=5000, wait_exponential_max=500000,wrap_exception=False,stop_max_attempt_number=10)
+@retry(wait_exponential_multiplier=5000, wait_exponential_max=50000,wrap_exception=False)
 def retry(fun,name):
-    time.sleep(5)
+    time.sleep(random.randint(10))
     data=fun(name)
     return data
 # @retry(stop_max_attempt_number=7)
