@@ -49,7 +49,7 @@ def query_indsutry_index(symbol='半导体及元件'):
 
 @retry(wait_exponential_multiplier=5000, wait_exponential_max=500000,wrap_exception=False,stop_max_attempt_number=10)
 def retry(fun,name):
-    time.sleep(3)
+    time.sleep(5)
     data=fun(name)
     return data
 # @retry(stop_max_attempt_number=7)
