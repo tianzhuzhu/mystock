@@ -28,6 +28,8 @@
 # 涨跌额	float	Y	-
 # 股票名称	str	Y	-
 import datetime
+import random
+import time
 
 import akshare as ak
 
@@ -66,11 +68,13 @@ def save_secotr_Data(sector_list_table='tb_ak_sector_spot',sector_detail_table='
     engine=database.engine
     sector_type_list=["新浪行业", "启明星行业", "概念", "地域", "行业"]
     for type in sector_type_list:
+        time.sleep(random.randint(5))
         sector_list=query_sector_list(indicator=type)
         sector_list['update_time']=datetime.datetime.now().date()
         sector_list.to_sql(sector_list_table,con=engine,if_exists='append',index=False)
         for secotr in sector_list['label']:
             try:
+                time.sleep(random.randint(3))
                 data=query_secotr_detail(secotr)
                 data['update_time'] = datetime.datetime.now().date()
                 data['label']=secotr

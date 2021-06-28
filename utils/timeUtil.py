@@ -10,7 +10,15 @@ def get_last_end_quarter_day(date):
     return date
 
 
-z=datetime.datetime.now()
+def get_no_chaging_date(date):
+    date=pd.to_datetime(str(date)).strftime('%Y%m%d')
+    date=str(date)
+    return date
+def get_chaging_date(date):
+    date=pd.to_datetime(str(date)).strftime('%Y-%m-%d')
+    date=str(date)
+    return date
+
 
 def saveOperationTime(name):
     database.init()
