@@ -14,14 +14,28 @@ def init():
     global growthSQl, marketSQl, industrySQL, industrySQL2, peSQL
     dirname, filename = os.path.split(os.path.abspath(__file__))
     # print(dirname)
+    global constant_variables
+
+
+
     cur_path=dirname
     logger = logging.getLogger(__name__)
+    now=datetime.datetime.now()
+    year_month=now.strftime('%Y-%m')
+    logpath=os.path.join(cur_path,'log',year_month)
+    print(logpath)
     logger.setLevel(level = logging.INFO)
-    handler = logging.FileHandler(os.path.join(cur_path,"log.txt"))
+    if(not os.path.exists(logpath)):
+        os.mkdir(logpath)
+    handler = logging.FileHandler(os.path.join(logpath,str(now.date())+'_log.txt'))
     handler.setLevel(logging.INFO)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     handler.setFormatter(formatter)
     logger.addHandler(handler)
+
+
+
+
     lastOperateTimeSql="select max(updateTime) from tb_operation_time where name='{}'"
     data=utils.loadData.loadData('config.yml')
     growthSQl=getStrSQL('growth')
@@ -30,6 +44,8 @@ def init():
     peSQL=getStrSQL('peSQL')
     date=datetime.datetime.now().date()
     engine=create_engine(data['db'])
+
+    constant_variables=data['constant_variables']
     mysql=engine
     path=r'选股\KLine\{}'.format(date)
 def getStrSQL(sql):

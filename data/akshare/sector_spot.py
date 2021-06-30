@@ -34,7 +34,6 @@ import time
 import akshare as ak
 
 import database
-from dataHandler.akshare.industry_concept import retry
 
 
 def query_sector_list(indicator="新浪行业"):

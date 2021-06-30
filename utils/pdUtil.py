@@ -23,6 +23,7 @@ def fillNullColumns(data,columns,value):
     return data
 #'600000'->'sh.600000'
 def get_code_by_number(data,column):
+
     def apply_number_to_code(x):
         x=str(x)
         if(x.startswith('6')):

@@ -84,32 +84,27 @@ def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb):
         data=get_yjbb_by_date(date,fun)
         print(data)
         if(data is None):
-            logger.info(tablename+' '+str(date)+' have no data')
+            print(tablename+' '+str(date)+' have no data')
             continue
         data['update_time']=now
         try:
             sql = 'select * from {} where date="{}"'.format(tablename, date.date())
             print(sql)
             saved_data=pd.read_sql(sql=sql,con=engine)
-            print('save data')
-            print(saved_data)
-            print('data')
-            print(data)
+
             print(data['code'].isin(saved_data['code']))
             data=data=data.loc[~data['code'].isin(saved_data['code'])]
-            print('not in')
-            print(data)
             resultlist.append(data)
         except:
             resultlist.append(data)
-        logger.info(tablename + ' ' + str(date) + ' finshed')
     for data in resultlist:
         if(not data.empty):
+            print(data)
             data.to_sql(tablename,con=engine,if_exists='append',index=False)
-    logger.info(tablename + 'have already finshed')
+    logger.info(tablename + ' finshed')
     logger.info('______________'+tablename + str(now)+'-----------------')
     timeUtil.saveOperationTime(tablename)
-def update_allow_basic_information():
+def update_allow_basic_information(way='byboot'):
     dict = {
         'tb_bi_akshare_yjbb': ak.stock_em_yjbb,
         'tb_bi_akshare_quick_report': ak.stock_em_yjkb,

@@ -9,4 +9,5 @@ sql:
 path:
   default-kLine: 选股\kLine
 db: mysql+pymysql://root:root@localhost:3306/stock
-
+constant_variables:
+    low_ferquency_update_days: 7

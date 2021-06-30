@@ -1,5 +1,4 @@
 import time
-import traceback
 
 import choose.byVolume as volume
 import choose.bygrowthAndPe  as PE
@@ -9,12 +8,8 @@ from choose import chooseByIndustry
 from choose.marketValuePeGrowh import getResultFile
 from data import importStockAndPE as importStockAndPE
 import utils.loadData
-from data import importGrowth
 from data import importTodayStock
 import myEmail.send as send
-import _thread
-
-from dataHandler.akshare.yjbb import update_allow_basic_information
 
 
 def init():
@@ -57,11 +52,13 @@ def process6(data):
     send.send_mail([result],['SMA结果.xlsx'],data)
 
 if __name__ == '__main__':
-
-    res=chooseByIndustry.choose(times=8)
-    database.init()
-    data=utils.loadData.loadData('config.yml')
-    myEmail.send.send_general_email(namelist=['行业净利润增长率平均','行业龙头','加权行业龙头'],datalist=res,data=data,content='这是{}所有的股票列表数据，请查收！')
+    times=[2,4,8,12]
+    for time in times:
+        res=chooseByIndustry.choose(times=time)
+        database.init()
+        data=utils.loadData.loadData('config.yml')
+        myEmail.send.send_general_email(namelist=['行业净利润增长率平均','行业龙头','加权行业龙头'],datalist=res,data=data,content='这是{}所有的股票列表数据，请查收！'+
+                                                                                                               'times={}'.format(time))
     # try:
     #     _thread.start_new_thread( process1, (data,) )
     #     # _thread.start_new_thread( process3, () )

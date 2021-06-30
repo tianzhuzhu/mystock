@@ -28,26 +28,31 @@ def saveOperationTime(name):
     operation.loc[0,'updateTime']=datetime.datetime.now()
     operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
     return True
-def tableNeedUpdate(tableName):
+def tableNeedUpdate(tableName,days=1):
     database.init()
     # 显示登陆返回信息
     # 结果集输出到csv文件
     con=database.engine
+    logger=database.logger
     try:
         sql=database.lastOperateTimeSql.format(tableName)
         lastTime=pd.read_sql(sql=sql,con=con).iloc[0,0]
+        now=datetime.datetime.now()
         print(lastTime)
     except:
-        print('没有操作数据')
+        logger.info('{}没有数据'.format(tableName))
         return True
     if(lastTime==None):
-        lastTime=pd.to_datetime('1990-1-1 00:00:00')
         return True
-    if(needUpdate(lastTime,datetime.datetime.now(),isWorkDay=True)==False):
-        print('{}数据已经更新'.format(tableName))
-        return False
-    print(lastTime,datetime.datetime.now())
-    return needUpdate(lastTime,datetime.datetime.now(),isWorkDay=True)
+    if(days==1):
+        if(needUpdate(lastTime,now,isWorkDay=True)==False):
+            logger.info('{}数据已经更新'.format(tableName))
+            return False
+        return needUpdate(lastTime,now,isWorkDay=True)
+    else:
+        return (now.date()-lastTime).days>days
+
+
 
 
 def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
