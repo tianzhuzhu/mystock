@@ -1,7 +1,7 @@
 import pandas as pd
 
 import database
-from dataHandler.industryHandler import getIndustryData
+from dataHandler.baostack.industryHandler import getIndustryData
 
 
 def industryPe():

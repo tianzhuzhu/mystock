@@ -1,16 +1,9 @@
-import datetime
-import os
-import time
-import traceback
-import akshare as ak
-import baostock as bs
 import math
 from math import e
 import pandas as pd
-from tqdm import tqdm
 import database
-from dataHandler import marketHandler
-from dataHandler.industryHandler import getIndustryData
+from dataHandler.baostack import marketHandler
+from dataHandler.baostack.industryHandler import getIndustryData
 from utils.pdUtil import deleteNullColumn, fillNullColumn
 def getRecnetN(x,n):
     x.reset_index(inplace=True)
@@ -128,7 +121,7 @@ def constantGrowth(codes='all',times=8,allAbove=True,accumulate=False,WeightAccu
     return result
 def chooseByInDustry(times,lowTh=100,highTh=1000):
     res=constantGrowth(codes='all',times=times)
-    marketvalue=marketHandler.getmarketValue(lowTh=lowTh, highTh=highTh)
+    marketvalue= marketHandler.getmarketValue(lowTh=lowTh, highTh=highTh)
     res=res.loc[res.index.isin(marketvalue.index)]
     industry=getIndustryData()[['code','行业']]
     res=pd.merge(left=res,right=industry,left_index=True,right_on='code')

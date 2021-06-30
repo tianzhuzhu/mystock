@@ -1,15 +1,10 @@
-import datetime
 import os
 
 import database
-import myEmail.send
 import utils.util as util
-import pandas as pd
-from sqlalchemy import create_engine
 
-import utils.loadData
-from dataHandler.macdHandler import findMacdListBySymobls
-from dataHandler.smaHandler import findSMAbySymbols
+from dataHandler.baostack.macdHandler import findMacdListBySymobls
+from dataHandler.baostack.smaHandler import findSMAbySymbols
 
 
 def getResultFile(th=1000,growth=0.3,pe=20,ByMACD=False,BySMA=False):

@@ -1,14 +1,13 @@
 import pandas as pd
 
-import myEmail.send
-from dataHandler import growthHandler
-from dataHandler.industryHandler import getIndustryData, findMax
+from dataHandler.baostack import growthHandler
+from dataHandler.baostack.industryHandler import getIndustryData, findMax
 
 
 def choose(times=8,lowTh=200,highTh=20000):
     indutry=getIndustryData()
     print(indutry)
-    growth=growthHandler.getRecentGrowth(n=1)
+    growth= growthHandler.getRecentGrowth(n=1)
     data=pd.merge(left=growth,right=indutry,on='code')
     print(data)
     data['净利润']=data['净利润'].astype(float)
@@ -30,7 +29,7 @@ def choose(times=8,lowTh=200,highTh=20000):
     print(result2)
     res.append(result2)
 
-    result3= growthHandler.chooseByInDustry(times=times,lowTh=lowTh,highTh=highTh)
+    result3= growthHandler.chooseByInDustry(times=times, lowTh=lowTh, highTh=highTh)
     result3.reset_index(inplace=True)
     result3=result3.groupby('行业').apply(lambda x:findMax(x,'weightAverage'))
     result3.sort_values(by='weightAverage',ascending=False,inplace=True)

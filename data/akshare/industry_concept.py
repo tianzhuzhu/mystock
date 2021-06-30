@@ -72,7 +72,7 @@ def save_industry_data(seconds=100,way='byboot'):
     print(names)
     if(utils.timeUtil.tableNeedUpdate(infotable,wait_days) or way=='byhand'):
         for name in names['name']:
-            if(data_need_update(infotable,'update_time','行业',name)==False and way!='byhand'):
+            if(data_need_update(infotable,'update_time','行业',name)==False):
                 continue
             data = retry(query_industry_infos,name)
             data.to_sql(infotable, con=engine, if_exists='append', index=False)
@@ -80,7 +80,7 @@ def save_industry_data(seconds=100,way='byboot'):
         utils.timeUtil.saveOperationTime(infotable)
     if(utils.timeUtil.tableNeedUpdate(indextable,wait_days) or way=='byhand'):
         for name in names['name']:
-            if (data_need_update(indextable, 'update_time', '行业', name) == False and way!='byhand'):
+            if (data_need_update(indextable, 'update_time', '行业', name) == False):
                 continue
             data = retry(query_indsutry_index,name)
             try:
@@ -108,7 +108,7 @@ def save_concept_data(seconds=100,way='byboot'):
     if(not utils.timeUtil.tableNeedUpdate(infotable) or way=='byhand'):
         for name in names['name']:
             print(name)
-            if (data_need_update(infotable, 'update_time', '概念', name) == False and way!='byhand'):
+            if (data_need_update(infotable, 'update_time', '概念', name) == False):
                 continue
             data = retry(query_concept_infos, name)
             # data = query_concept_infos(name)
@@ -118,9 +118,9 @@ def save_concept_data(seconds=100,way='byboot'):
 
         utils.timeUtil.saveOperationTime(infotable)
 
-    if(not utils.timeUtil.tableNeedUpdate(indextable,wait_days)    ):
+    if(not utils.timeUtil.tableNeedUpdate(indextable,wait_days)or way=='byhand'    ):
         for name in names['name']:
-            if (data_need_update(indextable, 'update_time', '概念', name) == False and way!='byhand'):
+            if (data_need_update(indextable, 'update_time', '概念', name) == False):
                 continue
             data = retry(query_concept_index, name)
             try:
