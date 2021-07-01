@@ -1,0 +1,667 @@
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,633 - database - INFO - tb_bi_akshare_yjbb finshed
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,635 - database - INFO - ______________tb_bi_akshare_yjbb2021-06-30 08:45:15.712483-----------------
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,897 - database - INFO - tb_bi_akshare_quick_report finshed
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:26,898 - database - INFO - ______________tb_bi_akshare_quick_report2021-06-30 08:45:26.657126-----------------
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,938 - database - INFO - tb_bi_akshare_forecast_report finshed
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:45:36,939 - database - INFO - ______________tb_bi_akshare_forecast_report2021-06-30 08:45:26.938877-----------------
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - tb_bi_akshare_disclosure_time finshed
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:46,308 - database - INFO - ______________tb_bi_akshare_disclosure_time2021-06-30 08:45:36.983009-----------------
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - tb_bi_akshare_balance_sheet finshed
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:51,157 - database - INFO - ______________tb_bi_akshare_balance_sheet2021-06-30 08:49:46.354098-----------------
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - tb_bi_akshare_interst finshed
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:55,463 - database - INFO - ______________tb_bi_akshare_interst2021-06-30 08:49:51.186674-----------------
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - tb_bi_akshare_cash_flow finshed
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 08:49:59,779 - database - INFO - ______________tb_bi_akshare_cash_flow2021-06-30 08:49:55.498495-----------------
+2021-06-30 10:17:29,971 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:17:29,971 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:17:29,971 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:17:29,971 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:17:29,971 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:17:29,971 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:17:29,971 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:30:14,852 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:30:43,105 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:30:43,105 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:30:43,105 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:30:43,105 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:30:43,105 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:30:43,105 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:07,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:33:35,438 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:35:57,344 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:36:25,470 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:41:55,478 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:42:31,325 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:42:31,325 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:42:31,325 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:42:31,325 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:42:31,325 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:42:31,325 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:06,502 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:45:43,199 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:16,279 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:48:44,725 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:11,373 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 10:51:37,932 - database - INFO - tb_industry_information数据已经更新
+2021-06-30 11:35:48,468 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 11:35:48,468 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 11:35:48,468 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 11:35:48,468 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 11:35:48,468 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 11:35:48,483 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 11:35:48,483 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 11:35:48,483 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 11:35:48,483 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 11:35:48,483 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 11:35:48,483 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 11:35:48,483 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,496 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,526 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,546 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,568 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 11:35:48,590 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,556 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 14:44:25,556 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 14:44:25,556 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 14:44:25,556 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 14:44:25,556 - database - INFO - tb_bi_akshare_yjbb数据已经更新
+2021-06-30 14:44:25,579 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 14:44:25,579 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 14:44:25,579 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 14:44:25,579 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 14:44:25,579 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 14:44:25,579 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 14:44:25,579 - database - INFO - tb_bi_akshare_quick_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,610 - database - INFO - tb_bi_akshare_forecast_report数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,628 - database - INFO - tb_bi_akshare_disclosure_time数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,648 - database - INFO - tb_bi_akshare_balance_sheet数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,668 - database - INFO - tb_bi_akshare_interst数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,689 - database - INFO - tb_bi_akshare_cash_flow数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 14:44:25,815 - database - INFO - tb_ak_concept_infos数据已经更新
+2021-06-30 16:18:13,779 - database - INFO - a

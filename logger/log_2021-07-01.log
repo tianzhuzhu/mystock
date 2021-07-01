@@ -1,0 +1,75 @@
+2021-07-01 17:10:38,888 root  ERROR   44 8092 MainThread 17588 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000022F5A934388>)
+2021-07-01 17:11:15,141 root  INFO   39 6056 MainThread 5936 function start
+2021-07-01 17:11:15,141 root  INFO   41 6056 MainThread 5936 function finshed
+2021-07-01 17:11:15,141 root  INFO   39 6056 MainThread 5936 function start
+2021-07-01 17:11:15,141 root  ERROR   43 6056 MainThread 5936 function except
+2021-07-01 17:11:15,141 root  ERROR   44 6056 MainThread 5936 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x00000259B6A4BC08>)
+2021-07-01 17:16:02,848 root  INFO   49 680 MainThread 10976 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py start
+2021-07-01 17:16:02,848 root  INFO   51 680 MainThread 10976 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py finshed
+2021-07-01 17:16:02,848 root  INFO   49 680 MainThread 10976 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py start
+2021-07-01 17:16:02,848 root  ERROR   53 680 MainThread 10976 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py except
+2021-07-01 17:16:02,849 root  ERROR   54 680 MainThread 10976 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000029ED9330B08>)
+2021-07-01 17:16:20,733 root  INFO   49 1288 MainThread 16256 D:/onedrive/OneDrive - ncist.edu.cn/project/mystock/logger/singleton.py start
+2021-07-01 17:16:20,733 root  INFO   51 1288 MainThread 16256 D:/onedrive/OneDrive - ncist.edu.cn/project/mystock/logger/singleton.py finshed
+2021-07-01 17:16:20,734 root  INFO   49 1288 MainThread 16256 D:/onedrive/OneDrive - ncist.edu.cn/project/mystock/logger/singleton.py start
+2021-07-01 17:16:20,734 root  ERROR   53 1288 MainThread 16256 D:/onedrive/OneDrive - ncist.edu.cn/project/mystock/logger/singleton.py except
+2021-07-01 17:16:20,734 root  ERROR   54 1288 MainThread 16256 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000021F38C17608>)
+2021-07-01 17:16:29,477 root  INFO   49 10960 MainThread 260 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py start
+2021-07-01 17:16:29,477 root  INFO   51 10960 MainThread 260 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py finshed
+2021-07-01 17:16:29,478 root  INFO   49 10960 MainThread 260 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py start
+2021-07-01 17:16:29,478 root  ERROR   53 10960 MainThread 260 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py except
+2021-07-01 17:16:29,478 root  ERROR   54 10960 MainThread 260 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000021C8E1301C8>)
+2021-07-01 17:16:35,561 root  INFO   49 15932 MainThread 2552 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py start
+2021-07-01 17:16:35,561 root  INFO   51 15932 MainThread 2552 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py finshed
+2021-07-01 17:16:35,562 root  INFO   49 15932 MainThread 2552 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py start
+2021-07-01 17:16:35,562 root  ERROR   53 15932 MainThread 2552 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py except
+2021-07-01 17:16:35,562 root  ERROR   54 15932 MainThread 2552 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000001F5F6AF52C8>)
+2021-07-01 17:21:03,739 root  ERROR   52 980 MainThread 7364 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000002447BCFB388>)
+2021-07-01 17:21:35,878 root  ERROR   52 11156 MainThread 15708 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000002937F6C4048>)
+2021-07-01 17:22:44,534 root  ERROR   53 12744 MainThread 3912 Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 48, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 64, in b
+    b=1/0
+ZeroDivisionError: division by zero
+
+2021-07-01 17:23:15,370 root  INFO   47 14376 MainThread 11344 astart
+2021-07-01 17:23:15,370 root  INFO   49 14376 MainThread 11344 afinshed
+2021-07-01 17:23:15,370 root  INFO   47 14376 MainThread 11344 bstart
+2021-07-01 17:23:15,370 root  ERROR   52 14376 MainThread 11344 berror
+2021-07-01 17:23:15,371 root  ERROR   53 14376 MainThread 11344 Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 48, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 64, in b
+    b=1/0
+ZeroDivisionError: division by zero
+
+2021-07-01 17:25:39,938 root  ERROR   55 3504 MainThread 17112 Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 66, in b
+    b=1/0
+ZeroDivisionError: division by zero
+
+2021-07-01 17:26:05,716 root  INFO   49 5972 MainThread 6232 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 17:26:05,717 root  INFO   51 5972 MainThread 6232 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 17:26:05,717 root  INFO   49 5972 MainThread 6232 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py b start
+2021-07-01 17:26:05,718 root  ERROR   54 5972 MainThread 6232 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py b error
+2021-07-01 17:26:05,718 root  ERROR   55 5972 MainThread 6232 Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 66, in b
+    b=1/0
+ZeroDivisionError: division by zero
+
+2021-07-01 17:27:59,889 root  INFO   61 9632 MainThread 4180 function a start
+2021-07-01 17:27:59,890 root  INFO   63 9632 MainThread 4180 function a finshed
+2021-07-01 17:27:59,890 root  INFO   50 9632 MainThread 4180 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py b start
+2021-07-01 17:27:59,891 root  ERROR   55 9632 MainThread 4180 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py b error
+2021-07-01 17:27:59,891 root  ERROR   56 9632 MainThread 4180 Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 51, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 77, in b
+    b=1/0
+ZeroDivisionError: division by zero
+
