@@ -2,7 +2,7 @@ import time
 
 import choose.byVolume as volume
 import choose.bygrowthAndPe  as PE
-import database
+import configger
 import myEmail
 from choose import chooseByIndustry
 from choose.marketValuePeGrowh import getResultFile
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     times=[2,4,8,12]
     for time in times:
         res=chooseByIndustry.choose(times=time)
-        database.init()
+        configger.init()
         data=utils.loadData.loadData('config.yml')
         myEmail.send.send_general_email(namelist=['行业净利润增长率平均','行业龙头','加权行业龙头'],datalist=res,data=data,content='这是{}所有的股票列表数据，请查收！'+
                                                                                                                'times={}'.format(time))

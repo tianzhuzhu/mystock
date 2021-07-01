@@ -9,12 +9,12 @@ import baostock as bs
 import talib
 from sqlalchemy import create_engine, VARCHAR
 import numpy as np
-import database
+import configger
 from utils import timeUtil, pdUtil
 
 def data_need_update(tablename,time,keyname,key) ->bool:
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     try:
         sql='select max({}) from {} where {}="{}"'.format(time,tablename,keyname,key)
         date=pd.read_sql(sql=sql,con=engine).iloc[0,0]
@@ -56,8 +56,8 @@ def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
         else:
             return False
 def todayStock(table='tb_today_stock'):
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     if(timeUtil.tableNeedUpdate(table)==False):
         return  pd.read_sql(con=engine,sql='select * from {}'.format(table))
     nowtime = datetime.datetime.now()
@@ -100,8 +100,8 @@ def removedotBysymbol(code):
     return code
 
 def getKBySymbol(symobl,days=None):
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     if(days==None):
         sql='select * from tb_stock_hisotry_detatil where code="{}"  order by date desc'.format(symobl)
     else:
@@ -131,8 +131,8 @@ def getMaBydata(data,MAlist):
     # print(data)
     return data
 def getMarketValueBySymbol(symbol):
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     sql1="select totalShare from tb_profit WHERE code='{}' ORDER BY date desc limit 0,1".format(symbol)
     sql1.format(symbol)
     sql2="select close from tb_stock_hisotry_detatil WHERE code='{}' ORDER BY date desc limit 0,1".format(symbol)
@@ -145,8 +145,8 @@ def getMarketValueBySymbol(symbol):
     marketValue=totalShare*price
     return  marketValue
 def getAllMarketValue():
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     sqlCloseValue='select t.* from (' \
                   'SELECT max(date) as date,code  FROM tb_stock_hisotry_detatil  GROUP BY code) o ,  tb_stock_hisotry_detatil t where t.code=o.code and t.date=o.date'
     sqlShare='select t.* from ' \
@@ -180,8 +180,8 @@ def getAllMarketValue():
 
     return marketData
 def findDataBymarkevalueTH(totalMarketValuelowTh,totalMarketValueHighTh=0,liquidMarketValueLowTh=0,liquidMarketValueHighTh=0):
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     sqlBasicInformation='select * from tb_basic_information'
     basicinformation=pd.read_sql(sql=sqlBasicInformation,con=engine,index_col='code')
     # print(basicinformation)
@@ -201,8 +201,8 @@ def findDataBymarkevalueTH(totalMarketValuelowTh,totalMarketValueHighTh=0,liquid
     return basicinformation
 def getRecentDataBydata(data):
 
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     if(data.index.name!='code'):
         data.set_index('code',inplace=True)
     list=data.index.tolist()
@@ -219,8 +219,8 @@ def getRecentDataBydata(data):
     return result
 
 def findGrowhBydata(data,grow=.3):
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     if(data.index.name!='code'):
         data.set_index('code',inplace=True)
     list=data.index.tolist()
@@ -267,8 +267,8 @@ def findVolume(x,n):
 
     return sumv
 def findVolumeCountByData(data,days=100):
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     list=data.index.tolist()
     for i in range(len(list)):
         list[i]="'"+list[i]+"'"

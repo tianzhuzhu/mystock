@@ -9,7 +9,7 @@ from tqdm import tqdm
 # 登陆系统
 from sqlalchemy import create_engine
 
-import database
+import configger
 from utils import util
 from utils.util import todayStock
 
@@ -106,8 +106,8 @@ def importData(stockData,engine):
         # i = i + 1
     bs.logout()
 def importProfit():
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     stockData=todayStock()
     importData(stockData,engine)
 if __name__ == '__main__':

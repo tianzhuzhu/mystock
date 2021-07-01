@@ -1,13 +1,13 @@
 import pandas as pd
 
-import database
+import configger
 from dataHandler.baostack.industryHandler import getIndustryData
 
 
 def industryPe():
-    database.init()
-    engine=database.engine
-    peSQl=database.peSQL
+    configger.init()
+    engine=configger.engine
+    peSQl=configger.peSQL
     print(peSQl)
     industryData=getIndustryData(index=True)
     print(industryData)
@@ -31,9 +31,9 @@ def findmin(x,column):
     return data
 
 def industryMinPE():
-    database.init()
-    engine=database.engine
-    peSQl=database.peSQL
+    configger.init()
+    engine=configger.engine
+    peSQl=configger.peSQL
     print(peSQl)
     industryData=getIndustryData(index=True)
     print(industryData)

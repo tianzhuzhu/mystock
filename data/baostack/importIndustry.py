@@ -1,7 +1,7 @@
 import baostock as bs
 import pandas as pd
 
-import database
+import configger
 from utils import timeUtil
 from utils.timeUtil import tableNeedUpdate, saveOperationTime
 
@@ -30,7 +30,7 @@ def UpdateIndustryData(code='',date=''):
     
         print(result)
         try:
-            result.to_sql(name='tb_industry_information',con=database.engine,if_exists='append',index=False)
+            result.to_sql(name='tb_industry_information', con=configger.engine, if_exists='append', index=False)
             saveOperationTime('tb_industry_information')
         except:
             print('industry 更新失败')

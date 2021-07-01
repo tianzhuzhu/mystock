@@ -1,7 +1,7 @@
 import datetime
 import pandas as pd
 
-import database
+import configger
 def get_this_end_quarter_day(date):
     date = date + pd.tseries.offsets.DateOffset(months=3 - ((date.month - 1) % 3), days=-date.day)  # 当季最后一天
     return date
@@ -21,21 +21,21 @@ def get_chaging_date(date):
 
 
 def saveOperationTime(name):
-    database.init()
-    con=database.engine
+    configger.init()
+    con=configger.engine
     operation=pd.DataFrame()
     operation.loc[0,'name']=name
     operation.loc[0,'updateTime']=datetime.datetime.now()
     operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
     return True
 def tableNeedUpdate(tableName,days=1):
-    database.init()
+    configger.init()
     # 显示登陆返回信息
     # 结果集输出到csv文件
-    con=database.engine
-    logger=database.logger
+    con=configger.engine
+    logger=configger.logger
     try:
-        sql=database.lastOperateTimeSql.format(tableName)
+        sql=configger.lastOperateTimeSql.format(tableName)
         lastTime=pd.read_sql(sql=sql,con=con).iloc[0,0]
         now=datetime.datetime.now()
         print(lastTime)

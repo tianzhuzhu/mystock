@@ -1,7 +1,7 @@
 import pandas as pd
 
-import database
-from data.importIndustry import UpdateIndustryData
+import configger
+from data.baostack.importIndustry import UpdateIndustryData
 
 
 def getIndustryData(code='',date='',index=True):
@@ -11,22 +11,22 @@ def getIndustryData(code='',date='',index=True):
     if(not result.empty and code!=''):
         return result
     if(code==''):
-        database.init()
-        indutrysql=database.industrySQL
+        configger.init()
+        indutrysql=configger.industrySQL
         print(indutrysql)
 
         if(index):
-            data=pd.read_sql(sql=indutrysql,con=database.engine)
+            data=pd.read_sql(sql=indutrysql, con=configger.engine)
         else:
-            data=pd.read_sql(sql=indutrysql,con=database.engine)
+            data=pd.read_sql(sql=indutrysql, con=configger.engine)
     else:
-        database.init()
+        configger.init()
         if(index):
-            indutrysql=database.industrySQL2
-            data=pd.read_sql(sql=indutrysql.format(code),con=database.engine,)
+            indutrysql=configger.industrySQL2
+            data=pd.read_sql(sql=indutrysql.format(code), con=configger.engine, )
         else:
-            indutrysql=database.industrySQL2
-            data=pd.read_sql(sql=indutrysql.format(code),con=database.engine)
+            indutrysql=configger.industrySQL2
+            data=pd.read_sql(sql=indutrysql.format(code), con=configger.engine)
     return data
 def findMax(x,column):
 

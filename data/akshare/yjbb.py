@@ -1,11 +1,16 @@
 import datetime
+import logging
 import traceback
 
 import akshare as ak
 import pandas as pd
 
-import database
+import configger
 from utils import pdUtil, timeUtil
+from utils.pdUtil import number_to_code
+
+
+@number_to_code(column='code')
 def get_last_yjbb_by_date(date=''):
     if(date==''):
         date=datetime.datetime.now()
@@ -16,7 +21,6 @@ def get_last_yjbb_by_date(date=''):
         data = ak.stock_em_yjbb(date=query_time)
         data['date']=date
         data.rename(columns={'股票代码':'code'},inplace=True)
-        data=pdUtil.get_code_by_number(data,'code')
     except:
         traceback.print_exc()
         return None
@@ -49,19 +53,17 @@ def get_yjbb_by_date(date='',fun=ak.stock_em_yjbb):
 def select_yjbb_by_date(tablename,date):
     sql='select * from {} where date ={}'.format(tablename,date)
     try:
-        database.init()
-        engine=database.engine
+        configger.init()
+        engine=configger.engine
         result=pd.read_sql(sql=sql,con=engine)
         return result
     except:
         print('select_yjbb_by_date error {}'.format(date))
 
 def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb):
-    database.init()
-    engine = database.engine
-    logger=database.logger
+    configger.init()
+    engine = configger.engine
     now=datetime.datetime.now()
-
     if(timeUtil.tableNeedUpdate(tablename)==False):
         return False
     try:
@@ -101,8 +103,6 @@ def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb):
         if(not data.empty):
             print(data)
             data.to_sql(tablename,con=engine,if_exists='append',index=False)
-    logger.info(tablename + ' finshed')
-    logger.info('______________'+tablename + str(now)+'-----------------')
     timeUtil.saveOperationTime(tablename)
 def update_allow_basic_information(way='byboot'):
     dict = {

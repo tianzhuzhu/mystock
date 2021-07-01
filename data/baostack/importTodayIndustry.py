@@ -5,19 +5,19 @@ import baostock as bs
 import pandas as pd
 
 # 登陆系统
-import database
+import configger
 from utils.util import needUpdate
 
 
 def inportIndustryData(name='tb_today_industry',code=None,date=None):
-    database.init()
+    configger.init()
 # 显示登陆返回信息
 
     # 结果集输出到csv文件
 
-    con=database.engine
+    con=configger.engine
     try:
-        sql=database.lastOperateTimeSql.format(name)
+        sql=configger.lastOperateTimeSql.format(name)
         lastTime=pd.read_sql(sql=sql,con=con).iloc[0,0]
         print(lastTime)
     except:

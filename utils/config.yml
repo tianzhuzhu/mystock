@@ -6,6 +6,10 @@ sql:
   industrySQL: sql/industry.sql
   industrySQL2: sql/industry2.sql
   peSQL: sql/pe.sql
+  akshare_all_growth: sql/akshare/growth/all_growth_date.sql
+  akshare_all_growth_current_data: sql/akshare/growth/current_data.sql
+  akshare_growth_near_data: sql/akshare/growth/near_data.sql
+  akshare_growth_near_date: sql/akshare/growth/near_date.sql
 path:
   default-kLine: 选股\kLine
 db: mysql+pymysql://root:root@localhost:3306/stock

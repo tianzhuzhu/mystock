@@ -1,6 +1,6 @@
 import pandas as pd
 
-import database
+import configger
 from utils.util import getAllMarketValue
 def getmarketValue(data=None,highTh=None,lowTh=None):
     billion=100000000
@@ -16,8 +16,8 @@ def getmarketValue(data=None,highTh=None,lowTh=None):
             list.append(' totalmarketvalue > {}'.format(lowTh))
         sql+= ' and'.join(list)
     print(sql)
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     res=pd.read_sql(con=engine,sql=sql,index_col='code')
     if(data!=None):
         try:

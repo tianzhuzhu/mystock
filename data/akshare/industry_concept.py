@@ -7,19 +7,21 @@ from retrying import retry
 import akshare as ak
 import pandas as pd
 
-import database
+import configger
 import utils.timeUtil
-from utils.pdUtil import get_code_by_number
+from utils.pdUtil import get_code_by_number, number_to_code
 from utils.util import data_need_update
 
 
 def delete_no_data(data,column):
     data=data.loc[data[column]!='暂无成份股数据']
     return data
+
 def query_concept_names():
     data=ak.stock_board_concept_name_ths()
     data['update_time'] = datetime.datetime.now()
     return data
+@number_to_code(column='代码')
 def query_concept_infos(symbol):
     data = ak.stock_board_concept_cons_ths(symbol=symbol)
     data['update_time'] = datetime.datetime.now()
@@ -36,6 +38,7 @@ def query_industry_names():
     data=ak.stock_board_industry_name_ths()
     data['update_time']=datetime.datetime.now()
     return data
+@number_to_code(column='代码')
 def query_industry_infos(symbol='半导体及元件'):
     data = ak.stock_board_industry_cons_ths(symbol=symbol)
     data['update_time'] = datetime.datetime.now()
@@ -58,9 +61,9 @@ def retry(fun,name):
 # @retry(stop_max_attempt_number=7)
 
 def save_industry_data(seconds=100,way='byboot'):
-    database.init()
-    engine = database.engine
-    wait_days=database.constant_variables['low_ferquency_update_days']
+    configger.init()
+    engine = configger.engine
+    wait_days=configger.constant_variables['low_ferquency_update_days']
 
     maintable = 'tb_ak_industry_names'
     indextable = 'tb_ak_industry_index'
@@ -94,9 +97,9 @@ def save_industry_data(seconds=100,way='byboot'):
         utils.timeUtil.saveOperationTime(indextable)
     utils.timeUtil.saveOperationTime('tb_ak_industry_names')
 def save_concept_data(seconds=100,way='byboot'):
-    database.init()
-    engine = database.engine
-    wait_days=database.constant_variables['low_ferquency_update_days']
+    configger.init()
+    engine = configger.engine
+    wait_days=configger.constant_variables['low_ferquency_update_days']
     if(not utils.timeUtil.tableNeedUpdate('tb_akshare_concept_names',wait_days)    ):
         return
     maintable = 'tb_ak_concept_names'
@@ -112,7 +115,6 @@ def save_concept_data(seconds=100,way='byboot'):
                 continue
             data = retry(query_concept_infos, name)
             # data = query_concept_infos(name)
-            data=get_code_by_number(data,'代码')
             data.to_sql(infotable, con=engine, if_exists='replace', index=False)
             print(data)
 
@@ -129,7 +131,7 @@ def save_concept_data(seconds=100,way='byboot'):
                 data = data.loc[not data['日期'].isin(saved_data['日期'])]
             except:
                 traceback.print_exc()
-            data=get_code_by_number(data,'代码')
+
             data.to_sql(indextable, con=engine, if_exists='append', index=False)
             print(data)
         utils.timeUtil.saveOperationTime(indextable)

@@ -10,7 +10,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 #### 登陆系统 ####
-import database
+import configger
 from utils import util, timeUtil
 from utils.util import needUpdate
 
@@ -45,8 +45,8 @@ def importBycode(code,start_date,end_date):
     return result
 def importHistory(data,table):
     today = datetime.datetime.now()
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     lg = bs.login()
     i=0
     symbols = tqdm(data['symbol'])

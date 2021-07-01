@@ -5,7 +5,7 @@ import akshare as ak
 # import akshare as ak
 # stock_em_comment_df = ak.stock_em_comment()
 # print(stock_em_comment_df)
-import database
+import configger
 from utils.pdUtil import get_code_by_number
 
 
@@ -123,8 +123,8 @@ def shsz_history_data(symbol):
     return data
 
 def save_north_data(hold_stock_table='tb_ak_north_hold_stock',hold_board_rank_table='tb_ak_north_board_rank',way='byboot'):
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     # north_net_in=query_north_net_in()#北上资金净流入
     # north_cash_balance=query_north_net_balance()#北上资金净流入
     # north_cash_acc_flow_in=query_north_acc_flow_in()

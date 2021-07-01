@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.image import MIMEImage
 
-import database
+import configger
 import plotUtil.plotDay
 import plotUtil.plotDayNew
 
@@ -83,7 +83,7 @@ def send_general_email(namelist,datalist,data,title='行业股票推荐',content
         data=datalist[i]
         name=namelist[i]
         # pfile = '结果{}.xlsx'.format(today)
-        path=database.path
+        path=configger.path
         klinebasepath=path
         if(not os.path.exists(path)):
             os.mkdir(path)

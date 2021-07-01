@@ -1,7 +1,7 @@
 import baostock as bs
 import pandas as pd
 
-import database
+import configger
 from utils import timeUtil
 from utils.timeUtil import tableNeedUpdate, saveOperationTime
 

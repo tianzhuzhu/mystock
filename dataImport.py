@@ -10,7 +10,6 @@ if __name__ == '__main__':
         args1=sys.argv[1]
     except:
         args1='byhand'
-
     t1=threading.Thread(target=save_data,args=(100,args1))
     t2=threading.Thread(target=update_allow_basic_information,args=(args1,))
     t3=threading.Thread(target=save_north_data,args=('tb_ak_north_hold_stock','tb_ak_north_board_rank',args1))

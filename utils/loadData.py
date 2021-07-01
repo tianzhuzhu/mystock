@@ -16,6 +16,7 @@ def loadData(name):
         file_data = file.read()
         data = yaml.load(file_data, Loader=yaml.FullLoader)
     except:
+        return data
         traceback.print_exc()
     return data
 

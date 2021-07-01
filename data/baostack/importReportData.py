@@ -11,7 +11,7 @@ from tqdm import tqdm
 # 登陆系统
 import logging
 from sqlalchemy import create_engine
-import database
+import configger
 from utils import util, timeUtil
 from utils.util import todayStock, needUpdate
 
@@ -39,8 +39,8 @@ def dataimport(table,fun,if_exists='append'):
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     logger.info(table+' start')
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     data=todayStock()
     lg = bs.login()
     i=0

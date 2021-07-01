@@ -33,7 +33,7 @@ import time
 
 import akshare as ak
 
-import database
+import configger
 
 
 def query_sector_list(indicator="新浪行业"):
@@ -63,8 +63,8 @@ def query_secotr_detail(sector="hangye_ZL01"):
     return data
 
 def save_secotr_Data(sector_list_table='tb_ak_sector_spot',sector_detail_table='tb_ak_sector_detail'):
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
     sector_type_list=["新浪行业", "启明星行业", "概念", "地域", "行业"]
     for type in sector_type_list:
         time.sleep(random.randint(5))

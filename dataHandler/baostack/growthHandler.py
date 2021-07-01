@@ -1,7 +1,7 @@
 import math
 from math import e
 import pandas as pd
-import database
+import configger
 from dataHandler.baostack import marketHandler
 from dataHandler.baostack.industryHandler import getIndustryData
 from utils.pdUtil import deleteNullColumn, fillNullColumn
@@ -13,9 +13,9 @@ def getRecnetN(x,n):
     fillNullColumn(x,'净利润',0)
     return x
 def getRecentGrowth(code='',n=1):
-    database.init()
-    growthSQl=database.growthSQl
-    data=pd.read_sql(sql=growthSQl,con=database.mysql,index_col='code')
+    configger.init()
+    growthSQl=configger.growthSQl
+    data=pd.read_sql(sql=growthSQl, con=configger.mysql, index_col='code')
     print(data)
     data=data.groupby(data.index).apply(lambda x:getRecnetN(x,n))
     data.index.names=['code','index']
@@ -30,8 +30,6 @@ def findAverage(x,n=12):
     x=x[0:n]
     result=pd.Series(dtype=float)
     x.dropna(subset=['净利润'],inplace=True)
-
-
     x['净利润']=x['净利润'].map(lambda x:float(x))
     result['average']=x['净利润'].mean()
     # result['净资产']=x['净资产'].mean()
@@ -77,9 +75,9 @@ def findAboveZero(x, times):
     count=x['净利润']>0
     return count.sum()
 def constantGrowth(codes='all',times=8,allAbove=True,accumulate=False,WeightAccumulate=False):
-    database.init()
-    growthSQl=database.growthSQl
-    data=pd.read_sql(sql=growthSQl,con=database.mysql,index_col='code')
+    configger.init()
+    growthSQl=configger.growthSQl
+    data=pd.read_sql(sql=growthSQl, con=configger.mysql, index_col='code')
     data.dropna(subset=['净利润'],inplace=True)
     # data.astype({'净利润':'float64'}).dtypes
     # 好好检查一下自己的字符串内容，注意里面是否有换换行符 \n，制表符 \t 或空字符串 ‘ ’ todo

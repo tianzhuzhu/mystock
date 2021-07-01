@@ -1,6 +1,6 @@
 import os
 
-import database
+import configger
 import utils.util as util
 
 from dataHandler.baostack.macdHandler import findMacdListBySymobls
@@ -8,11 +8,11 @@ from dataHandler.baostack.smaHandler import findSMAbySymbols
 
 
 def getResultFile(th=1000,growth=0.3,pe=20,ByMACD=False,BySMA=False):
-    database.init()
+    configger.init()
 
-    date=database.date
+    date=configger.date
     data=findStockList(100,th,growth,pe,ByMACD,BySMA)
-    path=database.path
+    path=configger.path
     if(not os.path.exists(path)):
         os.mkdir(path)
     filepath=os.path.join(path,'市值{}市盈率{}增长率{}.xlsx'.format('500亿','25','25%'))

@@ -11,7 +11,7 @@ import pymysql
 # print(stock_df)
 from tqdm import tqdm
 
-import database
+import configger
 from utils import util, timeUtil
 from utils.util import removedotBysymbol, todayStock
 
@@ -63,8 +63,8 @@ def insertTotalData(code,startDate,endate,engine):
 
 def insertTodayValue(data,table):
     today = datetime.datetime.now()
-    database.init()
-    engine=database.engine
+    configger.init()
+    engine=configger.engine
 
     i=0
     symbols = tqdm(data['symbol'])
