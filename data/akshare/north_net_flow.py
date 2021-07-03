@@ -6,7 +6,8 @@ import akshare as ak
 # stock_em_comment_df = ak.stock_em_comment()
 # print(stock_em_comment_df)
 import configger
-from utils.pdUtil import get_code_by_number
+from logger.my_logger import logit
+from utils.pdUtil import get_code_by_number, number_to_code
 
 
 def query_north_net_in(indicator="北上"):
@@ -55,6 +56,7 @@ def query_north_board_rank(symbol='北向资金增持行业板块排行',indicat
 # 个股排行
 # market	str	Y	market="沪股通"; choice of {"北向", "沪股通", "深股通"}
 # indicator	str	Y	indicator="沪股通"; choice of {"今日排行", "3日排行", "5日排行", "10日排行", "月排行", "季排行", "年排行"}
+@number_to_code(column='代码')
 def query_north_hold_stock(market='北向',indicator='今日排行'):
     data = ak.stock_em_hsgt_hold_stock(market=market, indicator=indicator)
     data['market'] = market
@@ -121,7 +123,7 @@ def every_day_insititution_statistics(market,start_date,end_date):
 def shsz_history_data(symbol):
     data = ak.stock_em_hsgt_hist(symbol=symbol)
     return data
-
+@logit()
 def save_north_data(hold_stock_table='tb_ak_north_hold_stock',hold_board_rank_table='tb_ak_north_board_rank',way='byboot'):
     configger.init()
     engine=configger.engine
@@ -134,7 +136,6 @@ def save_north_data(hold_stock_table='tb_ak_north_hold_stock',hold_board_rank_ta
     for market in market_list:
         for indicator in indicator_list:
             hold_stock = query_north_hold_stock(market,indicator)
-            hold_stock=get_code_by_number(hold_stock,'代码')
             hold_stock['updatetime']=datetime.datetime.now().date()
             print(hold_stock)
             hold_stock.to_sql(hold_stock_table,con=engine,index=False,if_exists='append')
@@ -143,7 +144,6 @@ def save_north_data(hold_stock_table='tb_ak_north_hold_stock',hold_board_rank_ta
         for indicator in indicator_list:
             board_rank=query_north_board_rank(symbol,indicator)
             board_rank['updatetime']=datetime.datetime.now().date()
-            board_rank=get_code_by_number(board_rank,'代码')
             print(board_rank)
             board_rank.to_sql(hold_board_rank_table,con=engine,index=False,if_exists='append')
 if __name__=='__main__':

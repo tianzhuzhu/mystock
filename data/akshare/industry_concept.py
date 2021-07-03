@@ -9,6 +9,7 @@ import pandas as pd
 
 import configger
 import utils.timeUtil
+from logger.my_logger import logit
 from utils.pdUtil import get_code_by_number, number_to_code
 from utils.util import data_need_update
 
@@ -52,14 +53,14 @@ def query_indsutry_index(symbol='半导体及元件'):
     data = delete_no_data(data, '日期')
     return data
 
-@retry(wait_exponential_multiplier=5000, wait_exponential_max=50000,wrap_exception=False)
+@retry(wait_exponential_multiplier=5000, wait_exponential_max=5000,wrap_exception=False,stop_max_attempt_number=10)
 def retry(fun,name):
     print(name,'start')
     time.sleep(3)
     data=fun(name)
     return data
 # @retry(stop_max_attempt_number=7)
-
+@logit()
 def save_industry_data(seconds=100,way='byboot'):
     configger.init()
     engine = configger.engine
@@ -96,6 +97,7 @@ def save_industry_data(seconds=100,way='byboot'):
             print(data)
         utils.timeUtil.saveOperationTime(indextable)
     utils.timeUtil.saveOperationTime('tb_ak_industry_names')
+@logit()
 def save_concept_data(seconds=100,way='byboot'):
     configger.init()
     engine = configger.engine
@@ -115,7 +117,7 @@ def save_concept_data(seconds=100,way='byboot'):
                 continue
             data = retry(query_concept_infos, name)
             # data = query_concept_infos(name)
-            data.to_sql(infotable, con=engine, if_exists='replace', index=False)
+            data.to_sql(infotable, con=engine, if_exists='append', index=False)
             print(data)
 
         utils.timeUtil.saveOperationTime(infotable)

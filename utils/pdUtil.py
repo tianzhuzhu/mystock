@@ -39,7 +39,10 @@ def number_to_code(column='code'):
         @wraps(f)
         def decorate(*args,**kwargs):
             res=f(*args,**kwargs)
-            res=get_code_by_number(res,column)
+            try:
+                res=get_code_by_number(res,column)
+            except:
+                pass
             return res
         return decorate
     return to_code

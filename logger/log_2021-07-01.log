@@ -1,75 +1,1110 @@
-2021-07-01 17:10:38,888 root  ERROR   44 8092 MainThread 17588 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000022F5A934388>)
-2021-07-01 17:11:15,141 root  INFO   39 6056 MainThread 5936 function start
-2021-07-01 17:11:15,141 root  INFO   41 6056 MainThread 5936 function finshed
-2021-07-01 17:11:15,141 root  INFO   39 6056 MainThread 5936 function start
-2021-07-01 17:11:15,141 root  ERROR   43 6056 MainThread 5936 function except
-2021-07-01 17:11:15,141 root  ERROR   44 6056 MainThread 5936 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x00000259B6A4BC08>)
-2021-07-01 17:16:02,848 root  INFO   49 680 MainThread 10976 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py start
-2021-07-01 17:16:02,848 root  INFO   51 680 MainThread 10976 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py finshed
-2021-07-01 17:16:02,848 root  INFO   49 680 MainThread 10976 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py start
-2021-07-01 17:16:02,848 root  ERROR   53 680 MainThread 10976 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py except
-2021-07-01 17:16:02,849 root  ERROR   54 680 MainThread 10976 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000029ED9330B08>)
-2021-07-01 17:16:20,733 root  INFO   49 1288 MainThread 16256 D:/onedrive/OneDrive - ncist.edu.cn/project/mystock/logger/singleton.py start
-2021-07-01 17:16:20,733 root  INFO   51 1288 MainThread 16256 D:/onedrive/OneDrive - ncist.edu.cn/project/mystock/logger/singleton.py finshed
-2021-07-01 17:16:20,734 root  INFO   49 1288 MainThread 16256 D:/onedrive/OneDrive - ncist.edu.cn/project/mystock/logger/singleton.py start
-2021-07-01 17:16:20,734 root  ERROR   53 1288 MainThread 16256 D:/onedrive/OneDrive - ncist.edu.cn/project/mystock/logger/singleton.py except
-2021-07-01 17:16:20,734 root  ERROR   54 1288 MainThread 16256 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000021F38C17608>)
-2021-07-01 17:16:29,477 root  INFO   49 10960 MainThread 260 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py start
-2021-07-01 17:16:29,477 root  INFO   51 10960 MainThread 260 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py finshed
-2021-07-01 17:16:29,478 root  INFO   49 10960 MainThread 260 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py start
-2021-07-01 17:16:29,478 root  ERROR   53 10960 MainThread 260 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py except
-2021-07-01 17:16:29,478 root  ERROR   54 10960 MainThread 260 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000021C8E1301C8>)
-2021-07-01 17:16:35,561 root  INFO   49 15932 MainThread 2552 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py start
-2021-07-01 17:16:35,561 root  INFO   51 15932 MainThread 2552 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py finshed
-2021-07-01 17:16:35,562 root  INFO   49 15932 MainThread 2552 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py start
-2021-07-01 17:16:35,562 root  ERROR   53 15932 MainThread 2552 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\singleton.py except
-2021-07-01 17:16:35,562 root  ERROR   54 15932 MainThread 2552 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000001F5F6AF52C8>)
-2021-07-01 17:21:03,739 root  ERROR   52 980 MainThread 7364 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000002447BCFB388>)
-2021-07-01 17:21:35,878 root  ERROR   52 11156 MainThread 15708 (<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x000002937F6C4048>)
-2021-07-01 17:22:44,534 root  ERROR   53 12744 MainThread 3912 Traceback (most recent call last):
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 48, in wrapped_function
-    res=func(*args, **kwargs)
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 64, in b
-    b=1/0
-ZeroDivisionError: division by zero
+2021-07-01 21:29:32,289 root  INFO   60 4052 MainThread 14884 function a start
+2021-07-01 21:29:32,289 root  INFO   62 4052 MainThread 14884 function a finshed
+2021-07-01 21:29:38,552 root  INFO   60 3464 MainThread 10684 function a start
+2021-07-01 21:29:38,553 root  INFO   62 3464 MainThread 10684 function a finshed
+2021-07-01 21:30:31,775 root  INFO   49 17792 MainThread 9100 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:30:31,776 root  INFO   51 17792 MainThread 9100 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:30:51,650 root  INFO   49 12148 MainThread 8564 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:30:51,650 root  INFO   51 12148 MainThread 8564 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:31:51,484 root  INFO   49 15000 MainThread 15496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:31:51,485 root  INFO   51 15000 MainThread 15496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:32:22,744 root  INFO   49 2856 MainThread 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:32:22,744 root  INFO   51 2856 MainThread 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:32:22,757 root  INFO   49 4632 Thread-1 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 21:32:22,759 root  INFO   49 5156 Thread-3 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 21:32:22,792 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:22,826 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:22,877 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/ HTTP/1.1" 200 None
+2021-07-01 21:32:22,895 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:22,896 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:22,903 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:22,955 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:23,038 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=5000&p=1&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:23,061 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:23,131 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=1&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:23,147 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:23,249 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=2&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:23,268 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:23,351 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=3&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:23,371 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:23,451 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=4&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:23,468 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:23,504 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28DateType%3D%271%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 950214
+2021-07-01 21:32:23,635 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=5&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:24,051 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:24,174 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=6&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:24,806 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:24,959 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=7&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:25,376 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:25,559 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=8&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:26,007 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:26,083 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:26,129 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/ HTTP/1.1" 200 None
+2021-07-01 21:32:26,144 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=9&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:26,681 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:26,776 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:26,791 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=500&p=10&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:26,818 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:26,869 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:26,885 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:26,915 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:27,127 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/1/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:27,132 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:27,133 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:27,139 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:27,149 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/1/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:27,162 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=5000&p=1&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:27,163 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:27,163 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:27,163 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:27,164 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:27,195 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=5000&p=1&type=RPT_LICO_FN_CPD&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORTDATE%3D%272021-09-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:27,196 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:27,234 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/2/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:27,244 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:27,312 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/3/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:27,321 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:27,323 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:27,323 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:27,341 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28DateType%3D%273%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 950410
+2021-07-01 21:32:27,355 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=5000&p=1&type=RPT_FCI_PERFORMANCEE&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORT_DATE%3D%272021-03-31%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:27,360 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:27,514 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/4/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:27,761 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:27,823 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:27,915 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=5000&p=1&type=RPT_FCI_PERFORMANCEE&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:28,085 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:28,287 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:28,316 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:28,454 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /api/data/get?st=UPDATE_DATE%2CSECURITY_CODE&sr=-1%2C-1&ps=5000&p=1&type=RPT_FCI_PERFORMANCEE&sty=ALL&token=894050c76af8597a853f5b408b759f5d&filter=%28REPORT_DATE%3D%272021-09-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:28,455 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:29,039 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:29,208 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/5/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:30,540 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:30,669 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/6/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:30,678 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:30,725 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:30,738 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:30,794 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/7/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:30,809 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:30,824 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:30,879 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/8/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:30,882 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:30,883 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:30,889 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:30,936 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=1&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:30,939 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:30,966 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=1&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:30,971 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:30,973 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/9/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:30,981 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:31,035 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=2&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:31,040 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:31,049 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/10/ajax/1/code/301558 HTTP/1.1" 200 None
+2021-07-01 21:32:31,080 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=3&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:31,090 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:31,134 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=4&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:31,141 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:31,188 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=5&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:31,193 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:31,284 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28DateType%3D%275%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 950421
+2021-07-01 21:32:31,316 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=6&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:31,321 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:31,410 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=7&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:31,596 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:31,702 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=8&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:32,026 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:32,241 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=9&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:32,519 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:32,611 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=10&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:32,704 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:32,873 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=11&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:32,935 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:33,104 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=12&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:33,258 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:33,473 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=13&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:33,628 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:33,796 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=14&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:34,166 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:34,213 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:34,274 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=15&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:34,351 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/ HTTP/1.1" 200 None
+2021-07-01 21:32:34,456 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:34,520 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=16&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:34,555 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:34,579 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:34,588 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:34,610 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:34,636 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:34,652 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/1/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:34,659 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:34,672 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=17&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:34,676 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/1/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:34,679 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:34,685 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:34,741 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=18&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:34,746 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:34,750 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/2/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:34,758 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:34,822 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/3/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:34,831 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:34,877 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=19&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:34,883 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:34,896 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/4/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:34,899 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28DateType%3D%2710%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 951798
+2021-07-01 21:32:34,905 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:34,925 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=20&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:34,931 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:34,981 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=21&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:34,982 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/5/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:35,212 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:35,428 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=22&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:35,583 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:35,658 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=23&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:35,936 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:36,059 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=24&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-06-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:36,215 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:36,491 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:36,613 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/6/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:38,088 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:38,156 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/7/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:38,167 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:38,168 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): datacenter.eastmoney.com:80
+2021-07-01 21:32:38,177 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:38,180 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:38,192 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://datacenter.eastmoney.com:80 "GET /securities/api/data/v1/get?sortColumns=NOTICE_DATE%2CSECURITY_CODE&sortTypes=-1%2C-1&pageSize=50&pageNumber=1&reportName=RPT_PUBLIC_OP_NEWPREDICT&columns=ALL&token=894050c76af8597a853f5b408b759f5d&filter=+%28REPORT_DATE%3D%272021-09-30%27%29 HTTP/1.1" 200 None
+2021-07-01 21:32:38,192 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:38,193 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:38,245 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/8/ajax/1/code/300800 HTTP/1.1" 200 None
+2021-07-01 21:32:38,271 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:38,294 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:38,297 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:38,885 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1991-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:38,888 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:38,888 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:38,889 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:38,923 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1991-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:38,925 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:38,925 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:38,926 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:39,318 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28DateType%3D%27m%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 950595
+2021-07-01 21:32:39,538 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1991-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:39,570 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:39,571 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:39,585 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:39,677 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1991-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:39,724 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:39,738 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:39,785 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:39,877 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1992-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:39,924 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:39,954 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:40,031 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:40,108 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1992-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:40,125 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:40,125 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:40,201 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:40,323 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1992-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:40,371 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:40,446 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:40,494 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:40,570 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1992-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:40,602 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:40,677 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:40,740 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:40,862 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1993-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:40,910 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:40,939 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:41,001 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:41,062 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1993-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:41,080 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:41,093 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:41,109 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:41,216 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1993-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:41,264 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:41,278 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:41,340 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:41,463 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:41,478 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1993-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:41,526 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:41,617 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/ HTTP/1.1" 200 None
+2021-07-01 21:32:41,632 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:41,679 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:41,771 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1994-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:41,803 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:41,803 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:41,833 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:41,909 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1994-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:41,957 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:41,971 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:41,972 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,171 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1994-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,173 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,173 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,203 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,279 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1994-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,281 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,294 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,310 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,371 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1995-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,373 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,373 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,374 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,448 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1995-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,450 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,450 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,451 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,500 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1995-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,502 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,502 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,504 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,534 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1995-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,557 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,557 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,559 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,617 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:42,624 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:42,637 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:42,654 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1996-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,656 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,656 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,658 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,667 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,683 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1996-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,685 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,685 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,686 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,690 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/1/ajax/1/code/301496 HTTP/1.1" 200 None
+2021-07-01 21:32:42,697 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:42,710 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/1/ajax/1/code/301496 HTTP/1.1" 200 None
+2021-07-01 21:32:42,718 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:42,763 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1996-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,765 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,765 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,766 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,795 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/2/ajax/1/code/301496 HTTP/1.1" 200 None
+2021-07-01 21:32:42,799 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1996-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,801 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,801 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,802 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,808 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:42,869 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1997-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,871 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,871 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,872 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,885 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/3/ajax/1/code/301496 HTTP/1.1" 200 None
+2021-07-01 21:32:42,893 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1997-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,895 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,895 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,896 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,897 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:42,917 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1997-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,919 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,919 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,920 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,954 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1997-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,956 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,957 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,958 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:42,982 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/4/ajax/1/code/301496 HTTP/1.1" 200 None
+2021-07-01 21:32:42,983 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1998-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:42,985 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:42,985 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:42,987 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,012 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1998-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,014 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,014 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,015 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,040 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1998-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,042 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,042 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,043 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,077 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1998-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,079 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,079 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,081 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,124 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1999-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,126 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,126 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,127 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,153 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1999-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,155 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,155 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,156 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,187 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1999-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,189 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,189 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,190 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,216 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E1999-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,218 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,218 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,219 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,244 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2000-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,245 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,246 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,246 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,270 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2000-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,272 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,273 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,274 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,298 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2000-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,300 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,301 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,302 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,332 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2000-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,334 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,334 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,335 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,364 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2001-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,366 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,366 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,367 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,392 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2001-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,394 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,394 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,395 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,418 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2001-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,420 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,420 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,421 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,447 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2001-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,449 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,449 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,450 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,476 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2002-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,477 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,477 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,478 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,501 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2002-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,503 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,503 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,504 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,530 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2002-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,532 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,532 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,533 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,570 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2002-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,572 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,572 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,573 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,595 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2003-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,597 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,597 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,598 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,622 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2003-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,623 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,623 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,624 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,655 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2003-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,657 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,657 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,658 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,681 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28DateType%3D%27jd%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 950820
+2021-07-01 21:32:43,685 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2003-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,686 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,686 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,687 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,712 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2004-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,714 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,715 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,716 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,756 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2004-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,804 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,804 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:43,819 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:43,910 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2004-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:43,913 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:43,926 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:44,003 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:44,095 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2004-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:44,128 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:44,218 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:44,296 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:44,388 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2005-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:44,420 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:44,434 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:44,481 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:44,572 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2005-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:44,620 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:44,620 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:44,650 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:44,757 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2005-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:44,788 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:44,803 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:44,835 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:44,896 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2005-12-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:44,913 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:44,927 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:44,958 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:45,065 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2006-03-31%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:45,113 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:45,157 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:45,220 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:45,296 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2006-06-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:45,328 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:45,329 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:45,358 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:45,450 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2006-09-30%5E%29&rt=52907209 HTTP/1.1" 200 86
+2021-07-01 21:32:45,482 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:45,496 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:45,497 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:45,681 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2006-12-31%5E%29&rt=52907209 HTTP/1.1" 200 373980
+2021-07-01 21:32:46,098 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:46,235 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/ HTTP/1.1" 200 None
+2021-07-01 21:32:48,106 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:48,107 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:48,108 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:48,214 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:48,242 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:48,255 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:48,263 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2007-03-31%5E%29&rt=52907209 HTTP/1.1" 200 376830
+2021-07-01 21:32:48,280 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:48,290 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/1/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:48,298 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:48,329 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/1/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:48,775 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28DateType%3D%27y%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 948568
+2021-07-01 21:32:49,576 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:49,577 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:49,607 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:49,822 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2007-06-30%5E%29&rt=52907209 HTTP/1.1" 200 381482
+2021-07-01 21:32:50,146 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:50,330 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/2/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:51,947 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:51,948 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:51,949 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:52,147 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2007-09-30%5E%29&rt=52907209 HTTP/1.1" 200 392171
+2021-07-01 21:32:52,825 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:53,117 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/3/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:54,604 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:54,609 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:54,621 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:54,633 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:54,716 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:54,754 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/4/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:54,757 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2007-12-31%5E%29&rt=52907209 HTTP/1.1" 200 407225
+2021-07-01 21:32:54,763 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:54,779 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:54,842 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/5/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:56,058 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:56,058 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:56,060 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:56,066 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:56,078 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:56,173 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2008-03-31%5E%29&rt=52907209 HTTP/1.1" 200 409799
+2021-07-01 21:32:56,189 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/6/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:56,198 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:56,397 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27001%27+and+DateType%3D%271%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 388939
+2021-07-01 21:32:56,412 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/7/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:58,340 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:58,368 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:58,384 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:58,553 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:58,612 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2008-06-30%5E%29&rt=52907209 HTTP/1.1" 200 419281
+2021-07-01 21:32:58,651 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/8/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:58,676 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:32:58,677 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:58,722 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:32:58,830 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/9/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:59,898 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:32:59,899 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:32:59,901 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:59,906 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:32:59,926 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:32:59,970 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/10/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:32:59,978 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:00,044 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/11/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:00,052 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:00,113 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2008-09-30%5E%29&rt=52907209 HTTP/1.1" 200 422743
+2021-07-01 21:33:00,115 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/12/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:00,124 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:00,130 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27001%27+and+DateType%3D%273%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 388856
+2021-07-01 21:33:00,214 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/13/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:02,493 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:02,539 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:02,539 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:02,555 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:02,624 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/14/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:02,633 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:02,641 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:33:02,659 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:33:02,684 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:02,687 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2008-12-31%5E%29&rt=52907209 HTTP/1.1" 200 425808
+2021-07-01 21:33:02,698 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/15/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:02,706 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:02,800 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/16/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:02,985 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27001%27+and+DateType%3D%275%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 388799
+2021-07-01 21:33:04,510 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:04,510 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:04,541 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:04,694 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2009-03-31%5E%29&rt=52907209 HTTP/1.1" 200 424530
+2021-07-01 21:33:04,696 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:04,848 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/17/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:05,819 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:33:05,879 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:33:06,445 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:06,445 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:06,446 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:06,453 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:06,475 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:06,525 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/18/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:06,533 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:06,567 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2009-06-30%5E%29&rt=52907209 HTTP/1.1" 200 425504
+2021-07-01 21:33:06,695 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27001%27+and+DateType%3D%2710%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 389366
+2021-07-01 21:33:06,787 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/19/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:08,776 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:08,789 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:08,790 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:08,912 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:08,989 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2009-09-30%5E%29&rt=52907209 HTTP/1.1" 200 431384
+2021-07-01 21:33:09,020 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/20/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:09,513 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:33:09,605 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:33:10,329 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:10,329 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:10,331 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:10,335 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:10,357 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:10,406 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/21/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:10,415 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:10,494 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/22/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:10,502 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:10,592 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/23/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:10,600 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:10,623 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2009-12-31%5E%29&rt=52907209 HTTP/1.1" 200 467668
+2021-07-01 21:33:10,634 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27001%27+and+DateType%3D%27m%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 388828
+2021-07-01 21:33:10,681 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/24/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:12,684 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:12,822 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/25/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:13,177 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:13,191 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:13,208 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:13,327 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:13,368 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:33:13,382 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:33:13,407 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:13,450 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2010-03-31%5E%29&rt=52907209 HTTP/1.1" 200 479821
+2021-07-01 21:33:13,606 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27001%27+and+DateType%3D%27jd%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 388775
+2021-07-01 21:33:14,468 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/26/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:16,164 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:16,168 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:16,171 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:16,177 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:16,217 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:33:16,233 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:33:16,257 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:16,288 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/27/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:16,296 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:16,328 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2010-06-30%5E%29&rt=52907209 HTTP/1.1" 200 502987
+2021-07-01 21:33:16,407 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/28/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:16,437 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27001%27+and+DateType%3D%27y%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 387830
+2021-07-01 21:33:18,902 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:18,916 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:18,933 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:19,043 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:19,088 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:33:19,096 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2010-09-30%5E%29&rt=52907209 HTTP/1.1" 200 523668
+2021-07-01 21:33:19,110 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:33:19,135 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:19,163 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/29/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:19,532 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27003%27+and+DateType%3D%271%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 561352
+2021-07-01 21:33:21,146 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:21,182 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:21,182 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:21,257 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:21,302 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/30/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:21,457 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2010-12-31%5E%29&rt=52907209 HTTP/1.1" 200 563472
+2021-07-01 21:33:22,058 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:22,257 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/31/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:23,337 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): data.eastmoney.com:80
+2021-07-01 21:33:23,443 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://data.eastmoney.com:80 "GET /hsgtcg/list.html HTTP/1.1" 200 None
+2021-07-01 21:33:24,063 root  INFO   51 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:24,063 root  INFO   49 14444 Thread-2 11836 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:24,065 urllib3.connectionpool  DEBUG   230 14444 Thread-2 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:24,070 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:24,148 urllib3.connectionpool  DEBUG   230 5156 Thread-3 11836 Starting new HTTP connection (1): dcfm.eastmoney.com:80
+2021-07-01 21:33:24,198 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/32/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:24,206 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:24,207 urllib3.connectionpool  DEBUG   442 14444 Thread-2 11836 http://dcfm.eastmoney.com:80 "GET /em_mutisvcexpandinterface/api/js/get?type=YJBB21_YYPL&token=70f12f2f4f091e459a279469fe49eca5&st=frdate&sr=1&p=1&ps=5000&js=var+HXutCoUP%3D%7Bpages%3A%28tp%29%2Cdata%3A+%28x%29%2Cfont%3A%28font%29%7D&filter=%28securitytypecode%3D%27058001001%27%29%28reportdate%3D%5E2011-03-31%5E%29&rt=52907209 HTTP/1.1" 200 573343
+2021-07-01 21:33:24,289 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/33/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:24,535 urllib3.connectionpool  DEBUG   442 5156 Thread-3 11836 http://dcfm.eastmoney.com:80 "GET /EM_MutiSvcExpandInterface/api/js/get?type=HSGT20_GGTJ_SUM&token=894050c76af8597a853f5b408b759f5d&st=ShareSZ_Chg_One&sr=-1&p=1&ps=5000&js=%7B%22data%22%3A%28x%29%2C%22pages%22%3A%28tp%29%2C%22font%22%3A%28font%29%7D&filter=%28Market%3D%27003%27+and+DateType%3D%273%27+and+HdDate%3D%272021-06-29%27%29&rt=53001697 HTTP/1.1" 200 561631
+2021-07-01 21:33:26,106 urllib3.connectionpool  DEBUG   230 4632 Thread-1 11836 Starting new HTTP connection (1): q.10jqka.com.cn:80
+2021-07-01 21:33:26,382 urllib3.connectionpool  DEBUG   442 4632 Thread-1 11836 http://q.10jqka.com.cn:80 "GET /gn/detail/field/264648/order/desc/page/34/ajax/1/code/308594 HTTP/1.1" 200 None
+2021-07-01 21:33:27,791 root  INFO   49 2800 MainThread 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:33:27,792 root  INFO   51 2800 MainThread 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:33:27,803 root  INFO   49 4552 Thread-1 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 21:33:27,803 root  INFO   49 16864 Thread-3 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 21:33:27,906 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:27,932 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:27,932 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:27,977 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:27,978 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,006 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,007 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,038 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,038 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,063 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,063 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,154 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,154 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,325 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,353 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,478 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,478 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,540 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,540 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,678 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,692 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,802 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,846 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:28,956 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:28,984 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,064 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,064 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,125 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,125 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,233 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,233 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,340 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,341 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,510 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,510 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,571 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,585 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,695 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,695 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,802 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,802 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:29,879 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:29,908 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,032 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,032 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,110 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,110 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,173 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,185 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,311 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,355 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,434 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,434 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,526 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,526 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,649 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,649 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,817 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,817 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:30,911 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:30,911 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,018 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,032 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,188 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,188 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,239 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,239 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,272 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,273 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,516 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,517 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,558 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,572 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,727 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,727 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,850 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,879 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:31,974 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:31,987 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:32,035 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:32,035 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:32,143 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:32,143 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:32,252 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:32,279 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:32,405 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:32,405 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:32,513 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:32,513 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:32,558 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:32,559 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:32,666 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:32,680 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:32,790 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:32,849 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:33,005 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:33,006 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:33,113 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:33,172 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:33,267 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:33,311 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:33,542 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:33,588 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:33,759 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:33,835 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:33,991 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:34,019 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:34,067 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:34,067 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:34,160 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:34,160 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:34,252 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:34,253 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:34,435 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:34,435 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:34,560 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:34,561 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:34,606 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:34,606 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:41,335 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:41,429 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:41,473 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:41,518 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:41,559 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:41,559 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:41,588 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:41,588 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:42,802 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:42,802 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:44,598 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:44,598 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:47,338 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:47,338 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:49,447 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:49,448 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:51,467 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:51,479 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:54,359 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:54,420 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:56,319 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:56,320 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:33:58,287 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:33:58,300 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:34:01,195 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:34:01,211 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:34:03,406 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:34:03,408 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:34:05,644 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:34:05,689 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:34:07,265 root  INFO   51 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date finshed
+2021-07-01 21:34:07,266 root  INFO   49 1876 Thread-2 6924 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py get_yjbb_by_date start
+2021-07-01 21:34:11,004 root  INFO   49 4720 MainThread 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:34:11,004 root  INFO   51 4720 MainThread 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:34:11,016 root  INFO   49 8992 Thread-1 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 21:34:11,017 root  INFO   49 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:34:11,018 root  INFO   49 2028 Thread-3 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 21:34:11,061 root  INFO   51 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:34:11,061 root  INFO   49 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:34:11,069 root  INFO   51 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:34:11,069 root  INFO   49 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:34:11,082 root  INFO   51 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:34:11,082 root  INFO   49 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:35:16,145 root  ERROR   54 2028 Thread-3 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-01 21:35:16,176 root  ERROR   55 2028 Thread-3 12320 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '代码'
 
-2021-07-01 17:23:15,370 root  INFO   47 14376 MainThread 11344 astart
-2021-07-01 17:23:15,370 root  INFO   49 14376 MainThread 11344 afinshed
-2021-07-01 17:23:15,370 root  INFO   47 14376 MainThread 11344 bstart
-2021-07-01 17:23:15,370 root  ERROR   52 14376 MainThread 11344 berror
-2021-07-01 17:23:15,371 root  ERROR   53 14376 MainThread 11344 Traceback (most recent call last):
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 48, in wrapped_function
-    res=func(*args, **kwargs)
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 64, in b
-    b=1/0
-ZeroDivisionError: division by zero
+The above exception was the direct cause of the following exception:
 
-2021-07-01 17:25:39,938 root  ERROR   55 3504 MainThread 17112 Traceback (most recent call last):
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
     res=func(*args, **kwargs)
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 66, in b
-    b=1/0
-ZeroDivisionError: division by zero
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 148, in save_north_data
+    board_rank=get_code_by_number(board_rank,'代码')
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 64, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: '代码'
 
-2021-07-01 17:26:05,716 root  INFO   49 5972 MainThread 6232 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
-2021-07-01 17:26:05,717 root  INFO   51 5972 MainThread 6232 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
-2021-07-01 17:26:05,717 root  INFO   49 5972 MainThread 6232 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py b start
-2021-07-01 17:26:05,718 root  ERROR   54 5972 MainThread 6232 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py b error
-2021-07-01 17:26:05,718 root  ERROR   55 5972 MainThread 6232 Traceback (most recent call last):
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+2021-07-01 21:37:15,561 root  INFO   51 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:37:15,562 root  INFO   49 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:37:18,920 root  INFO   51 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:37:18,920 root  INFO   49 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:37:21,993 root  INFO   51 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:37:21,993 root  INFO   49 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:37:24,945 root  INFO   51 16116 Thread-2 12320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:41:36,123 root  INFO   49 1632 MainThread 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:41:36,123 root  INFO   51 1632 MainThread 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:41:36,136 root  INFO   49 13280 Thread-1 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 21:41:36,136 root  INFO   49 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:41:36,136 root  INFO   49 15956 Thread-3 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 21:41:36,242 root  ERROR   54 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-01 21:41:36,242 root  ERROR   55 7824 Thread-2 9644 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
     res=func(*args, **kwargs)
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 66, in b
-    b=1/0
-ZeroDivisionError: division by zero
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 89, in update_yjbb_to_db
+    data=get_yjbb_by_date(date,fun)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 42, in decorate
+    res=get_code_by_number(res,column)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 64, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+TypeError: 'NoneType' object is not subscriptable
 
-2021-07-01 17:27:59,889 root  INFO   61 9632 MainThread 4180 function a start
-2021-07-01 17:27:59,890 root  INFO   63 9632 MainThread 4180 function a finshed
-2021-07-01 17:27:59,890 root  INFO   50 9632 MainThread 4180 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py b start
-2021-07-01 17:27:59,891 root  ERROR   55 9632 MainThread 4180 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py b error
-2021-07-01 17:27:59,891 root  ERROR   56 9632 MainThread 4180 Traceback (most recent call last):
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 51, in wrapped_function
+2021-07-01 21:41:36,242 root  INFO   49 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:41:36,322 root  ERROR   54 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-01 21:41:36,325 root  ERROR   55 7824 Thread-2 9644 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
     res=func(*args, **kwargs)
-  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 77, in b
-    b=1/0
-ZeroDivisionError: division by zero
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 89, in update_yjbb_to_db
+    data=get_yjbb_by_date(date,fun)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 42, in decorate
+    res=get_code_by_number(res,column)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 64, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+TypeError: 'NoneType' object is not subscriptable
 
+2021-07-01 21:41:36,326 root  INFO   49 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:41:36,401 root  ERROR   54 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-01 21:41:36,401 root  ERROR   55 7824 Thread-2 9644 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 89, in update_yjbb_to_db
+    data=get_yjbb_by_date(date,fun)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 42, in decorate
+    res=get_code_by_number(res,column)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 64, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+TypeError: 'NoneType' object is not subscriptable
+
+2021-07-01 21:41:36,401 root  INFO   49 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:41:36,444 root  ERROR   54 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-01 21:41:36,445 root  ERROR   55 7824 Thread-2 9644 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 89, in update_yjbb_to_db
+    data=get_yjbb_by_date(date,fun)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 42, in decorate
+    res=get_code_by_number(res,column)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 64, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+TypeError: 'NoneType' object is not subscriptable
+
+2021-07-01 21:41:36,445 root  INFO   49 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:41:36,630 root  ERROR   54 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-01 21:41:36,661 root  ERROR   55 7824 Thread-2 9644 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 89, in update_yjbb_to_db
+    data=get_yjbb_by_date(date,fun)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 42, in decorate
+    res=get_code_by_number(res,column)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 64, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+TypeError: 'NoneType' object is not subscriptable
+
+2021-07-01 21:41:36,692 root  INFO   49 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:41:39,448 root  ERROR   54 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-01 21:41:39,448 root  ERROR   55 7824 Thread-2 9644 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 89, in update_yjbb_to_db
+    data=get_yjbb_by_date(date,fun)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 42, in decorate
+    res=get_code_by_number(res,column)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 64, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+TypeError: 'NoneType' object is not subscriptable
+
+2021-07-01 21:41:39,448 root  INFO   49 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:41:40,064 root  ERROR   54 7824 Thread-2 9644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-01 21:41:40,079 root  ERROR   55 7824 Thread-2 9644 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 89, in update_yjbb_to_db
+    data=get_yjbb_by_date(date,fun)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 42, in decorate
+    res=get_code_by_number(res,column)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 64, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+TypeError: 'NoneType' object is not subscriptable
+
+2021-07-01 21:42:28,692 root  INFO   49 1516 MainThread 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:42:28,693 root  INFO   51 1516 MainThread 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:42:28,705 root  INFO   49 6348 Thread-1 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 21:42:28,707 root  INFO   49 11496 Thread-2 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:42:28,709 root  INFO   49 17760 Thread-3 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 21:43:23,043 root  ERROR   54 17760 Thread-3 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-01 21:43:23,044 root  ERROR   55 17760 Thread-3 6668 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '代码'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 148, in save_north_data
+    board_rank=get_code_by_number(board_rank,'代码')
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 67, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: '代码'
+
+2021-07-01 21:45:15,388 root  INFO   51 11496 Thread-2 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:45:15,388 root  INFO   49 11496 Thread-2 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:45:31,860 root  INFO   51 11496 Thread-2 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:45:31,861 root  INFO   49 11496 Thread-2 6668 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:46:15,239 root  INFO   49 13560 MainThread 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 21:46:15,239 root  INFO   51 13560 MainThread 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 21:46:15,253 root  INFO   49 13272 Thread-1 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 21:46:15,253 root  INFO   49 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:46:15,253 root  INFO   49 15956 Thread-3 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 21:46:23,098 root  INFO   51 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:46:23,099 root  INFO   49 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:46:23,280 root  INFO   51 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:46:23,280 root  INFO   49 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:47:08,751 root  ERROR   54 15956 Thread-3 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-01 21:47:08,751 root  ERROR   55 15956 Thread-3 4496 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '代码'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 148, in save_north_data
+    board_rank=get_code_by_number(board_rank,'代码')
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 67, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: '代码'
+
+2021-07-01 21:49:56,081 root  INFO   51 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:49:56,081 root  INFO   49 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:53:26,999 root  INFO   51 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:53:27,000 root  INFO   49 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:55:49,990 root  INFO   51 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:55:49,990 root  INFO   49 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:57:43,609 root  INFO   51 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 21:57:43,609 root  INFO   49 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 21:59:48,802 root  INFO   51 17416 Thread-2 4496 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:34:21,322 root  INFO   49 11720 MainThread 6436 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 22:34:21,322 root  INFO   51 11720 MainThread 6436 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 22:34:39,124 root  INFO   49 10868 MainThread 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 22:34:39,125 root  INFO   51 10868 MainThread 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 22:34:39,137 root  INFO   49 8692 Thread-1 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 22:34:39,137 root  INFO   49 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:34:39,140 root  INFO   49 12848 Thread-3 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 22:34:43,791 root  INFO   51 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:34:43,791 root  INFO   49 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:34:45,857 root  INFO   51 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:34:45,905 root  INFO   49 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:34:54,409 root  INFO   51 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:34:54,409 root  INFO   49 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:36:11,840 root  ERROR   54 12848 Thread-3 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-01 22:36:11,841 root  ERROR   55 12848 Thread-3 17840 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: '代码'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 148, in save_north_data
+    board_rank=get_code_by_number(board_rank,'代码')
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 67, in get_code_by_number
+    data[column]=data[column].apply(lambda x:apply_number_to_code(x))
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: '代码'
+
+2021-07-01 22:37:48,749 root  INFO   51 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:37:48,749 root  INFO   49 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:37:51,325 root  INFO   51 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:37:51,326 root  INFO   49 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:37:53,606 root  INFO   51 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:37:53,606 root  INFO   49 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:37:55,883 root  INFO   51 14664 Thread-2 17840 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:39:13,946 root  INFO   49 17640 MainThread 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 22:39:13,947 root  INFO   51 17640 MainThread 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 22:39:13,958 root  INFO   49 1500 Thread-1 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 22:39:13,960 root  INFO   49 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:39:13,960 root  INFO   49 18164 Thread-3 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 22:39:21,986 root  INFO   51 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:39:21,986 root  INFO   49 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:39:22,218 root  INFO   51 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:39:22,218 root  INFO   49 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:39:29,722 root  INFO   51 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:39:29,722 root  INFO   49 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:41:07,567 root  INFO   51 18164 Thread-3 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-01 22:42:46,819 root  INFO   51 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:42:46,819 root  INFO   49 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:42:50,120 root  INFO   51 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:42:50,121 root  INFO   49 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:42:53,784 root  INFO   51 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 22:42:53,784 root  INFO   49 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 22:42:56,925 root  INFO   51 1176 Thread-2 13872 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 23:37:59,272 root  INFO   49 16096 MainThread 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-01 23:37:59,272 root  INFO   51 16096 MainThread 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-01 23:37:59,287 root  INFO   49 4484 Thread-1 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-01 23:37:59,287 root  INFO   49 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 23:37:59,287 root  INFO   49 4692 Thread-3 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-01 23:38:07,349 root  INFO   51 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 23:38:07,350 root  INFO   49 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 23:38:07,584 root  INFO   51 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 23:38:07,585 root  INFO   49 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 23:38:15,241 root  INFO   51 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 23:38:15,241 root  INFO   49 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 23:39:25,714 root  INFO   51 4692 Thread-3 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-01 23:41:08,492 root  INFO   51 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 23:41:08,492 root  INFO   49 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 23:41:11,992 root  INFO   51 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 23:41:11,992 root  INFO   49 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 23:41:15,010 root  INFO   51 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 23:41:15,010 root  INFO   49 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-01 23:41:17,901 root  INFO   51 10044 Thread-2 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-01 23:41:51,241 root  ERROR   54 4484 Thread-1 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-01 23:41:51,241 root  ERROR   55 4484 Thread-1 6420 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 129, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-01 23:41:51,241 root  INFO   49 4484 Thread-1 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-01 23:52:43,525 root  INFO   51 4484 Thread-1 6420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed

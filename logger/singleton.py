@@ -6,10 +6,10 @@ import time
 import traceback
 from functools import wraps
 
-import my_logger
 
 
-def singleton(cls):
+
+def Singleton(cls):
     instances = {}
     def _singleton(*args,**kwargs):
         if cls not in instances:
@@ -17,9 +17,6 @@ def singleton(cls):
         return instances[cls]
     return _singleton
 
-if __name__ == "__main__":
-    my_logger.a()
-    my_logger.b()
 
 
 

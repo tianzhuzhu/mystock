@@ -33,20 +33,17 @@ def tableNeedUpdate(tableName,days=1):
     # 显示登陆返回信息
     # 结果集输出到csv文件
     con=configger.engine
-    logger=configger.logger
     try:
         sql=configger.lastOperateTimeSql.format(tableName)
         lastTime=pd.read_sql(sql=sql,con=con).iloc[0,0]
         now=datetime.datetime.now()
         print(lastTime)
     except:
-        logger.info('{}没有数据'.format(tableName))
         return True
     if(lastTime==None):
         return True
     if(days==1):
         if(needUpdate(lastTime,now,isWorkDay=True)==False):
-            logger.info('{}数据已经更新'.format(tableName))
             return False
         return needUpdate(lastTime,now,isWorkDay=True)
     else:

@@ -4,13 +4,15 @@ import traceback
 
 import akshare as ak
 import pandas as pd
+import retrying
 
 import configger
+from logger.my_logger import logit
 from utils import pdUtil, timeUtil
 from utils.pdUtil import number_to_code
 
 
-@number_to_code(column='code')
+
 def get_last_yjbb_by_date(date=''):
     if(date==''):
         date=datetime.datetime.now()
@@ -29,6 +31,8 @@ def get_last_yjbb_by_date(date=''):
     except:
         pass
     return data
+@number_to_code(column='code')
+@retrying.retry()
 def get_yjbb_by_date(date='',fun=ak.stock_em_yjbb):
     query_time=str(date.strftime("%Y%m%d"))
     try:
@@ -59,12 +63,13 @@ def select_yjbb_by_date(tablename,date):
         return result
     except:
         print('select_yjbb_by_date error {}'.format(date))
+@logit()
 
-def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb):
+def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb,way='byboot'):
     configger.init()
     engine = configger.engine
     now=datetime.datetime.now()
-    if(timeUtil.tableNeedUpdate(tablename)==False):
+    if(timeUtil.tableNeedUpdate(tablename)==False and way=='byboot'):
         return False
     try:
         sql='select max(date) from {}'.format(tablename)
@@ -93,7 +98,6 @@ def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb):
             sql = 'select * from {} where date="{}"'.format(tablename, date.date())
             print(sql)
             saved_data=pd.read_sql(sql=sql,con=engine)
-
             print(data['code'].isin(saved_data['code']))
             data=data=data.loc[~data['code'].isin(saved_data['code'])]
             resultlist.append(data)
@@ -106,16 +110,16 @@ def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb):
     timeUtil.saveOperationTime(tablename)
 def update_allow_basic_information(way='byboot'):
     dict = {
-        'tb_bi_akshare_yjbb': ak.stock_em_yjbb,
-        'tb_bi_akshare_quick_report': ak.stock_em_yjkb,
-        'tb_bi_akshare_forecast_report': ak.stock_em_yjyg,
-        'tb_bi_akshare_disclosure_time': ak.stock_em_yysj,
-        'tb_bi_akshare_balance_sheet': ak.stock_em_zcfz,
-        'tb_bi_akshare_interst': ak.stock_em_lrb,
-        'tb_bi_akshare_cash_flow': ak.stock_em_xjll,
+        'tb_ak_bi_yjbb': ak.stock_em_yjbb,
+        'tb_ak_bi_quick_report': ak.stock_em_yjkb,
+        'tb_ak_bi_forecast_report': ak.stock_em_yjyg,
+        'tb_ak_bi_disclosure_time': ak.stock_em_yysj,
+        'tb_ak_bi_balance_sheet': ak.stock_em_zcfz,
+        'tb_ak_bi_interst': ak.stock_em_lrb,
+        'tb_ak_bi_cash_flow': ak.stock_em_xjll,
     }
     for k,v in dict.items():
-        update_yjbb_to_db(tablename=k,fun=v)
+        update_yjbb_to_db(tablename=k,fun=v,way=way)
 if __name__=='__main__':
     update_yjbb_to_db('tb_bi_akshare_yjbb')
 

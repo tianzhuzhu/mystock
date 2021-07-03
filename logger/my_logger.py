@@ -8,10 +8,9 @@ import traceback
 from functools import wraps
 from inspect import getargvalues, stack
 
-from logger.singleton import singleton
+from logger.singleton import Singleton
 
-
-@singleton
+@Singleton
 class Logger():
     def __init__(self,logfile=None):
         self.logger = logging.getLogger()
@@ -29,7 +28,7 @@ class Logger():
         self.fh.setFormatter(formater)
         self.logger.addHandler(self.sh)
         self.logger.addHandler(self.fh)
-        self.logger.setLevel(logging.DEBUG)
+        self.logger.setLevel(logging.INFO)
 def get_class_from_frame(fr):
     args, _, _, value_dict = getargvalues(fr)
     if len(args) and args[0] == 'self':
@@ -69,10 +68,10 @@ def logit(description=''):
                     return res
         return wrapped_function
     return logging_decorator
-@logit('function a')
-def a():
-    a=1+1
+@logit()
+def a(a=1,b=2):
+    return a+b
 @logit()
 def b():
     b=1/0
-
+a(a=1,b=2)
