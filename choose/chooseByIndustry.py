@@ -1,7 +1,8 @@
 import pandas as pd
 
 from dataHandler.baostack import growthHandler
-from dataHandler.baostack.industryHandler import getIndustryData, findMax
+from dataHandler.baostack.industryHandler import getIndustryData
+from mathUtils.general import findMax
 
 
 def choose(times=8,lowTh=200,highTh=20000):

@@ -91,7 +91,6 @@ def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb,way='byboot'):
         data=get_yjbb_by_date(date,fun)
         print(data)
         if(data is None):
-            print(tablename+' '+str(date)+' have no data')
             continue
         data['update_time']=now
         try:

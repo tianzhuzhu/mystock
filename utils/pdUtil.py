@@ -4,10 +4,13 @@ from functools import update_wrapper, wraps
 import numpy as np
 import pandas as pd
 
+
+
 def deleteNullColumn(data,column):
-    data[column]=data[column].map(lambda x:x.strip())
+    data[column]=data[column].map(lambda x:str(x).strip())
     data.dropna(subset=[],inplace=True)
     data=data.loc[data[column]!='']
+    data=data.loc[data[column]!='None']
     return data
 def deleteNullColumns(data,columns):
     for column in columns:
@@ -56,6 +59,18 @@ def code_to_number(column='code'):
             return res
         return decorate
     return to_number
+
+def rename_index_to_code(column='代码'):
+    def to_number(f):
+        @wraps(f)
+        def decorate(*args,**kwargs):
+            res=f(*args,**kwargs)
+            res.rename(column={column:'code'})
+            return res
+        return decorate
+    return to_number
+
+
 def get_code_by_number(data,column):
     def apply_number_to_code(x):
         x=str(x)
@@ -89,6 +104,23 @@ def add_date_to_df(stf='%Y-%m-%d'):
             return res
         return decorate
     return add_date
+
+
+
+#获取前多少条数据
+def getRecnetN(x,n=8,column='date',ascending=False):
+    x.reset_index(inplace=True)
+    x.sort_values(by=[column],ascending=ascending,inplace=True)
+    x=x[0:n]
+    try:
+        x.drop(columns=['index'],inplace=True)
+        x.drop(columns=['code'],inplace=True)
+    except:
+        pass
+    return x
+
+
+
 
 
 @number_to_code(column='code')

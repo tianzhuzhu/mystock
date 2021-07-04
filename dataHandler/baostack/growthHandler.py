@@ -63,7 +63,6 @@ def findWeightAverage(x,n=12,t=1):
     result.loc[index,'weightAverage']=weightAverage
     return result
 
-
 def findAboveZero(x, times):
     x=x.copy()
     x.sort_values(by=['date'],ascending=False,inplace=True)
@@ -79,8 +78,7 @@ def constantGrowth(codes='all',times=8,allAbove=True,accumulate=False,WeightAccu
     growthSQl=configger.growthSQl
     data=pd.read_sql(sql=growthSQl, con=configger.mysql, index_col='code')
     data.dropna(subset=['净利润'],inplace=True)
-    # data.astype({'净利润':'float64'}).dtypes
-    # 好好检查一下自己的字符串内容，注意里面是否有换换行符 \n，制表符 \t 或空字符串 ‘ ’ todo
+
     print(data)
     if(codes!='all'):
         isIn=data.index.isin(codes)
@@ -117,13 +115,14 @@ def constantGrowth(codes='all',times=8,allAbove=True,accumulate=False,WeightAccu
     result.sort_values(by=['above','weightAverage'],inplace=True,ascending=False)
 
     return result
-def chooseByInDustry(times,lowTh=100,highTh=1000):
+def chooseByInDustry(times=12,lowTh=100,highTh=1000):
     res=constantGrowth(codes='all',times=times)
     marketvalue= marketHandler.getmarketValue(lowTh=lowTh, highTh=highTh)
     res=res.loc[res.index.isin(marketvalue.index)]
     industry=getIndustryData()[['code','行业']]
     res=pd.merge(left=res,right=industry,left_index=True,right_on='code')
     res.set_index('code',inplace=True)
+
     return res
 if __name__=='__main__':
     res=chooseByInDustry()

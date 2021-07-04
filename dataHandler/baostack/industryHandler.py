@@ -28,16 +28,4 @@ def getIndustryData(code='',date='',index=True):
             indutrysql=configger.industrySQL2
             data=pd.read_sql(sql=indutrysql.format(code), con=configger.engine)
     return data
-def findMax(x,column):
 
-    maxprofit=x[column].max()
-    code=x.loc[x[column]==maxprofit,'code'].iloc[0]
-
-    print(x.columns.tolist())
-    data=pd.DataFrame(columns=x.columns.tolist())
-    data.index.name=code
-    data.loc[code]=x.loc[x[column]==maxprofit].iloc[0]
-    # print(data)
-    return data
-
-    return res

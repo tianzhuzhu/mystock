@@ -69,18 +69,26 @@ def save_industry_data(seconds=100,way='byboot'):
     maintable = 'tb_ak_industry_names'
     indextable = 'tb_ak_industry_index'
     infotable = 'tb_ak_industry_infos'
-    if(not utils.timeUtil.tableNeedUpdate(maintable)):
+
+    if(not utils.timeUtil.tableNeedUpdate(maintable)  and way!='byhand'):
         return
     names = query_industry_names()
     names.to_sql(maintable, con=engine, if_exists='replace', index=False)
     print(names)
     if(utils.timeUtil.tableNeedUpdate(infotable,wait_days) or way=='byhand'):
+        flag=True
+        dataList=pd.DataFrame()
         for name in names['name']:
-            if(data_need_update(infotable,'update_time','行业',name)==False):
-                continue
+            # if(data_need_update(infotable,'update_time','行业',name)==False):
+            #     continue
             data = retry(query_industry_infos,name)
-            data.to_sql(infotable, con=engine, if_exists='append', index=False)
+            if (flag and not data.empty):
+                dataList = data
+            else:
+                dataList.append(data)
+            data.to_sql(infotable + '_his', con=engine, if_exists='append', index=False)
             print(data)
+        dataList.to_sql(infotable, con=engine, if_exists='append', index=False)
         utils.timeUtil.saveOperationTime(infotable)
     if(utils.timeUtil.tableNeedUpdate(indextable,wait_days) or way=='byhand'):
         for name in names['name']:
@@ -95,6 +103,7 @@ def save_industry_data(seconds=100,way='byboot'):
                 traceback.print_exc()
             data.to_sql(indextable, con=engine, if_exists='append', index=False)
             print(data)
+
         utils.timeUtil.saveOperationTime(indextable)
     utils.timeUtil.saveOperationTime('tb_ak_industry_names')
 @logit()
@@ -102,7 +111,7 @@ def save_concept_data(seconds=100,way='byboot'):
     configger.init()
     engine = configger.engine
     wait_days=configger.constant_variables['low_ferquency_update_days']
-    if(not utils.timeUtil.tableNeedUpdate('tb_akshare_concept_names',wait_days)    ):
+    if(not utils.timeUtil.tableNeedUpdate('tb_akshare_concept_names')):
         return
     maintable = 'tb_ak_concept_names'
     indextable = 'tb_ak_concept_index'
@@ -110,19 +119,24 @@ def save_concept_data(seconds=100,way='byboot'):
     names = query_concept_names()
     names.to_sql(maintable, con=engine, if_exists='replace', index=False)
     print(names)
-    if(not utils.timeUtil.tableNeedUpdate(infotable) or way=='byhand'):
+    if(not utils.timeUtil.tableNeedUpdate(infotable) or  way=='byhand'):
+        flag=True
+        dataList=pd.DataFrame()
         for name in names['name']:
             print(name)
-            if (data_need_update(infotable, 'update_time', '概念', name) == False):
-                continue
+            # if (data_need_update(infotable, 'update_time', '概念', name) == False):
+            #     continue
             data = retry(query_concept_infos, name)
             # data = query_concept_infos(name)
-            data.to_sql(infotable, con=engine, if_exists='append', index=False)
+            if(flag and not data.empty):
+                dataList=data
+            else:
+                dataList.append(data)
+            data.to_sql(infotable+'_his', con=engine, if_exists='append', index=False)
             print(data)
-
+        dataList.to_sql(infotable, con=engine, if_exists='append', index=False)
         utils.timeUtil.saveOperationTime(infotable)
-
-    if(not utils.timeUtil.tableNeedUpdate(indextable,wait_days)or way=='byhand'    ):
+    if(not utils.timeUtil.tableNeedUpdate(indextable,wait_days) or way=='byhand'    ):
         for name in names['name']:
             if (data_need_update(indextable, 'update_time', '概念', name) == False):
                 continue
@@ -133,7 +147,6 @@ def save_concept_data(seconds=100,way='byboot'):
                 data = data.loc[not data['日期'].isin(saved_data['日期'])]
             except:
                 traceback.print_exc()
-
             data.to_sql(indextable, con=engine, if_exists='append', index=False)
             print(data)
         utils.timeUtil.saveOperationTime(indextable)
@@ -145,4 +158,4 @@ def save_data(seconds=100,way='byboot'):
 
 
 if __name__=='__main__':
-    save_data()
+    save_data(way='byhand')

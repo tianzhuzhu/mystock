@@ -47,7 +47,7 @@ def tableNeedUpdate(tableName,days=1):
             return False
         return needUpdate(lastTime,now,isWorkDay=True)
     else:
-        return (now.date()-lastTime).days>days
+        return (pd.to_datetime(now.date())-pd.to_datetime(lastTime)).days>days
 
 
 

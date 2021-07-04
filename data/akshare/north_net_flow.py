@@ -6,6 +6,7 @@ import akshare as ak
 # stock_em_comment_df = ak.stock_em_comment()
 # print(stock_em_comment_df)
 import configger
+import utils.timeUtil
 from logger.my_logger import logit
 from utils.pdUtil import get_code_by_number, number_to_code
 
@@ -124,6 +125,8 @@ def shsz_history_data(symbol):
     data = ak.stock_em_hsgt_hist(symbol=symbol)
     return data
 @logit()
+
+
 def save_north_data(hold_stock_table='tb_ak_north_hold_stock',hold_board_rank_table='tb_ak_north_board_rank',way='byboot'):
     configger.init()
     engine=configger.engine
@@ -133,19 +136,30 @@ def save_north_data(hold_stock_table='tb_ak_north_hold_stock',hold_board_rank_ta
     symbol_list=["北向资金增持行业板块排行", "北向资金增持概念板块排行", "北向资金增持地域板块排行"]
     market_list=["北向", "沪股通", "深股通"]
     indicator_list=["今日排行", "3日排行", "5日排行", "10日排行", "月排行", "季排行", "年排行"]
+    if(utils.timeUtil.tableNeedUpdate(hold_stock_table)==False):
+        return
     for market in market_list:
         for indicator in indicator_list:
-            hold_stock = query_north_hold_stock(market,indicator)
-            hold_stock['updatetime']=datetime.datetime.now().date()
-            print(hold_stock)
-            hold_stock.to_sql(hold_stock_table,con=engine,index=False,if_exists='append')
+            try:
+                hold_stock = query_north_hold_stock(market,indicator)
+                hold_stock['updatetime']=datetime.datetime.now().date()
+                print(hold_stock)
+                hold_stock.to_sql(hold_stock_table,con=engine,index=False,if_exists='append')
+            except:
+                pass
     indicator_list = ["今日", "3日", "5日", "10日", "1月", "1季", "1年"]
     for symbol in symbol_list:
         for indicator in indicator_list:
-            board_rank=query_north_board_rank(symbol,indicator)
-            board_rank['updatetime']=datetime.datetime.now().date()
-            print(board_rank)
-            board_rank.to_sql(hold_board_rank_table,con=engine,index=False,if_exists='append')
+            try:
+                board_rank=query_north_board_rank(symbol,indicator)
+                board_rank['updatetime']=datetime.datetime.now().date()
+                print(board_rank)
+                board_rank.to_sql(hold_board_rank_table,con=engine,index=False,if_exists='append')
+            except:
+                pass
+        utils.timeUtil.saveOperationTime(hold_stock_table)
 if __name__=='__main__':
-    save_north_data()
+    # query_north_board_rank('北向资金增持行业板块排行','今日')
+    stock_em_hsgt_industry_rank_df = ak.stock_em_hsgt_board_rank(symbol="北向资金增持行业板块排行", indicator="5日")
+    # save_north_data()
 
