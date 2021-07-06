@@ -53,10 +53,10 @@ def query_indsutry_index(symbol='半导体及元件'):
     data = delete_no_data(data, '日期')
     return data
 
-@retry(wait_exponential_multiplier=5000, wait_exponential_max=5000,wrap_exception=False,stop_max_attempt_number=10)
+@retry(wait_exponential_multiplier=1000, wait_exponential_max=256000,wrap_exception=False,stop_max_attempt_number=8)
 def retry(fun,name):
     print(name,'start')
-    time.sleep(3)
+    time.sleep(2)
     data=fun(name)
     return data
 # @retry(stop_max_attempt_number=7)
@@ -79,16 +79,20 @@ def save_industry_data(seconds=100,way='byboot'):
         flag=True
         dataList=pd.DataFrame()
         for name in names['name']:
-            # if(data_need_update(infotable,'update_time','行业',name)==False):
-            #     continue
-            data = retry(query_industry_infos,name)
+            try:
+                data = retry(query_industry_infos,name)
+            except:
+                continue
             if (flag and not data.empty):
                 dataList = data
+                flag=False
             else:
-                dataList.append(data)
-            data.to_sql(infotable + '_his', con=engine, if_exists='append', index=False)
-            print(data)
-        dataList.to_sql(infotable, con=engine, if_exists='append', index=False)
+                dataList=dataList.append(data,ignore_index=True)
+            if(data_need_update(infotable + '_his','update_time','行业',name)==True):
+                data.to_sql(infotable + '_his', con=engine, if_exists='append', index=False)
+            # print(dataList)
+        print(dataList)
+        dataList.to_sql(infotable, con=engine, if_exists='replace', index=False)
         utils.timeUtil.saveOperationTime(infotable)
     if(utils.timeUtil.tableNeedUpdate(indextable,wait_days) or way=='byhand'):
         for name in names['name']:
@@ -126,15 +130,21 @@ def save_concept_data(seconds=100,way='byboot'):
             print(name)
             # if (data_need_update(infotable, 'update_time', '概念', name) == False):
             #     continue
-            data = retry(query_concept_infos, name)
+            try:
+                data = retry(query_concept_infos, name)
+            except:
+                continue
             # data = query_concept_infos(name)
             if(flag and not data.empty):
                 dataList=data
+                flag = False
             else:
-                dataList.append(data)
-            data.to_sql(infotable+'_his', con=engine, if_exists='append', index=False)
-            print(data)
-        dataList.to_sql(infotable, con=engine, if_exists='append', index=False)
+                # print(dataList)
+                dataList=dataList.append(data,ignore_index=True)
+            if (data_need_update(infotable + '_his', 'update_time', '概念', name) == True):
+                data.to_sql(infotable+'_his', con=engine, if_exists='append', index=False)
+            print(dataList)
+        dataList.to_sql(infotable, con=engine, if_exists='replace', index=False)
         utils.timeUtil.saveOperationTime(infotable)
     if(not utils.timeUtil.tableNeedUpdate(indextable,wait_days) or way=='byhand'    ):
         for name in names['name']:

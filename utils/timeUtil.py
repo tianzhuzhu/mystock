@@ -81,3 +81,18 @@ def needUpdate(lastUpdateTime,nowtime,isWorkDay=False):
             return True
         else:
             return False
+
+def data_need_update(tablename,time,keyname,key) ->bool:
+    configger.init()
+    engine=configger.engine
+    try:
+        sql='select max({}) from {} where {}="{}"'.format(time,tablename,keyname,key)
+        date=pd.read_sql(sql=sql,con=engine).iloc[0,0]
+        now=datetime.datetime.now().date()
+        date=pd.to_datetime(date).date()
+        if(now-date).days>0:
+            return True
+        else:
+            return False
+    except:
+        return True

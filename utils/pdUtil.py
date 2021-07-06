@@ -35,7 +35,6 @@ def attrs(**kwds):
         for k in kwds:
             setattr(f, k, kwds[k])
         return f
-
     return decorate
 def number_to_code(column='code'):
     def to_code(f):
@@ -50,6 +49,27 @@ def number_to_code(column='code'):
         return decorate
     return to_code
 
+
+def a_dot_to_code(data,column) ->pd.DataFrame:
+    def getdotCodeBysymbol(code):
+        code = list(code)
+        code.insert(2, '.')
+        code = ''.join(code)
+        return code
+    data[column]=data[column].apply(lambda x:getdotCodeBysymbol(x))
+    return data
+def add_dot_to_code(column='code'):
+    def to_code(f):
+        @wraps(f)
+        def decorate(*args,**kwargs):
+            res=f(*args,**kwargs)
+            try:
+                res=a_dot_to_code(res,column)
+            except:
+                pass
+            return res
+        return decorate
+    return to_code
 def code_to_number(column='code'):
     def to_number(f):
         @wraps(f)
@@ -93,14 +113,14 @@ def get_number_by_code(data,column):
     return data
 
 
-def add_date_to_df(stf='%Y-%m-%d'):
+def add_date_to_df(stf='%Y-%m-%d',column='update_time'):
     def add_date(f):
         @wraps(f)
         def decorate(*args,**kwargs):
             res=f(*args,**kwargs)
             date=datetime.datetime.now().date()
             date=date.strftime(stf)
-            res['date']=date
+            res[column]=date
             return res
         return decorate
     return add_date
@@ -118,6 +138,7 @@ def getRecnetN(x,n=8,column='date',ascending=False):
     except:
         pass
     return x
+
 
 
 

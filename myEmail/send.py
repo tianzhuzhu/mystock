@@ -67,7 +67,7 @@ def send_general_email(namelist,datalist,data,title='行业股票推荐',content
     mail_pass="SAQCPCVSXLCVKHDT"  #口令
     today=datetime.datetime.now().date()
     sender = 'lujin19950917@163.com' # 发送方
-    receivers = ['lujin19950917@163.com','532978773@qq.com','617970137@qq.com','893573580@qq.com'] # 接收方
+    receivers = ['lujin19950917@163.com','532978773@qq.com','893573580@qq.com'] # 接收方
 
     # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
     message = MIMEMultipart()
@@ -134,13 +134,12 @@ def send_mail(filelist,namelist,data,contentlist=['{}您好！根据pe和增长�
     path=os.path.join(klinePath,str(date))
     if(not os.path.exists(path)):
         os.mkdir(path)
-
     mail_host="smtp.163.com" #设置服务器
     mail_user="lujin19950917@163.com"  #用户名
     mail_pass="SAQCPCVSXLCVKHDT"  #口令
     today=datetime.datetime.now().date()
     sender = 'lujin19950917@163.com' # 发送方
-    receivers = ['lujin19950917@163.com','532978773@qq.com','617970137@qq.com','893573580@qq.com'] # 接收方
+    receivers = ['lujin19950917@163.com','532978773@qq.com','893573580@qq.com'] # 接收方
 
     # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
     message = MIMEMultipart()

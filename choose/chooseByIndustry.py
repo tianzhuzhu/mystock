@@ -1,5 +1,6 @@
 import pandas as pd
 
+from dataHandler.akshare.concept import cocept_weight_average
 from dataHandler.baostack import growthHandler
 from dataHandler.baostack.industryHandler import getIndustryData
 from mathUtils.general import findMax
@@ -40,3 +41,10 @@ def choose(times=8,lowTh=200,highTh=20000):
     for i in res:
         i.dropna(how='any',inplace=True)
     return res
+def choose_by_chain(n=4,list=['营业收入-季度环比增长','净利润-同比增长','净利润-季度环比增长']):
+    list2=['行业','概念']
+    res=[]
+    for i in list2:
+        for j in list:
+            res.append(cocept_weight_average(n,value_column=j,key=i))
+

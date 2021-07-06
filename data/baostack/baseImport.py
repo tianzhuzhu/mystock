@@ -14,6 +14,7 @@ import logging
 from sqlalchemy import create_engine
 
 import configger
+from logger.my_logger import logit
 from utils import util, timeUtil
 from utils.util import todayStock
 
@@ -108,15 +109,9 @@ def queryStockIndustry(code,date=''):
 
     # 结果集输出到csv文件
 
+@logit()
 def dataimport(table,fun,if_exists='append'):
-    logger = logging.getLogger(__name__)
-    logger.setLevel(level = logging.INFO)
-    handler = logging.FileHandler("log.txt")
-    handler.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
-    logger.addHandler(handler)
-    logger.info(table+' start')
+
     configger.init()
     engine=configger.engine
     stockData=todayStock()
@@ -204,7 +199,6 @@ def dataimport(table,fun,if_exists='append'):
             time.sleep(5)
             bs.login()
         codes.set_description("导入{}中代码为{},条数为{}".format(table,code,len(data.index)))
-    logger.info(table+' finished')
     bs.logout()
 def importBasicData(table,fun,if_exists='append'):
     if(timeUtil.tableNeedUpdate(table)):

@@ -54,13 +54,13 @@ if __name__ == '__main__':
         threads.append(t2)
         t3=threading.Thread(target=save_north_data,args=('tb_ak_north_hold_stock','tb_ak_north_board_rank',args1))
         threads.append(t3)
-        t4=threading.Thread(target=importBasic,args=(args1))
-        threads.append(t4)
+
+
         for t in threads:
             t.setDaemon(False)
             t.start()
 
-
+        importBasic(args1)
     # try:
     #     .process5(main.data)
     #     main.process4(main.data)

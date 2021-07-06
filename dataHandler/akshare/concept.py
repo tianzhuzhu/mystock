@@ -16,7 +16,7 @@ def select_all_CI(key):#key : 行业/概念
     data=pd.read_sql(sql=sql,con=con,index_col='序号')
     data.rename(columns={'代码':'code'},inplace=True)
     return data
-def cocept_weight_average(n=6,value_column='净利润-季度环比增长',is_above_zero=True,key='概念'):
+def cocept_weight_average(n=4,value_column='净利润-季度环比增长',is_above_zero=True,key='概念'):
     data=select_all_CI(key)[['code','名称',key]]
     print(key)
     print(data)
@@ -24,12 +24,23 @@ def cocept_weight_average(n=6,value_column='净利润-季度环比增长',is_abo
     marketvalue= marketHandler.getmarketValue(lowTh=200, highTh=20000)
     data=data.loc[data['code'].isin(marketvalue.index)]
     res=get_weight_average(growth_data,value_column=value_column,n=n,is_above_zero=is_above_zero)
+    print(res)
     data=pd.merge(on='code',left=data,right=res,validate='many_to_many')
+    print(data)
     res=data.groupby(key).apply(lambda x:findMax(x,column='weightAverage'))
+
     res.sort_values('weightAverage',inplace=True,ascending=False)
+
     res.drop(columns=['code',key,'is_above_zero'],inplace=True)
-    res.to_excel(key+'.xlsx')
+    res.to_excel(key+value_column+'.xlsx')
     return res
 
+
 cocept_weight_average()
+cocept_weight_average(value_column='营业收入-季度环比增长')
+cocept_weight_average(value_column='净利润-同比增长',n=12)
+
+
 cocept_weight_average(key='行业')
+cocept_weight_average(key='行业',value_column='营业收入-季度环比增长')
+cocept_weight_average(key='行业',value_column='净利润-同比增长',n=12)
