@@ -111,7 +111,6 @@ def queryStockIndustry(code,date=''):
 
 @logit()
 def dataimport(table,fun,if_exists='append'):
-
     configger.init()
     engine=configger.engine
     stockData=todayStock()
@@ -145,7 +144,6 @@ def dataimport(table,fun,if_exists='append'):
             year,season=date.split('-')
             year,season=int(year),int(season)
         except:
-
             year=1989
             season=4
 

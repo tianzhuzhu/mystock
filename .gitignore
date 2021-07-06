@@ -6,3 +6,4 @@
 *.png
 /importdata.bat
 /log.txt
+**.txt
