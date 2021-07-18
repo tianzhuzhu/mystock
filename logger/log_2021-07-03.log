@@ -1,0 +1,99 @@
+2021-07-03 16:29:33,318 root  INFO   49 16080 MainThread 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-03 16:29:33,318 root  INFO   51 16080 MainThread 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-03 16:29:33,339 root  INFO   49 3468 Thread-1 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-03 16:29:33,339 root  INFO   49 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 16:29:33,339 root  INFO   49 18608 Thread-3 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-03 16:29:40,809 root  INFO   51 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 16:29:40,809 root  INFO   49 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 16:29:41,116 root  INFO   51 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 16:29:41,116 root  INFO   49 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 16:29:51,532 root  INFO   51 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 16:29:51,533 root  INFO   49 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 16:31:23,702 root  INFO   51 18608 Thread-3 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-03 16:32:41,578 root  INFO   51 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 16:32:41,578 root  INFO   49 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 16:32:44,348 root  INFO   51 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 16:32:44,348 root  INFO   49 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 16:32:46,887 root  INFO   51 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 16:32:46,887 root  INFO   49 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 16:32:49,419 root  INFO   51 19756 Thread-2 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 17:12:21,405 root  ERROR   54 3468 Thread-1 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-03 17:12:21,405 root  ERROR   55 3468 Thread-1 2160 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 129, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-03 17:12:21,405 root  INFO   49 3468 Thread-1 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-03 17:12:21,981 root  ERROR   54 3468 Thread-1 2160 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data error
+2021-07-03 17:12:21,981 root  ERROR   55 3468 Thread-1 2160 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 77, in save_industry_data
+    if(utils.timeUtil.tableNeedUpdate(infotable,wait_days) or way=='byhand'):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 50, in tableNeedUpdate
+    return (now.date()-lastTime).days>days
+TypeError: unsupported operand type(s) for -: 'datetime.date' and 'Timestamp'
+
+2021-07-03 18:40:44,491 root  INFO   49 19924 MainThread 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-03 18:40:44,491 root  INFO   51 19924 MainThread 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-03 18:40:44,503 root  INFO   49 12608 Thread-1 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-03 18:40:44,503 root  INFO   49 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 18:40:44,503 root  INFO   49 6596 Thread-3 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-03 18:40:51,980 root  INFO   51 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 18:40:51,980 root  INFO   49 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 18:40:52,175 root  INFO   51 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 18:40:52,175 root  INFO   49 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 18:40:59,631 root  INFO   51 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 18:40:59,631 root  INFO   49 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 18:42:30,440 root  INFO   51 6596 Thread-3 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-03 18:43:58,143 root  INFO   51 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 18:43:58,143 root  INFO   49 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 18:44:00,771 root  INFO   51 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 18:44:00,771 root  INFO   49 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 18:44:03,280 root  INFO   51 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 18:44:03,280 root  INFO   49 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-03 18:44:05,548 root  INFO   51 1540 Thread-2 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-03 18:45:18,029 root  ERROR   54 12608 Thread-1 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-03 18:45:18,029 root  ERROR   55 12608 Thread-1 7576 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 129, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-03 18:45:18,029 root  INFO   49 12608 Thread-1 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-03 18:57:36,633 root  INFO   51 12608 Thread-1 7576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed

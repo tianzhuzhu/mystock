@@ -1,0 +1,8 @@
+2021-07-07 08:37:51,807 root  INFO   49 5368 MainThread 628 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-07 08:37:51,808 root  INFO   51 5368 MainThread 628 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-07 08:37:52,302 data.baostack.importReportData  INFO   41 5368 MainThread 628 tb_performance_express_report start
+2021-07-07 08:42:43,302 data.baostack.importReportData  INFO   41 5368 MainThread 628 tb_forecast_report start
+2021-07-07 23:57:55,424 root  INFO   49 7440 MainThread 11624 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-07 23:57:55,451 root  INFO   51 7440 MainThread 11624 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-07 23:57:55,688 data.baostack.importReportData  INFO   41 7440 MainThread 11624 tb_performance_express_report start
+2021-07-08 00:03:49,154 data.baostack.importReportData  INFO   41 7440 MainThread 11624 tb_forecast_report start

@@ -20,3 +20,4 @@ print(result_growth)
 
 # 登出系统
 bs.logout()
+

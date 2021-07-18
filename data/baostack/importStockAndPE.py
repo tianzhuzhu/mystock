@@ -90,6 +90,7 @@ def importTodayStockAndPE(tablename='tb_stock_hisotry_detatil'):
         data=util.todayStock()
         print(data)
     except:
+        traceback.print_exc()
         print('error')
     try:
         if(timeUtil.tableNeedUpdate(tablename)):

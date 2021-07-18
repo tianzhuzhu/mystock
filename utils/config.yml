@@ -12,6 +12,9 @@ sql:
   akshare_growth_near_date: sql/akshare/growth/near_date.sql
 path:
   default-kLine: 选股\kLine
-db: mysql+pymysql://root:Memoriesoff8!@qq532978773.f3322.net:3306/stock
+db:
+  g15: mysql+pymysql://root:Memoriesoff8!@qq532978773.f3322.net:3306/stock
+  local_g15: mysql+pymysql://root:Memoriesoff8!@localhost:3306/stock
+  locahost: mysql+pymysql://root:root@localhost:3306/stock
 constant_variables:
     low_ferquency_update_days: 7

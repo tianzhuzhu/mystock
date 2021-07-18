@@ -37,7 +37,7 @@ def get_class_from_frame(fr):
             return getattr(instance, '__class__', None)
     return None
 
-def logit(description=''):
+def  logit(description=''):
     lg=Logger()
     lg=lg.logger
     def logging_decorator(func):

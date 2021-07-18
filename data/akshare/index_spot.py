@@ -34,7 +34,7 @@ def query_index_content(code='sh000001'):
     index_stock_cons_df.rename(columns={'品种代码': 'code'}, inplace=True)
     return index_stock_cons_df
 
-def saveData(index_table='tb_ak_index_names',index_content='tb_ak_index_content',index_his='tb_ak_his_data'):
+def save_index_data(index_table='tb_ak_index_names',index_content='tb_ak_index_content',index_his='tb_ak_his_data'):
     configger.init()
     engine=configger.engine
     all_index=query_all_index_spot()
@@ -55,11 +55,10 @@ def saveData(index_table='tb_ak_index_names',index_content='tb_ak_index_content'
     his_df = pd.DataFrame()
     for his in hislist:
         if (his_df.empty):
-            his_df = his_df
+            his_df = his
         else:
-            his_df = his_df.append(c)
+            his_df = his_df.append(his)
     his_df.to_sql(index_content, engine=engine, if_exists='replace')
 
 
-
-saveData()
+save_index_data()

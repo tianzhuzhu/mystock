@@ -1,0 +1,1198 @@
+2021-07-04 10:15:53,465 root  INFO   49 4912 MainThread 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 10:15:53,465 root  INFO   51 4912 MainThread 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 10:15:53,477 root  INFO   49 6460 Thread-1 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 10:15:53,477 root  INFO   49 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:15:53,477 root  INFO   49 2176 Thread-3 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 10:16:01,756 root  INFO   51 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:16:01,757 root  INFO   49 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:16:02,019 root  INFO   51 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:16:02,019 root  INFO   49 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:16:09,798 root  INFO   51 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:16:09,798 root  INFO   49 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:17:22,843 root  ERROR   54 2176 Thread-3 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-04 10:17:22,873 root  ERROR   55 2176 Thread-3 14096 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 145, in save_north_data
+    board_rank=query_north_board_rank(symbol,indicator)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 52, in query_north_board_rank
+    data = ak.stock_em_hsgt_board_rank(symbol=symbol, indicator=indicator)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_em_hsgt.py", line 967, in stock_em_hsgt_board_rank
+    "_",
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 5491, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 763, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 1 elements, new values have 33 elements
+
+2021-07-04 10:19:16,902 root  INFO   51 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:19:16,902 root  INFO   49 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:19:19,296 root  INFO   51 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:19:19,296 root  INFO   49 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:19:21,463 root  INFO   51 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:19:21,463 root  INFO   49 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:19:23,674 root  INFO   51 13016 Thread-2 14096 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:28:44,420 root  INFO   49 13684 MainThread 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 10:28:44,421 root  INFO   51 13684 MainThread 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 10:28:44,431 root  INFO   49 8224 Thread-1 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 10:28:44,433 root  INFO   49 13424 Thread-2 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:28:44,435 root  INFO   49 3908 Thread-3 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 10:28:44,680 root  ERROR   54 8224 Thread-1 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 10:28:44,681 root  ERROR   55 8224 Thread-1 11356 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 118, in save_concept_data
+    empty.to_sql(infotable, con=engine, if_exists='replace', index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 861, in create
+    self._execute_create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 853, in _execute_create
+    self.table.create()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\schema.py", line 925, in create
+    bind._run_visitor(ddl.SchemaGenerator, self, checkfirst=checkfirst)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2095, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1656, in _run_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 145, in traverse_single
+    return meth(obj, **kw)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 832, in visit_table
+    include_foreign_key_constraints,  # noqa
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 72, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1073, in _execute_ddl
+    compiled,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+[SQL: 
+CREATE TABLE tb_ak_concept_infos (
+)
+
+]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+
+2021-07-04 10:28:44,694 root  INFO   49 8224 Thread-1 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 10:28:44,703 root  INFO   51 8224 Thread-1 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-04 10:28:51,928 root  INFO   51 13424 Thread-2 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:28:51,928 root  INFO   49 13424 Thread-2 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:28:52,118 root  INFO   51 13424 Thread-2 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:28:52,118 root  INFO   49 13424 Thread-2 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:29:02,511 root  INFO   51 13424 Thread-2 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:29:02,511 root  INFO   49 13424 Thread-2 11356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:30:00,626 root  INFO   49 3260 MainThread 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 10:30:00,627 root  INFO   51 3260 MainThread 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 10:30:00,638 root  INFO   49 856 Thread-1 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 10:30:00,638 root  INFO   49 11600 Thread-2 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:30:00,641 root  INFO   49 20772 Thread-3 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 10:30:00,888 root  ERROR   54 856 Thread-1 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 10:30:00,889 root  ERROR   55 856 Thread-1 20112 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 121, in save_concept_data
+    empty.to_sql(infotable, con=engine, if_exists='replace', index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 867, in create
+    self._execute_create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 853, in _execute_create
+    self.table.create()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\schema.py", line 925, in create
+    bind._run_visitor(ddl.SchemaGenerator, self, checkfirst=checkfirst)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2095, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1656, in _run_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 145, in traverse_single
+    return meth(obj, **kw)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 832, in visit_table
+    include_foreign_key_constraints,  # noqa
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 72, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1073, in _execute_ddl
+    compiled,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+[SQL: 
+CREATE TABLE tb_ak_concept_infos (
+)
+
+]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+
+2021-07-04 10:30:00,891 root  INFO   49 856 Thread-1 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 10:30:00,912 root  INFO   51 856 Thread-1 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-04 10:30:07,909 root  INFO   51 11600 Thread-2 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:30:07,909 root  INFO   49 11600 Thread-2 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:30:08,171 root  INFO   51 11600 Thread-2 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:30:08,171 root  INFO   49 11600 Thread-2 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:30:15,161 root  INFO   51 11600 Thread-2 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:30:15,161 root  INFO   49 11600 Thread-2 20112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:32:42,433 root  INFO   49 8788 MainThread 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 10:32:42,433 root  INFO   51 8788 MainThread 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 10:32:42,444 root  INFO   49 876 Thread-1 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 10:32:42,444 root  INFO   49 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:32:42,444 root  INFO   49 10008 Thread-3 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 10:32:53,060 root  INFO   51 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:32:53,061 root  INFO   49 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:32:54,489 root  INFO   51 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:32:54,520 root  INFO   49 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:33:03,863 root  INFO   51 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:33:03,863 root  INFO   49 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:33:41,948 root  ERROR   54 10008 Thread-3 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-04 10:33:41,949 root  ERROR   55 10008 Thread-3 14492 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 145, in save_north_data
+    board_rank=query_north_board_rank(symbol,indicator)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 52, in query_north_board_rank
+    data = ak.stock_em_hsgt_board_rank(symbol=symbol, indicator=indicator)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_em_hsgt.py", line 967, in stock_em_hsgt_board_rank
+    "_",
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 5491, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 763, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 1 elements, new values have 33 elements
+
+2021-07-04 10:36:05,843 root  INFO   51 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:36:05,844 root  INFO   49 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:36:09,335 root  INFO   51 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:36:09,336 root  INFO   49 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:36:12,436 root  INFO   51 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:36:12,437 root  INFO   49 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 10:36:15,455 root  INFO   51 2108 Thread-2 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 10:48:22,627 root  INFO   49 7632 MainThread 12576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 10:48:22,627 root  INFO   51 7632 MainThread 12576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 10:48:22,627 root  INFO   49 7632 MainThread 12576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 10:49:14,580 root  ERROR   54 7632 MainThread 12576 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-04 10:49:14,581 root  ERROR   55 7632 MainThread 12576 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/north_net_flow.py", line 145, in save_north_data
+    board_rank=query_north_board_rank(symbol,indicator)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/north_net_flow.py", line 52, in query_north_board_rank
+    data = ak.stock_em_hsgt_board_rank(symbol=symbol, indicator=indicator)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_em_hsgt.py", line 967, in stock_em_hsgt_board_rank
+    "_",
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 5491, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 763, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 1 elements, new values have 33 elements
+
+2021-07-04 10:50:07,081 root  INFO   49 19972 MainThread 7504 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 10:50:07,081 root  INFO   51 19972 MainThread 7504 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 10:50:53,822 root  INFO   49 12204 MainThread 12292 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 10:50:53,822 root  INFO   51 12204 MainThread 12292 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 10:50:58,739 root  INFO   49 14096 MainThread 18156 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 10:50:58,739 root  INFO   51 14096 MainThread 18156 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:03:18,249 root  INFO   49 21216 MainThread 20196 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:03:18,250 root  INFO   51 21216 MainThread 20196 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:04:03,338 root  INFO   49 3892 MainThread 10428 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:04:03,339 root  INFO   51 3892 MainThread 10428 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:04:23,467 root  INFO   49 20544 MainThread 19068 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:04:23,468 root  INFO   51 20544 MainThread 19068 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:06:19,885 root  INFO   49 4960 MainThread 21024 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:06:19,886 root  INFO   51 4960 MainThread 21024 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:06:30,457 root  INFO   49 8688 MainThread 14264 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:06:30,458 root  INFO   51 8688 MainThread 14264 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:12:15,026 root  ERROR   54 876 Thread-1 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 11:12:15,026 root  ERROR   55 876 Thread-1 14492 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 145, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 11:12:15,027 root  INFO   49 876 Thread-1 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 11:12:15,054 root  INFO   51 876 Thread-1 14492 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-04 11:13:46,695 root  INFO   49 20924 MainThread 9508 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:13:46,696 root  INFO   51 20924 MainThread 9508 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:14:46,779 root  INFO   49 6260 MainThread 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:14:46,779 root  INFO   51 6260 MainThread 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:14:51,817 root  INFO   49 10120 Thread-1 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 11:14:51,817 root  INFO   49 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:14:51,819 root  INFO   49 8180 Thread-3 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 11:15:03,305 root  INFO   51 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:15:03,305 root  INFO   49 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:15:04,464 root  INFO   51 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:15:04,479 root  INFO   49 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:15:14,459 root  INFO   51 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:15:14,459 root  INFO   49 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:16:14,285 root  ERROR   54 8180 Thread-3 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-04 11:16:14,316 root  ERROR   55 8180 Thread-3 1988 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 147, in save_north_data
+    board_rank=query_north_board_rank(symbol,indicator)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 52, in query_north_board_rank
+    data = ak.stock_em_hsgt_board_rank(symbol=symbol, indicator=indicator)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_em_hsgt.py", line 967, in stock_em_hsgt_board_rank
+    "_",
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 5491, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 763, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 1 elements, new values have 33 elements
+
+2021-07-04 11:18:04,838 root  INFO   51 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:18:04,839 root  INFO   49 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:18:06,998 root  INFO   51 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:18:06,998 root  INFO   49 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:18:09,239 root  INFO   51 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:18:09,239 root  INFO   49 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:18:11,248 root  INFO   51 21108 Thread-2 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:18:33,522 root  ERROR   54 10120 Thread-1 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 11:18:33,522 root  ERROR   55 10120 Thread-1 1988 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 145, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 11:18:33,522 root  INFO   49 10120 Thread-1 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 11:18:33,887 root  ERROR   54 10120 Thread-1 1988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data error
+2021-07-04 11:18:33,887 root  ERROR   55 10120 Thread-1 1988 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 82, in save_industry_data
+    empty.to_sql(infotable, con=engine, if_exists='replace', index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 861, in create
+    self._execute_create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 853, in _execute_create
+    self.table.create()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\schema.py", line 925, in create
+    bind._run_visitor(ddl.SchemaGenerator, self, checkfirst=checkfirst)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2095, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1656, in _run_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 145, in traverse_single
+    return meth(obj, **kw)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 832, in visit_table
+    include_foreign_key_constraints,  # noqa
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 72, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1073, in _execute_ddl
+    compiled,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+[SQL: 
+CREATE TABLE tb_ak_industry_infos (
+)
+
+]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+
+2021-07-04 11:22:53,682 root  INFO   49 18752 MainThread 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:22:53,682 root  INFO   51 18752 MainThread 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:22:58,721 root  INFO   49 14628 Thread-1 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 11:22:58,721 root  INFO   49 1824 Thread-2 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:22:58,722 root  INFO   49 584 Thread-3 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 11:23:10,341 root  INFO   51 1824 Thread-2 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:23:10,341 root  INFO   49 1824 Thread-2 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:23:11,227 root  INFO   51 1824 Thread-2 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:23:11,243 root  INFO   49 1824 Thread-2 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:23:21,278 root  INFO   51 1824 Thread-2 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:23:21,278 root  INFO   49 1824 Thread-2 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:24:20,935 root  ERROR   54 584 Thread-3 19568 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-04 11:24:20,951 root  ERROR   55 584 Thread-3 19568 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 147, in save_north_data
+    board_rank=query_north_board_rank(symbol,indicator)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 52, in query_north_board_rank
+    data = ak.stock_em_hsgt_board_rank(symbol=symbol, indicator=indicator)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_em_hsgt.py", line 967, in stock_em_hsgt_board_rank
+    "_",
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 5491, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 763, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 1 elements, new values have 33 elements
+
+2021-07-04 11:25:31,714 root  INFO   49 6436 MainThread 14088 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:25:31,715 root  INFO   51 6436 MainThread 14088 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:25:38,905 root  INFO   49 11716 MainThread 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:25:38,906 root  INFO   51 11716 MainThread 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:25:43,939 root  INFO   49 8188 Thread-1 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 11:25:43,939 root  INFO   49 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:25:43,939 root  INFO   49 4416 Thread-3 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 11:25:43,970 data.baostack.importReportData  INFO   41 11716 MainThread 4152 tb_performance_express_report start
+2021-07-04 11:25:56,750 root  INFO   51 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:25:56,750 root  INFO   49 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:26:00,425 root  INFO   51 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:26:00,426 root  INFO   49 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:26:12,905 root  INFO   51 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:26:12,922 root  INFO   49 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:26:45,535 root  ERROR   54 4416 Thread-3 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-04 11:26:45,535 root  ERROR   55 4416 Thread-3 4152 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 147, in save_north_data
+    board_rank=query_north_board_rank(symbol,indicator)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 52, in query_north_board_rank
+    data = ak.stock_em_hsgt_board_rank(symbol=symbol, indicator=indicator)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_em_hsgt.py", line 967, in stock_em_hsgt_board_rank
+    "_",
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 5491, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 763, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 1 elements, new values have 33 elements
+
+2021-07-04 11:29:11,092 root  INFO   51 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:29:11,093 root  INFO   49 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:29:13,286 root  INFO   51 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:29:13,286 root  INFO   49 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:29:15,129 root  INFO   51 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:29:15,130 root  INFO   49 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:29:17,165 root  INFO   51 6760 Thread-2 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:29:23,345 root  ERROR   54 8188 Thread-1 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 11:29:23,346 root  ERROR   55 8188 Thread-1 4152 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 143, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 11:29:23,346 root  INFO   49 8188 Thread-1 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 11:29:23,874 root  ERROR   54 8188 Thread-1 4152 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data error
+2021-07-04 11:29:23,874 root  ERROR   55 8188 Thread-1 4152 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 81, in save_industry_data
+    empty.to_sql(infotable, con=engine, if_exists='replace', index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 867, in create
+    self._execute_create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 853, in _execute_create
+    self.table.create()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\schema.py", line 925, in create
+    bind._run_visitor(ddl.SchemaGenerator, self, checkfirst=checkfirst)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2095, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1656, in _run_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 145, in traverse_single
+    return meth(obj, **kw)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 832, in visit_table
+    include_foreign_key_constraints,  # noqa
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 72, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1073, in _execute_ddl
+    compiled,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+[SQL: 
+CREATE TABLE tb_ak_industry_infos (
+)
+
+]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+
+2021-07-04 11:30:27,607 root  INFO   49 11616 MainThread 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:30:27,608 root  INFO   51 11616 MainThread 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:30:32,654 root  INFO   49 9356 Thread-1 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 11:30:32,656 root  INFO   49 17532 Thread-2 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:30:32,657 root  INFO   49 1188 Thread-3 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 11:30:32,688 data.baostack.importReportData  INFO   41 11616 MainThread 5936 tb_performance_express_report start
+2021-07-04 11:30:43,544 root  INFO   51 17532 Thread-2 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:30:43,544 root  INFO   49 17532 Thread-2 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:30:45,952 root  INFO   51 17532 Thread-2 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:30:45,952 root  INFO   49 17532 Thread-2 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:30:54,272 root  INFO   51 17532 Thread-2 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:30:54,272 root  INFO   49 17532 Thread-2 5936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:31:04,165 root  INFO   49 2436 MainThread 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 11:31:04,165 root  INFO   51 2436 MainThread 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 11:31:09,197 root  INFO   49 10472 Thread-1 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 11:31:09,197 root  INFO   49 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:31:09,197 root  INFO   49 14452 Thread-3 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 11:31:09,230 data.baostack.importReportData  INFO   41 2436 MainThread 17828 tb_performance_express_report start
+2021-07-04 11:31:20,492 root  INFO   51 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:31:20,492 root  INFO   49 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:31:20,721 root  INFO   51 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:31:20,721 root  INFO   49 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:31:31,517 root  INFO   51 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:31:31,517 root  INFO   49 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:32:27,322 root  ERROR   54 14452 Thread-3 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-04 11:32:27,322 root  ERROR   55 14452 Thread-3 17828 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 150, in save_north_data
+    board_rank=query_north_board_rank(symbol,indicator)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 53, in query_north_board_rank
+    data = ak.stock_em_hsgt_board_rank(symbol=symbol, indicator=indicator)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_em_hsgt.py", line 967, in stock_em_hsgt_board_rank
+    "_",
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 5491, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas\_libs\properties.pyx", line 70, in pandas._libs.properties.AxisProperty.__set__
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 763, in _set_axis
+    self._mgr.set_axis(axis, labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\managers.py", line 216, in set_axis
+    self._validate_set_axis(axis, new_labels)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\internals\base.py", line 58, in _validate_set_axis
+    f"Length mismatch: Expected axis has {old_len} elements, new "
+ValueError: Length mismatch: Expected axis has 1 elements, new values have 33 elements
+
+2021-07-04 11:34:14,977 root  INFO   51 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:34:14,977 root  INFO   49 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:34:17,368 root  INFO   51 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:34:17,368 root  INFO   49 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:34:19,525 root  INFO   51 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:34:19,525 root  INFO   49 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 11:34:21,590 root  INFO   51 11692 Thread-2 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 11:44:19,741 root  ERROR   54 10472 Thread-1 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 11:44:19,741 root  ERROR   55 10472 Thread-1 17828 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 143, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 11:44:19,741 root  INFO   49 10472 Thread-1 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 11:44:19,942 root  ERROR   54 10472 Thread-1 17828 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data error
+2021-07-04 11:44:19,942 root  ERROR   55 10472 Thread-1 17828 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 81, in save_industry_data
+    empty.to_sql(infotable, con=engine, if_exists='replace', index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 867, in create
+    self._execute_create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 853, in _execute_create
+    self.table.create()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\schema.py", line 925, in create
+    bind._run_visitor(ddl.SchemaGenerator, self, checkfirst=checkfirst)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2095, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1656, in _run_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 145, in traverse_single
+    return meth(obj, **kw)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 832, in visit_table
+    include_foreign_key_constraints,  # noqa
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 72, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1073, in _execute_ddl
+    compiled,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+[SQL: 
+CREATE TABLE tb_ak_industry_infos (
+)
+
+]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+
+2021-07-04 11:44:34,159 data.baostack.importReportData  INFO   41 2436 MainThread 17828 tb_forecast_report start
+2021-07-04 12:02:21,904 root  INFO   49 6384 MainThread 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 12:02:21,904 root  INFO   51 6384 MainThread 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 12:02:26,938 root  INFO   49 16404 Thread-1 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 12:02:26,940 root  INFO   49 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 12:02:26,941 root  INFO   49 4960 Thread-3 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 12:02:33,693 root  INFO   51 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 12:02:33,694 root  INFO   49 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 12:02:33,952 root  INFO   51 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 12:02:33,952 root  INFO   49 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 12:02:36,698 root  INFO   51 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 12:02:36,698 root  INFO   49 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 12:04:36,585 root  INFO   51 4960 Thread-3 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-04 12:05:40,905 root  INFO   51 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 12:05:40,906 root  INFO   49 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 12:05:43,308 root  INFO   51 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 12:05:43,308 root  INFO   49 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 12:05:45,490 root  INFO   51 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 12:05:45,490 root  INFO   49 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 12:05:47,518 root  INFO   51 17648 Thread-2 8388 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 13:10:16,493 root  INFO   49 21088 MainThread 8604 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 13:10:16,493 root  INFO   51 21088 MainThread 8604 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 13:10:16,504 root  INFO   49 21088 MainThread 8604 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 13:11:30,155 root  INFO   49 8436 MainThread 11036 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 13:11:30,156 root  INFO   51 8436 MainThread 11036 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 13:11:30,166 root  INFO   49 8436 MainThread 11036 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 13:13:17,717 root  INFO   49 17724 MainThread 18852 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 13:13:17,717 root  INFO   51 17724 MainThread 18852 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 13:13:17,727 root  INFO   49 17724 MainThread 18852 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 13:31:30,293 root  INFO   51 17724 MainThread 18852 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data finshed
+2021-07-04 13:31:30,293 root  INFO   49 17724 MainThread 18852 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 13:31:30,305 root  INFO   51 17724 MainThread 18852 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-04 14:18:59,880 root  INFO   49 5904 MainThread 17472 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 14:18:59,880 root  INFO   51 5904 MainThread 17472 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 14:18:59,897 root  INFO   49 5904 MainThread 17472 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 14:19:00,126 root  ERROR   54 5904 MainThread 17472 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data error
+2021-07-04 14:19:00,126 root  ERROR   55 5904 MainThread 17472 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 81, in save_industry_data
+    empty.to_sql(infotable, con=engine, if_exists='replace', index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 867, in create
+    self._execute_create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 853, in _execute_create
+    self.table.create()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\schema.py", line 925, in create
+    bind._run_visitor(ddl.SchemaGenerator, self, checkfirst=checkfirst)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2095, in _run_visitor
+    conn._run_visitor(visitorcallable, element, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1656, in _run_visitor
+    visitorcallable(self.dialect, self, **kwargs).traverse_single(element)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\visitors.py", line 145, in traverse_single
+    return meth(obj, **kw)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 832, in visit_table
+    include_foreign_key_constraints,  # noqa
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\sql\ddl.py", line 72, in _execute_on_connection
+    return connection._execute_ddl(self, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1073, in _execute_ddl
+    compiled,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2")
+[SQL: 
+CREATE TABLE tb_ak_industry_infos (
+)
+
+]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+
+2021-07-04 14:19:20,586 root  INFO   49 5796 MainThread 18752 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 14:19:20,587 root  INFO   51 5796 MainThread 18752 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 14:19:20,596 root  INFO   49 5796 MainThread 18752 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 14:30:52,028 root  INFO   51 5796 MainThread 18752 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-04 14:45:24,104 root  INFO   49 17748 MainThread 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 14:45:24,104 root  INFO   51 17748 MainThread 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 14:45:29,134 root  INFO   49 4852 Thread-1 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 14:45:29,134 root  INFO   49 5264 Thread-2 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 14:45:29,134 root  INFO   49 3536 Thread-3 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 14:45:29,175 root  INFO   51 3536 Thread-3 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-04 14:45:31,665 root  INFO   51 5264 Thread-2 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 14:45:31,665 root  INFO   49 5264 Thread-2 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 14:45:32,009 root  INFO   51 5264 Thread-2 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 14:45:32,009 root  INFO   49 5264 Thread-2 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 14:45:34,377 root  INFO   51 5264 Thread-2 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 14:45:34,377 root  INFO   49 5264 Thread-2 13316 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 14:45:49,988 root  INFO   49 10624 MainThread 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 14:45:49,988 root  INFO   51 10624 MainThread 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 14:45:55,022 root  INFO   49 14816 Thread-1 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 14:45:55,023 root  INFO   49 792 Thread-2 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 14:45:55,026 root  INFO   49 9136 Thread-3 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-04 14:45:55,057 root  INFO   51 9136 Thread-3 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-04 14:45:56,933 root  INFO   51 792 Thread-2 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 14:45:56,933 root  INFO   49 792 Thread-2 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 14:45:57,149 root  INFO   51 792 Thread-2 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 14:45:57,149 root  INFO   49 792 Thread-2 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 14:45:58,976 root  INFO   51 792 Thread-2 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-04 14:45:58,976 root  INFO   49 792 Thread-2 20072 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-04 14:49:57,929 root  INFO   49 192 MainThread 20240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 14:49:57,929 root  INFO   51 192 MainThread 20240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 14:49:57,939 root  INFO   49 192 MainThread 20240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 15:09:31,366 root  ERROR   54 192 MainThread 20240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 15:09:31,366 root  ERROR   55 192 MainThread 20240 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 143, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 15:09:31,366 root  INFO   49 192 MainThread 20240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 15:13:40,288 root  INFO   51 192 MainThread 20240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-04 16:49:25,067 root  INFO   49 8660 MainThread 2744 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 16:49:25,068 root  INFO   51 8660 MainThread 2744 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 16:49:25,079 root  INFO   49 8660 MainThread 2744 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 16:50:51,457 root  INFO   49 10516 MainThread 14680 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 16:50:51,457 root  INFO   51 10516 MainThread 14680 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 16:50:51,467 root  INFO   49 10516 MainThread 14680 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 16:51:30,271 root  INFO   49 12464 MainThread 1144 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 16:51:30,272 root  INFO   51 12464 MainThread 1144 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 16:51:30,284 root  INFO   49 12464 MainThread 1144 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 16:52:50,490 root  INFO   49 21012 MainThread 16988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 16:52:50,491 root  INFO   51 21012 MainThread 16988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 16:52:50,501 root  INFO   49 21012 MainThread 16988 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 16:54:23,352 root  INFO   49 18040 MainThread 20128 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 16:54:23,353 root  INFO   51 18040 MainThread 20128 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 16:54:23,362 root  INFO   49 18040 MainThread 20128 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 16:55:17,439 root  INFO   49 17352 MainThread 12228 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 16:55:17,439 root  INFO   51 17352 MainThread 12228 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 16:55:17,450 root  INFO   49 17352 MainThread 12228 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 16:55:36,303 root  INFO   49 7668 MainThread 20356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 16:55:36,303 root  INFO   51 7668 MainThread 20356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 16:55:36,314 root  INFO   49 7668 MainThread 20356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 17:15:05,454 root  ERROR   54 7668 MainThread 20356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 17:15:05,454 root  ERROR   55 7668 MainThread 20356 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 147, in save_concept_data
+    continue
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 17:15:05,454 root  INFO   49 7668 MainThread 20356 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 17:17:20,637 root  INFO   49 2412 MainThread 21256 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 17:17:20,638 root  INFO   51 2412 MainThread 21256 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 17:17:20,648 root  INFO   49 2412 MainThread 21256 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 17:17:56,950 root  INFO   49 18016 MainThread 9960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 17:17:56,950 root  INFO   51 18016 MainThread 9960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 17:17:56,961 root  INFO   49 18016 MainThread 9960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 17:36:46,409 root  ERROR   54 18016 MainThread 9960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 17:36:46,409 root  ERROR   55 18016 MainThread 9960 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 153, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 17:36:46,409 root  INFO   49 18016 MainThread 9960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 17:39:50,773 root  INFO   51 18016 MainThread 9960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-04 18:18:04,430 root  INFO   49 5964 MainThread 13240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 18:18:04,431 root  INFO   51 5964 MainThread 13240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 18:18:04,440 root  INFO   49 5964 MainThread 13240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 18:36:44,875 root  ERROR   54 5964 MainThread 13240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 18:36:44,875 root  ERROR   55 5964 MainThread 13240 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 153, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 18:36:44,875 root  INFO   49 5964 MainThread 13240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 18:39:47,369 root  INFO   51 5964 MainThread 13240 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-04 18:55:43,465 root  INFO   49 17524 MainThread 13420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-04 18:55:43,466 root  INFO   51 17524 MainThread 13420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-04 18:55:43,476 root  INFO   49 17524 MainThread 13420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-04 19:14:45,897 root  ERROR   54 17524 MainThread 13420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-04 19:14:45,899 root  ERROR   55 17524 MainThread 13420 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 153, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-04 19:14:45,899 root  INFO   49 17524 MainThread 13420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-04 19:17:50,947 root  INFO   51 17524 MainThread 13420 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed

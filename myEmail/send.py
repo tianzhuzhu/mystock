@@ -81,7 +81,6 @@ def send_general_email(namelist,datalist,data,title='行业股票推荐',content
 
     for i in range(len(datalist)):
         data=datalist[i]
-        name=namelist[i]
         # pfile = '结果{}.xlsx'.format(today)
         path=configger.path
         klinebasepath=path

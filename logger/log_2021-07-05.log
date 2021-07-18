@@ -1,0 +1,2683 @@
+2021-07-05 18:51:34,093 root  INFO   49 17848 MainThread 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-05 18:51:34,093 root  INFO   51 17848 MainThread 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-05 18:51:39,171 root  INFO   49 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 18:51:39,171 root  INFO   49 3644 Thread-2 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-05 18:51:39,250 data.baostack.importReportData  INFO   41 17848 MainThread 17892 tb_performance_express_report start
+2021-07-05 18:51:48,310 root  INFO   51 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 18:51:48,310 root  INFO   49 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 18:51:52,319 root  INFO   51 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 18:51:52,349 root  INFO   49 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 18:52:06,224 root  INFO   51 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 18:52:06,224 root  INFO   49 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 18:53:38,839 root  INFO   51 3644 Thread-2 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-05 18:55:24,611 root  ERROR   54 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 18:55:24,611 root  ERROR   55 17004 Thread-1 17892 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 18:55:24,612 root  INFO   49 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:35:11,979 root  ERROR   54 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:35:11,979 root  ERROR   55 17004 Thread-1 17892 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 108, in update_yjbb_to_db
+    data.to_sql(tablename,con=engine,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:35:11,981 root  INFO   49 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:35:12,236 root  ERROR   54 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:35:12,236 root  ERROR   55 17004 Thread-1 17892 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:35:12,237 root  INFO   49 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:35:12,520 root  ERROR   54 17004 Thread-1 17892 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:35:12,522 root  ERROR   55 17004 Thread-1 17892 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:39:48,328 root  INFO   49 14900 MainThread 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-05 19:39:48,328 root  INFO   51 14900 MainThread 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-05 19:39:53,401 root  INFO   49 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:39:53,401 root  INFO   49 15724 Thread-2 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-05 19:39:53,463 data.baostack.importReportData  INFO   41 14900 MainThread 14896 tb_performance_express_report start
+2021-07-05 19:39:53,599 root  ERROR   54 15724 Thread-2 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-05 19:39:53,599 root  ERROR   55 15724 Thread-2 14896 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 160, in save_north_data
+    utils.timeUtil.saveOperationTime(hold_stock_table)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:39:53,756 root  ERROR   54 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:39:53,756 root  ERROR   55 15728 Thread-1 14896 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:39:53,756 root  INFO   49 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:39:53,960 root  ERROR   54 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:39:53,960 root  ERROR   55 15728 Thread-1 14896 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:39:53,960 root  INFO   49 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:39:54,210 root  ERROR   54 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:39:54,210 root  ERROR   55 15728 Thread-1 14896 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:39:54,211 root  INFO   49 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:39:54,437 root  ERROR   54 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:39:54,437 root  ERROR   55 15728 Thread-1 14896 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:39:54,438 root  INFO   49 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:39:54,657 root  ERROR   54 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:39:54,657 root  ERROR   55 15728 Thread-1 14896 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:39:54,658 root  INFO   49 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:39:54,889 root  ERROR   54 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:39:54,889 root  ERROR   55 15728 Thread-1 14896 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 19:39:54,890 root  INFO   49 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 19:39:55,154 root  ERROR   54 15728 Thread-1 14896 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 19:39:55,154 root  ERROR   55 15728 Thread-1 14896 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 20:01:06,954 root  INFO   49 15832 MainThread 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-05 20:01:06,954 root  INFO   51 15832 MainThread 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-05 20:01:11,994 root  INFO   49 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 20:01:11,995 root  INFO   49 19656 Thread-2 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-05 20:01:12,016 data.baostack.importReportData  INFO   41 15832 MainThread 3960 tb_performance_express_report start
+2021-07-05 20:02:28,415 root  ERROR   54 19656 Thread-2 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data error
+2021-07-05 20:02:28,415 root  ERROR   55 19656 Thread-2 3960 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py", line 160, in save_north_data
+    utils.timeUtil.saveOperationTime(hold_stock_table)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 20:03:33,732 root  ERROR   54 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 20:03:33,732 root  ERROR   55 5616 Thread-1 3960 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 108, in update_yjbb_to_db
+    data.to_sql(tablename,con=engine,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 20:03:33,746 root  INFO   49 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 20:03:49,007 root  ERROR   54 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 20:03:49,007 root  ERROR   55 5616 Thread-1 3960 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 108, in update_yjbb_to_db
+    data.to_sql(tablename,con=engine,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 20:03:49,022 root  INFO   49 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 20:06:55,142 root  ERROR   54 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 20:06:55,142 root  ERROR   55 5616 Thread-1 3960 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 108, in update_yjbb_to_db
+    data.to_sql(tablename,con=engine,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 20:06:55,156 root  INFO   49 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 20:10:33,342 root  ERROR   54 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 20:10:33,342 root  ERROR   55 5616 Thread-1 3960 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 109, in update_yjbb_to_db
+    timeUtil.saveOperationTime(tablename)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\timeUtil.py", line 29, in saveOperationTime
+    operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 20:10:33,357 root  INFO   49 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 20:12:58,992 root  ERROR   54 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 20:12:58,992 root  ERROR   55 5616 Thread-1 3960 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 108, in update_yjbb_to_db
+    data.to_sql(tablename,con=engine,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 20:12:58,993 root  INFO   49 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 20:14:58,803 root  ERROR   54 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 20:14:58,803 root  ERROR   55 5616 Thread-1 3960 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 108, in update_yjbb_to_db
+    data.to_sql(tablename,con=engine,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 20:14:58,818 root  INFO   49 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 20:16:33,085 root  ERROR   54 5616 Thread-1 3960 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db error
+2021-07-05 20:16:33,085 root  ERROR   55 5616 Thread-1 3960 Traceback (most recent call last):
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py", line 108, in update_yjbb_to_db
+    data.to_sql(tablename,con=engine,if_exists='append',index=False)
+  File "C:\Program Files\python37\lib\site-packages\pandas\core\generic.py", line 2879, in to_sql
+    method=method,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2211, in run_callable
+    with self._contextual_connect() as conn:
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\pool\base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 493, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 327, in __init__
+    self.connect()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 588, in connect
+    self._request_authentication()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 853, in _request_authentication
+    auth_packet = self._read_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 676, in _read_packet
+    packet.raise_for_error()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\protocol.py", line 223, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1045, "Access denied for user 'root'@'localhost' (using password: YES)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-05 23:43:20,022 root  INFO   49 20128 MainThread 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-05 23:43:20,022 root  INFO   51 20128 MainThread 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-05 23:43:25,081 root  INFO   49 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 23:43:25,082 root  INFO   49 2136 Thread-2 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-05 23:43:25,132 data.baostack.importReportData  INFO   41 20128 MainThread 17112 tb_performance_express_report start
+2021-07-05 23:43:25,140 root  INFO   51 2136 Thread-2 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-05 23:43:28,491 root  INFO   51 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 23:43:28,491 root  INFO   49 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 23:43:28,744 root  INFO   51 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 23:43:28,744 root  INFO   49 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 23:43:32,039 root  INFO   51 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 23:43:32,039 root  INFO   49 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 23:46:13,178 root  INFO   51 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 23:46:13,178 root  INFO   49 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 23:46:15,631 root  INFO   51 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 23:46:15,631 root  INFO   49 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 23:46:18,053 root  INFO   51 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 23:46:18,054 root  INFO   49 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-05 23:46:20,308 root  INFO   51 17736 Thread-1 17112 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-05 23:53:27,782 data.baostack.importReportData  INFO   41 20128 MainThread 17112 tb_forecast_report start

@@ -1,0 +1,89 @@
+2021-07-13 08:50:14,482 root  INFO   49 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-13 08:50:14,483 root  INFO   51 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-13 08:50:14,816 root  INFO   49 2040 Thread-1 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-13 08:50:14,820 root  INFO   49 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:50:14,822 root  INFO   49 15632 Thread-3 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-13 08:50:24,470 root  INFO   51 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:50:24,485 root  INFO   49 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:50:26,734 root  INFO   51 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:50:26,734 root  INFO   49 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:50:46,346 root  INFO   51 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:50:46,346 root  INFO   49 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:53:15,079 root  INFO   51 15632 Thread-3 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-13 08:55:21,971 root  INFO   51 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:55:21,971 root  INFO   49 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:55:23,225 root  INFO   51 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:55:23,226 root  INFO   49 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:55:24,328 root  INFO   51 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:55:24,328 root  INFO   49 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:55:29,139 root  INFO   51 14788 Thread-2 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:59:52,340 root  INFO   49 14592 MainThread 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-13 08:59:52,340 root  INFO   51 14592 MainThread 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-13 08:59:52,366 root  INFO   49 2052 Thread-1 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-13 08:59:52,366 root  INFO   49 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:59:52,367 root  INFO   49 14924 Thread-3 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-13 08:59:52,482 root  INFO   51 14924 Thread-3 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-13 08:59:52,494 root  INFO   51 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:59:52,494 root  INFO   49 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:59:52,582 root  INFO   51 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:59:52,583 root  INFO   49 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:59:52,677 root  INFO   51 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:59:52,677 root  INFO   49 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:59:52,949 root  INFO   51 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:59:52,949 root  INFO   49 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:59:53,008 root  INFO   51 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:59:53,008 root  INFO   49 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:59:53,087 root  INFO   51 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 08:59:53,087 root  INFO   49 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-13 08:59:53,130 root  INFO   51 2052 Thread-1 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data finshed
+2021-07-13 08:59:53,130 root  INFO   49 2052 Thread-1 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-13 08:59:53,306 root  INFO   51 5556 Thread-2 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-13 09:00:12,512 root  INFO   49 14592 MainThread 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:02:11,126 root  INFO   49 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:03:28,559 root  INFO   51 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:03:30,711 root  INFO   51 14592 MainThread 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:04:29,195 root  INFO   49 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:04:30,867 root  INFO   49 14592 MainThread 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:05:46,331 root  INFO   51 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:06:46,488 root  INFO   49 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:08:07,582 root  INFO   51 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:08:09,746 root  INFO   51 14592 MainThread 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:09:07,747 root  INFO   49 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:10:10,092 root  INFO   49 14592 MainThread 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:10:32,094 root  INFO   51 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:10:53,505 root  INFO   51 2052 Thread-1 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-13 09:11:32,329 root  INFO   49 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:12:49,889 root  INFO   51 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:13:30,294 root  INFO   51 14592 MainThread 6240 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:13:50,049 root  INFO   49 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-13 09:15:14,032 root  INFO   51 10756 MainThread 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-13 09:16:14,194 data.baostack.importReportData  INFO   41 10756 MainThread 12324 tb_performance_express_report start
+2021-07-13 09:16:30,795 data.baostack.importReportData  INFO   41 14592 MainThread 6240 tb_performance_express_report start
+2021-07-13 09:22:16,074 data.baostack.importReportData  INFO   41 14592 MainThread 6240 tb_forecast_report start
+2021-07-13 09:22:29,481 data.baostack.importReportData  INFO   41 10756 MainThread 12324 tb_forecast_report start
+2021-07-13 09:30:21,914 root  ERROR   54 2040 Thread-1 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-13 09:30:21,914 root  ERROR   55 2040 Thread-1 12324 Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 153, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\Python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\Python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\Python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\Python37\lib\site-packages\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\Python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\Python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-13 09:30:21,914 root  INFO   49 2040 Thread-1 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-13 09:33:58,607 root  INFO   51 2040 Thread-1 12324 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed

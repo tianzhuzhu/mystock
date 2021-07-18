@@ -46,6 +46,7 @@ def get_yjbb_by_date(date='',fun=ak.stock_em_yjbb):
         data.drop(columns=['序号'],inplace=True)
     except:
         pass
+    print(data)
     return data
 #stock_em_yjkb
 #stock_em_yjyg
@@ -73,7 +74,9 @@ def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb,way='byboot'):
         return False
     try:
         sql='select max(date) from {}'.format(tablename)
+        print(sql)
         last_update_date=pd.read_sql(sql=sql,con=engine).iloc[0,0]
+        print('last_update_date',last_update_date)
         last_update_date = timeUtil.get_this_end_quarter_day(last_update_date)
     except:
         last_update_date=pd.to_datetime('1991-1-1')
@@ -99,6 +102,7 @@ def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb,way='byboot'):
             saved_data=pd.read_sql(sql=sql,con=engine)
             print(data['code'].isin(saved_data['code']))
             data=data=data.loc[~data['code'].isin(saved_data['code'])]
+            print(data)
             resultlist.append(data)
         except:
             resultlist.append(data)
@@ -120,7 +124,7 @@ def update_allow_basic_information(way='byboot'):
     for k,v in dict.items():
         update_yjbb_to_db(tablename=k,fun=v,way=way)
 if __name__=='__main__':
-    update_yjbb_to_db('tb_bi_akshare_yjbb')
+    update_allow_basic_information('tb_bi_akshare_yjbb')
 
 
 
