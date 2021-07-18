@@ -150,3 +150,74 @@ AttributeError: 'NoneType' object has no attribute 'find'
 
 2021-07-18 17:34:19,448 root  INFO   49 16804 MainThread 9612 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
 2021-07-18 17:42:39,729 root  INFO   51 16804 MainThread 9612 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-18 22:04:41,874 root  INFO   49 13820 MainThread 22564 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 22:04:41,874 root  INFO   51 13820 MainThread 22564 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 22:04:41,897 root  INFO   49 13820 MainThread 22564 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-18 22:05:01,961 root  INFO   49 1904 MainThread 21632 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 22:05:01,962 root  INFO   51 1904 MainThread 21632 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 22:05:01,973 root  INFO   49 1904 MainThread 21632 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-18 22:05:25,469 root  INFO   49 17024 MainThread 22156 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 22:05:25,470 root  INFO   51 17024 MainThread 22156 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 22:05:25,481 root  INFO   49 17024 MainThread 22156 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-18 22:09:14,426 root  INFO   49 19820 MainThread 17660 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 22:09:14,427 root  INFO   51 19820 MainThread 17660 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 22:09:14,439 root  INFO   49 19820 MainThread 17660 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-18 22:09:15,279 root  ERROR   54 19820 MainThread 17660 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index error
+2021-07-18 22:09:15,279 root  ERROR   55 19820 MainThread 17660 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py", line 33, in get_industry_index
+    data=pd.read_sql(con=engine,sql=sql)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 634, in read_sql
+    chunksize=chunksize,
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1579, in read_query
+    result = self.execute(*args)
+  File "C:\Program Files\python37\lib\site-packages\pandas\io\sql.py", line 1424, in execute
+    return self.connectable.execution_options().execute(*args, **kwargs)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 2235, in execute
+    return connection.execute(statement, *multiparams, **params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1003, in execute
+    return self._execute_text(object_, multiparams, params)
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1178, in _execute_text
+    parameters,
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1514, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\python37\lib\site-packages\sqlalchemy\engine\default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1076, in read
+    self._read_result_packet(first_packet)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1146, in _read_result_packet
+    self._read_rowdata_packet()
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1184, in _read_rowdata_packet
+    rows.append(self._read_row_from_packet(packet))
+  File "C:\Program Files\python37\lib\site-packages\pymysql\connections.py", line 1203, in _read_row_from_packet
+    data = converter(data)
+  File "C:\Program Files\python37\lib\site-packages\pymysql\converters.py", line 203, in convert_datetime
+    return datetime.datetime(*[ int(x) for x in groups ])
+  File "C:\Program Files\python37\lib\site-packages\pymysql\converters.py", line 203, in <listcomp>
+    return datetime.datetime(*[ int(x) for x in groups ])
+KeyboardInterrupt
+
+2021-07-18 22:09:57,521 root  INFO   49 5664 MainThread 4480 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 22:09:57,522 root  INFO   51 5664 MainThread 4480 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 22:09:57,532 root  INFO   49 5664 MainThread 4480 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-18 22:10:02,309 root  INFO   51 5664 MainThread 4480 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index finshed
+2021-07-18 22:10:51,524 root  INFO   49 22228 MainThread 8888 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 22:10:51,525 root  INFO   51 22228 MainThread 8888 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 22:10:51,536 root  INFO   49 22228 MainThread 8888 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-18 22:10:56,209 root  INFO   51 22228 MainThread 8888 C:\Users\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index finshed
+2021-07-18 22:10:56,747 root  INFO   49 22228 MainThread 8888 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
