@@ -17,3 +17,136 @@
 2021-07-18 15:18:06,960 root  INFO   51 12164 Thread-2 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
 2021-07-18 15:18:06,961 root  INFO   49 12164 Thread-2 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
 2021-07-18 15:18:07,369 root  INFO   51 12164 Thread-2 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-18 15:21:38,650 root  INFO   49 19420 MainThread 8936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 15:21:38,650 root  INFO   51 19420 MainThread 8936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 15:21:38,651 root  INFO   49 19420 MainThread 8936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\index_spot.py save_index_data start
+2021-07-18 15:22:48,279 root  ERROR   54 19420 MainThread 8936 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\index_spot.py save_index_data error
+2021-07-18 15:22:48,279 root  ERROR   55 19420 MainThread 8936 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/index_spot.py", line 45, in save_index_data
+    contentlist=[query_index_content(i) for i in datalist]
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/index_spot.py", line 45, in <listcomp>
+    contentlist=[query_index_content(i) for i in datalist]
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 120, in decorate
+    res=f(*args,**kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\utils\pdUtil.py", line 65, in decorate
+    res=f(*args,**kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/index_spot.py", line 34, in query_index_content
+    index_stock_cons_df = ak.index_stock_cons(index=code)
+  File "C:\Program Files\python37\lib\site-packages\akshare\index\index_cons.py", line 92, in index_stock_cons
+    soup.find(attrs={"class": "table2"})
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-18 15:22:56,967 root  INFO   49 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-18 15:23:42,342 root  INFO   51 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-18 15:23:48,541 root  INFO   49 11296 MainThread 4000 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 15:23:48,541 root  INFO   51 11296 MainThread 4000 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 15:23:48,542 root  INFO   49 11296 MainThread 4000 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\index_spot.py save_index_data start
+2021-07-18 15:24:04,428 root  INFO   49 436 MainThread 11860 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 15:24:04,428 root  INFO   51 436 MainThread 11860 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 15:24:04,429 root  INFO   49 436 MainThread 11860 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\index_spot.py save_index_data start
+2021-07-18 15:24:42,379 root  INFO   49 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-18 15:25:29,440 root  INFO   51 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-18 15:26:08,604 root  INFO   49 2220 MainThread 18272 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 15:26:08,605 root  INFO   51 2220 MainThread 18272 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 15:26:08,605 root  INFO   49 2220 MainThread 18272 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\index_spot.py save_index_data start
+2021-07-18 15:26:29,471 root  INFO   49 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-18 15:27:22,878 root  INFO   51 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-18 15:28:22,944 root  INFO   49 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-18 15:29:14,682 root  INFO   51 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-18 15:30:14,728 root  INFO   49 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-18 15:31:08,683 root  INFO   51 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-18 15:32:08,740 root  INFO   49 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport start
+2021-07-18 15:33:04,909 root  INFO   51 8940 MainThread 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\baostack\baseImport.py dataimport finshed
+2021-07-18 15:34:04,981 data.baostack.importReportData  INFO   41 8940 MainThread 2584 tb_performance_express_report start
+2021-07-18 15:34:50,349 root  ERROR   54 2220 MainThread 18272 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\index_spot.py save_index_data error
+2021-07-18 15:34:50,349 root  ERROR   55 2220 MainThread 18272 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/index_spot.py", line 69, in save_index_data
+    configger.colseEngine()
+TypeError: colseEngine() missing 1 required positional argument: 'engine'
+
+2021-07-18 15:37:57,792 data.baostack.importReportData  INFO   41 8940 MainThread 2584 tb_forecast_report start
+2021-07-18 15:49:02,397 root  ERROR   54 18924 Thread-1 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-18 15:49:02,397 root  ERROR   55 18924 Thread-1 2584 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 153, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-18 15:49:02,397 root  INFO   49 18924 Thread-1 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-18 15:58:31,009 root  INFO   51 18924 Thread-1 2584 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-18 17:02:43,389 root  INFO   49 16804 MainThread 9612 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:02:43,389 root  INFO   51 16804 MainThread 9612 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:02:43,400 root  INFO   49 16804 MainThread 9612 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-18 17:06:01,171 root  INFO   49 18136 MainThread 18656 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:06:01,172 root  INFO   51 18136 MainThread 18656 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:06:19,875 root  INFO   49 4192 MainThread 16880 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:06:19,875 root  INFO   51 4192 MainThread 16880 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:06:48,066 root  INFO   49 16768 MainThread 6656 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:06:48,067 root  INFO   51 16768 MainThread 6656 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:06:58,010 root  INFO   49 15068 MainThread 7616 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:06:58,010 root  INFO   51 15068 MainThread 7616 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:08:22,131 root  INFO   49 13216 MainThread 16276 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:08:22,131 root  INFO   51 13216 MainThread 16276 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:08:32,092 root  INFO   49 19564 MainThread 9748 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:08:32,092 root  INFO   51 19564 MainThread 9748 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:09:01,447 root  INFO   49 21180 MainThread 11644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:09:01,448 root  INFO   51 21180 MainThread 11644 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:09:18,090 root  INFO   49 15368 MainThread 7436 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:09:18,090 root  INFO   51 15368 MainThread 7436 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:09:29,150 root  INFO   49 2972 MainThread 2076 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:09:29,150 root  INFO   51 2972 MainThread 2076 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:09:33,902 root  INFO   49 16380 MainThread 16736 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:09:33,902 root  INFO   51 16380 MainThread 16736 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:09:49,085 root  INFO   49 9600 MainThread 3384 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:09:49,085 root  INFO   51 9600 MainThread 3384 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:10:05,946 root  INFO   49 20680 MainThread 19320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:10:05,946 root  INFO   51 20680 MainThread 19320 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:10:11,054 root  INFO   49 864 MainThread 20552 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-18 17:10:11,054 root  INFO   51 864 MainThread 20552 C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-18 17:34:19,447 root  ERROR   54 16804 MainThread 9612 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-18 17:34:19,447 root  ERROR   55 16804 MainThread 9612 Traceback (most recent call last):
+  File "C:\Users\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 152, in save_concept_data
+    data = retry(query_concept_index, name)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 49, in wrapped_f
+    return Retrying(*dargs, **dkw).call(f, *args, **kw)
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 212, in call
+    raise attempt.get()
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 247, in get
+    six.reraise(self.value[0], self.value[1], self.value[2])
+  File "C:\Program Files\python37\lib\six.py", line 703, in reraise
+    raise value
+  File "C:\Program Files\python37\lib\site-packages\retrying.py", line 200, in call
+    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 60, in retry
+    data=fun(name)
+  File "C:/Users/OneDrive - ncist.edu.cn/project/mystock/data/akshare/industry_concept.py", line 33, in query_concept_index
+    data = ak.stock_board_concept_index_ths(symbol=symbol)
+  File "C:\Program Files\python37\lib\site-packages\akshare\stock_feature\stock_board_concept_ths.py", line 176, in stock_board_concept_index_ths
+    symbol_code = soup.find('div', attrs={'class': 'board-hq'}).find('span').text
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2021-07-18 17:34:19,448 root  INFO   49 16804 MainThread 9612 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-18 17:42:39,729 root  INFO   51 16804 MainThread 9612 C:\Users\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed

@@ -65,7 +65,6 @@ def save_industry_data(seconds=100,way='byboot'):
     configger.init()
     engine = configger.engine
     wait_days=configger.constant_variables['low_ferquency_update_days']
-
     maintable = 'tb_ak_industry_names'
     indextable = 'tb_ak_industry_index'
     infotable = 'tb_ak_industry_infos'
@@ -102,7 +101,7 @@ def save_industry_data(seconds=100,way='byboot'):
             try:
                 sql='select * from {} where 行业="{}"'.format(infotable,name)
                 saved_data=pd.read_sql(sql=sql,con=engine)
-                data=data.loc[not data['日期'].isin(saved_data['日期'])]
+                data=data.loc[~ data['日期'].isin(saved_data['日期'])]
             except:
                 traceback.print_exc()
             data.to_sql(indextable, con=engine, if_exists='append', index=False)
@@ -154,7 +153,7 @@ def save_concept_data(seconds=100,way='byboot'):
             try:
                 sql = 'select * from {} where 概念="{}"'.format(infotable, name)
                 saved_data = pd.read_sql(sql=sql, con=engine)
-                data = data.loc[not data['日期'].isin(saved_data['日期'])]
+                data = data.loc[~ data['日期'].isin(saved_data['日期'])]
             except:
                 traceback.print_exc()
             data.to_sql(indextable, con=engine, if_exists='append', index=False)
