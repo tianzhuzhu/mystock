@@ -80,7 +80,6 @@ def main():
         if txt != recent_txt:
             # print(f'txt:{txt}')
             new_txt = char_replace_reg_sub(txt)  # 没查到要替换的子串，返回None
-
             if new_txt is not None:
                 clipboard_set(new_txt)
                 # 更新 recent_txt 为替换之后的文本，便于下次与 txt 剪切板文本对比，判断内容有无更新

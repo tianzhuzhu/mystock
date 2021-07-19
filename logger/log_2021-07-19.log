@@ -1,0 +1,249 @@
+2021-07-19 08:50:29,984 root  INFO   49 6128 MainThread 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 08:50:29,985 root  INFO   51 6128 MainThread 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 08:50:30,176 root  INFO   49 14344 Thread-1 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-19 08:50:30,177 root  INFO   49 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-19 08:50:30,177 root  INFO   49 12108 Thread-3 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data start
+2021-07-19 08:50:34,957 root  INFO   51 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-19 08:50:34,958 root  INFO   49 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-19 08:50:34,959 root  INFO   51 12108 Thread-3 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\north_net_flow.py save_north_data finshed
+2021-07-19 08:50:35,034 root  INFO   51 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-19 08:50:35,034 root  INFO   49 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-19 08:50:35,112 root  INFO   51 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-19 08:50:35,113 root  INFO   49 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-19 08:50:35,201 root  INFO   51 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-19 08:50:35,201 root  INFO   49 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-19 08:50:35,288 root  INFO   51 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-19 08:50:35,288 root  INFO   49 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-19 08:50:35,380 root  INFO   51 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-19 08:50:35,380 root  INFO   49 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db start
+2021-07-19 08:50:35,478 root  INFO   51 4352 Thread-2 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\yjbb.py update_yjbb_to_db finshed
+2021-07-19 09:07:58,723 root  INFO   51 14344 Thread-1 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data finshed
+2021-07-19 09:07:58,724 root  INFO   49 14344 Thread-1 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-19 09:07:58,824 root  INFO   51 14344 Thread-1 10236 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-19 10:10:49,536 root  INFO   49 10756 MainThread 1212 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 10:10:49,536 root  INFO   51 10756 MainThread 1212 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 10:10:49,562 root  INFO   49 10756 MainThread 1212 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-19 10:10:58,684 root  INFO   51 10756 MainThread 1212 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index finshed
+2021-07-19 10:11:11,573 root  INFO   49 12592 MainThread 3880 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 10:11:11,573 root  INFO   51 12592 MainThread 3880 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 10:11:11,589 root  INFO   49 12592 MainThread 3880 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-19 10:11:20,901 root  INFO   51 12592 MainThread 3880 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index finshed
+2021-07-19 10:12:37,489 root  INFO   49 10732 MainThread 14220 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 10:12:37,489 root  INFO   51 10732 MainThread 14220 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 10:12:37,505 root  INFO   49 10732 MainThread 14220 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-19 10:12:40,895 root  INFO   49 13224 MainThread 7648 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 10:12:40,895 root  INFO   51 13224 MainThread 7648 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 10:12:40,911 root  INFO   49 13224 MainThread 7648 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-19 10:12:50,138 root  INFO   51 13224 MainThread 7648 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index finshed
+2021-07-19 10:13:04,737 root  INFO   49 5972 MainThread 2088 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 10:13:04,737 root  INFO   51 5972 MainThread 2088 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 10:13:04,747 root  INFO   49 5972 MainThread 2088 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-19 10:13:14,155 root  INFO   51 5972 MainThread 2088 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index finshed
+2021-07-19 10:14:39,228 root  INFO   49 11544 MainThread 4192 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 10:14:39,228 root  INFO   51 11544 MainThread 4192 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 10:14:39,243 root  INFO   49 11544 MainThread 4192 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-19 10:14:48,354 root  INFO   51 11544 MainThread 4192 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index finshed
+2021-07-19 10:14:48,498 root  INFO   49 11544 MainThread 4192 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-19 10:31:02,496 root  ERROR   54 11544 MainThread 4192 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-19 10:31:02,496 root  ERROR   55 11544 MainThread 4192 Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 683, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Program Files\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\default.py", line 609, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 646, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 146, in save_concept_data
+    dataList.to_sql(infotable, con=engine, if_exists='replace', index=False)
+  File "C:\Program Files\Python37\lib\site-packages\pandas\core\generic.py", line 2880, in to_sql
+    method=method,
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 2212, in run_callable
+    return conn.run_callable(callable_, *args, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1653, in run_callable
+    return callable_(self, *args, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\dialects\mysql\base.py", line 2610, in has_table
+    ).execute(st)
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1003, in execute
+    return self._execute_text(object_, multiparams, params)
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1178, in _execute_text
+    parameters,
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\default.py", line 609, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 646, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)')
+[SQL: DESCRIBE `tb_ak_concept_infos`]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-19 10:31:02,499 root  INFO   49 11544 MainThread 4192 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-19 10:39:16,087 root  INFO   49 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 10:39:16,088 root  INFO   51 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 10:39:16,104 root  INFO   49 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-19 10:39:16,273 root  ERROR   54 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index error
+2021-07-19 10:39:16,273 root  ERROR   55 5148 MainThread 12876 Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py", line 36, in get_industry_index
+    result.index.names=[key,'序号']
+  File "C:\Program Files\Python37\lib\site-packages\pandas\core\indexes\base.py", line 1520, in _set_names
+    raise ValueError(f"Length of new names must be 1, got {len(values)}")
+ValueError: Length of new names must be 1, got 2
+
+2021-07-19 10:39:16,439 root  INFO   49 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data start
+2021-07-19 10:57:16,364 root  ERROR   54 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_concept_data error
+2021-07-19 10:57:16,364 root  ERROR   55 5148 MainThread 12876 Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 683, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Program Files\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\default.py", line 609, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 646, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py", line 50, in wrapped_function
+    res=func(*args, **kwargs)
+  File "D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py", line 146, in save_concept_data
+    dataList.to_sql(infotable, con=engine, if_exists='replace', index=False)
+  File "C:\Program Files\Python37\lib\site-packages\pandas\core\generic.py", line 2880, in to_sql
+    method=method,
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 728, in to_sql
+    **engine_kwargs,
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 1758, in to_sql
+    dtype=dtype,
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 1650, in prep_table
+    table.create()
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 856, in create
+    if self.exists():
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 840, in exists
+    return self.pd_sql.has_table(self.name, self.schema)
+  File "C:\Program Files\Python37\lib\site-packages\pandas\io\sql.py", line 1787, in has_table
+    self.connectable.dialect.has_table, name, schema or self.meta.schema
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 2212, in run_callable
+    return conn.run_callable(callable_, *args, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1653, in run_callable
+    return callable_(self, *args, **kwargs)
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\dialects\mysql\base.py", line 2610, in has_table
+    ).execute(st)
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1003, in execute
+    return self._execute_text(object_, multiparams, params)
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1178, in _execute_text
+    parameters,
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "C:\Program Files\Python37\lib\site-packages\sqlalchemy\engine\default.py", line 609, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\cursors.py", line 163, in execute
+    result = self._query(query)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 505, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 724, in _read_query_result
+    result.read()
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 1069, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 646, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "C:\Program Files\Python37\lib\site-packages\pymysql\connections.py", line 691, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。)')
+[SQL: DESCRIBE `tb_ak_concept_infos`]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+
+2021-07-19 10:57:16,374 root  INFO   49 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data start
+2021-07-19 11:08:04,087 root  INFO   49 12780 MainThread 4812 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 11:08:04,087 root  INFO   51 12780 MainThread 4812 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 11:08:15,054 root  INFO   49 6992 MainThread 5360 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-19 11:08:15,054 root  INFO   51 6992 MainThread 5360 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-19 11:11:28,097 root  INFO   51 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\data\akshare\industry_concept.py save_industry_data finshed
+2021-07-19 11:11:28,097 root  INFO   49 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index start
+2021-07-19 11:11:37,163 root  INFO   51 5148 MainThread 12876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\dataHandler\akshare\industry_index.py get_industry_index finshed

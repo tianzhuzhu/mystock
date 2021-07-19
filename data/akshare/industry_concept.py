@@ -99,7 +99,7 @@ def save_industry_data(seconds=100,way='byboot'):
                 continue
             data = retry(query_indsutry_index,name)
             try:
-                sql='select * from {} where 行业="{}"'.format(infotable,name)
+                sql='select * from {} where 行业="{}"'.format(indextable,name)
                 saved_data=pd.read_sql(sql=sql,con=engine)
                 data=data.loc[~ data['日期'].isin(saved_data['日期'])]
             except:
@@ -151,7 +151,7 @@ def save_concept_data(seconds=100,way='byboot'):
                 continue
             data = retry(query_concept_index, name)
             try:
-                sql = 'select * from {} where 概念="{}"'.format(infotable, name)
+                sql = 'select * from {} where 概念="{}"'.format(indextable, name)
                 saved_data = pd.read_sql(sql=sql, con=engine)
                 data = data.loc[~ data['日期'].isin(saved_data['日期'])]
             except:

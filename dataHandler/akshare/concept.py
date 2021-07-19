@@ -83,5 +83,6 @@ def save_top():
     # cocept_forecast_report()
     # cocept_forecast_report(key='行业')
     save_top()
-res=get_weight_average_data()
-save_excel('行业预告.xlsx',res)
+if __name__=='__main__':
+    res=get_weight_average_data()
+    save_excel('行业预告.xlsx',res)
