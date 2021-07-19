@@ -10,7 +10,8 @@ ding = DingtalkChatbot(webhook)  # 方式一：通常初始化方式
 # ding = DingtalkChatbot(webhook, pc_slide=True)  # 方式三：设置消息链接在PC端侧边栏打开（v1.5以上新功能）
 # Text消息@所有人
 def send_messsage_byexcel(data :pd.DataFrame):
-    msg='老大'
+    msg='老大\r\n'
+    msg += '涨幅幅'
     columns=data.columns
     i =0
     for column in data.columns:
@@ -20,12 +21,14 @@ def send_messsage_byexcel(data :pd.DataFrame):
         print(indexs)
         print(values)
         for i in range(3):
-            msg+='{}涨幅第{}的是{},涨幅为{}\r\n'.format(column,i+1,indexs[0],format(values[0], '.2%'))
+            msg+='{}涨幅第{}的是{},涨幅为{}\r\n'.format(column,i+1,indexs[i],format(values[i], '.2%'))
         msg+='\r\n'
+
 
     ding.send_text(msg=msg, is_at_all=True)
     i = i + 1
-    msg = '老大'
+    msg = '老大\r\n'
+    msg+='跌幅'
     for column in data.columns:
         data.sort_values(by=[column], ascending=False, inplace=True)
         indexs = (data[:3]).index.tolist()
@@ -33,7 +36,7 @@ def send_messsage_byexcel(data :pd.DataFrame):
         print(indexs)
         print(values)
         for i in range(3):
-            msg+='{}涨幅第{}的是{},涨幅为{}\r\n'.format(column,i+1,indexs[0],format(values[0], '.2%'))
+            msg+='{}跌幅第{}的是{},涨幅为{}\r\n'.format(column,i+1,indexs[i],format(values[i], '.2%'))
         msg += '\r\n'
     ding.send_text(msg=msg, is_at_all=True)
     i = i + 1

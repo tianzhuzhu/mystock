@@ -23,6 +23,7 @@ all_growthSQL=getStrSQL('akshare_all_growth')
 date=datetime.datetime.now().date()
 constant_variables=data['constant_variables']
 path=r'选股\KLine\{}'.format(date)
+save_place=os.path.join(dirname,r'选股\data\{}'.format(data))
 T=2
 if(PC_util.getname().find('G15')>0):
     db=data['db']['local_g15']

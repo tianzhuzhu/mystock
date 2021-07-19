@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 from matplotlib import pyplot as plt
 
@@ -34,7 +36,5 @@ def get_industry_index(nlist=[3,7,14,31,100],key='行业')->pd.DataFrame:
     result=data.groupby(key).apply(lambda x:find_growth_index(x))
     result.index.names=[key,'序号']
     result.reset_index(level=1,drop=True,inplace=True)
+    result.to_excel(os.path.join(configger.save_place,key+'指数分析.xlsx'))
     return result
-
-
-get_industry_index()
