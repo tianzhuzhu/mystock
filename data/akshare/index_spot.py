@@ -68,4 +68,3 @@ def save_index_data(index_table='tb_ak_index_names',index_content='tb_ak_index_c
     his_df.to_sql(index_content, con=engine, if_exists='replace')
     configger.colseEngine(engine)
 
-save_index_data()

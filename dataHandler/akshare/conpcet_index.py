@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 from matplotlib import pyplot as plt
 
@@ -5,8 +7,6 @@ import configger
 
 #key =行业/概念
 from logger.my_logger import logit
-
-
 @logit()
 def get_industry_index(nlist=[3,7,14,31,100],key='行业')->pd.DataFrame:
 
@@ -20,8 +20,8 @@ def get_industry_index(nlist=[3,7,14,31,100],key='行业')->pd.DataFrame:
             str1=str(n)+'日涨跌幅'
             res.loc[0,str1]=((x.loc[0,'收盘价'])-(x.loc[n,'收盘价']))/x.loc[n,'收盘价']
             xc = x.shift(n)
-            str2 = str(2*max(nlist))+'日内'+str(n) + '日最大涨跌幅'
-            str3 = str(2*max(nlist))+'日内'+str(n) + '日最小涨跌幅'
+            str2 = str(n) + '日最大涨幅'+str(2*max(nlist))+'日内'
+            str3 = str(n) + '日最小涨幅'+str(2*max(nlist))+'日内'
             up_down=((xc['收盘价']-x['收盘价'])/x['收盘价'])[n:]
             print(up_down)
             print(max((up_down)),min(up_down))
@@ -35,5 +35,8 @@ def get_industry_index(nlist=[3,7,14,31,100],key='行业')->pd.DataFrame:
     result=data.groupby(key).apply(lambda x:find_growth_index(x))
     result.index.names=[key,'序号']
     result.reset_index(level=1,drop=True,inplace=True)
+    path=os.path.join(configger.default_save_path,key+'信息.xlsx')
+    result.to_excel(path)
     return result
-get_industry_index()
+if __name__=='__main__':
+    get_industry_index()
