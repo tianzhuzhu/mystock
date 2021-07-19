@@ -15,7 +15,7 @@ def select_growth_data(code='',n=12):
     return data
 def select_growth_data(code='',n=12):
     configger.init()
-    engine = configger.engine
+    engine = configger.getEngine()
     sql = configger.all_growthSQL
     if (code == ''):
         data = pd.read_sql(sql=sql, con=engine)
@@ -58,7 +58,12 @@ def get_weight_average(data,sort_column='date',value_column='净利润-季度环
     is_all=data.groupby('code').apply(lambda x: x[value_column].count() == n)
     is_all=is_all[is_all==True]
     tmp=data.loc[data['code'].isin(is_all.index)]
-    last_date=tmp.groupby('code').apply(lambda x:x[sort_column].min()).max()
+    # last_date=tmp.groupby('code').apply(lambda x:x[sort_column].min()).max()
+
+
+    valuecounts=tmp.groupby('code').apply(lambda x:x[sort_column].min()).value_counts()
+    last_date=valuecounts.nlargest(1).index[0]
+
     res = tmp.groupby('code').apply(lambda x: findWeightAverage(x, sort_column=sort_column,value_column=value_column,n=n,last_date=last_date))
     if(is_above_zero==True):
         # print(data.groupby('code').apply(lambda x:is_all_above_zero(x,value_column)))

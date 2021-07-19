@@ -23,7 +23,9 @@ all_growthSQL=getStrSQL('akshare_all_growth')
 date=datetime.datetime.now().date()
 constant_variables=data['constant_variables']
 path=r'选股\KLine\{}'.format(date)
-save_place=os.path.join(dirname,r'选股\data\{}'.format(data))
+default_save_path=os.path.join(cur_path,r'选股\文件\{}'.format(date))
+if(not os.path.exists(default_save_path)):
+    os.mkdir(default_save_path)
 T=2
 if(PC_util.getname().find('G15')>0):
     db=data['db']['local_g15']
@@ -40,8 +42,6 @@ def init():
         engine = create_engine(db)
         mysql = engine
     # print(db)
-
-
 list=[]
 def getEngine():
     global db

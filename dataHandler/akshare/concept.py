@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 
 import configger
@@ -33,8 +35,8 @@ def cocept_weight_average(n=4,value_column='净利润-季度环比增长',is_abo
     else:
         res = data.groupby(key).apply(lambda x: find_top_n(x, column='weightAverage'))
     res.sort_values('weightAverage',inplace=True,ascending=False)
-    res.drop(columns=['code',key,'is_above_zero'],inplace=True)
-    name='预告'+ key+value_column+'.xlsx' if forecast==True else key+value_column+'.xlsx'
+    res.drop(columns=[key,'is_above_zero'],inplace=True)
+    print(res)
     # res.to_excel(name)
     return res
 
@@ -61,7 +63,7 @@ def cocept_forecast_report(value_column='净利润-季度环比增长',key='概�
 def get_weight_average_data():
 
     a1=cocept_weight_average()
-    a2=cocept_weight_average(value_column='营业收入-季度环比增长')
+    a2=cocept_weight_average(value_column='营业收入-季度环比增长',n=4)
     a3=cocept_weight_average(value_column='净利润-同比增长',n=4)
     a4=cocept_weight_average(value_column='净利润-同比增长',n=4,forecast=True)
     a5=cocept_weight_average(key='行业')
@@ -83,5 +85,6 @@ def save_top():
     # cocept_forecast_report()
     # cocept_forecast_report(key='行业')
     save_top()
-res=get_weight_average_data()
-save_excel('行业预告.xlsx',res)
+if __name__=='__main__':
+    res=get_weight_average_data()
+    save_excel(os.path.join(configger.default_save_path,'概念-业绩报告.xlsx'),res)

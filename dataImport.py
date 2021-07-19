@@ -49,8 +49,11 @@ if __name__ == '__main__':
 
     print('all start')
     threads = []
-    t1=threading.Thread(target=save_data,args=(100,args1))
-    threads.append(t1)
+
+    #已经入au不V todingding模块
+    # t1=threading.Thread(target=save_data,args=(100,args1))
+    # threads.append(t1)
+
     t2=threading.Thread(target=update_allow_basic_information,args=(args1,))
     threads.append(t2)
     t3=threading.Thread(target=save_north_data,args=('tb_ak_north_hold_stock','tb_ak_north_board_rank',args1))
