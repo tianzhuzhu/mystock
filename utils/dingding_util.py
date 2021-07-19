@@ -20,7 +20,7 @@ def send_messsage_byexcel(data :pd.DataFrame):
         print(indexs)
         print(values)
         for i in range(3):
-            msg+='{}涨幅第{}的是{},涨幅为{}\r\n'.format(column,i+1,indexs[i],format(values[i], '.2%'))
+            msg+='{}涨幅第{}的是{},涨幅为{}\r\n'.format(column,i+1,indexs[0],format(values[0], '.2%'))
         msg+='\r\n'
 
     ding.send_text(msg=msg, is_at_all=True)
@@ -33,7 +33,7 @@ def send_messsage_byexcel(data :pd.DataFrame):
         print(indexs)
         print(values)
         for i in range(3):
-            msg+='{}涨幅第{}的是{},涨幅为{}\r\n'.format(column,i+1,indexs[i],format(values[i], '.2%'))
+            msg+='{}涨幅第{}的是{},涨幅为{}\r\n'.format(column,i+1,indexs[0],format(values[0], '.2%'))
         msg += '\r\n'
     ding.send_text(msg=msg, is_at_all=True)
     i = i + 1

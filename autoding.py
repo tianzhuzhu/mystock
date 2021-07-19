@@ -8,9 +8,7 @@ from utils.timeUtil import *
 if __name__=='__main__':
     operation='dingding_notice'
     while(True):
-        print(tableNeedUpdate(operation,days=1))
-        if(tableNeedUpdate(operation,days=1)==True and datetime.datetime.now().hour>=6):
-            print('start')
+        if(tableNeedUpdate(operation,days=1)==True and datetime.datetime.now().hour>8):
             save_data(way='byhand')
             print('start')
             data=get_industry_index()
