@@ -54,13 +54,14 @@ def send_recent_forecat_byexcel(days=[3,7]):
         data.sort_values(by=['业绩变动幅度'],inplace=True,ascending=False)
         count=data['业绩变动幅度'].count()
         print(count)
-        data['temp']=data['股票名称']+'('+data['code']+')'
+        data['temp']=data['股票简称']+'('+data['code']+')'
         str1=','.join(data['temp'].tolist())
-        resstr='今天(%s),近%s天更新的业绩共有%s条，详细如下:\r\n' % str(datetime.datetime.now().date()),day,count
-        data['res']=data['temp']+':'+data['业绩变动幅度']
+        resstr='今天(%{}),近{}天更新的业绩共有{}条，详细如下:\r\n'.format(datetime.datetime.now().date(),day,count)
+        resstr+=str1
+        data['res']=data['temp']+':'+data['业绩变动幅度'].str
         res=data[0:3]
-        res['res']
-        resstr+='业绩增幅前三的股票有'
-
+        str2='，'.join(res['res'].tolist())
+        resstr+='业绩增幅前三的股票有{}'.format(str2)
+        ding.send_text(msg=resstr)
 
 send_recent_forecat_byexcel()
