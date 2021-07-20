@@ -114,8 +114,8 @@ def update_yjbb_to_db(tablename='',fun=ak.stock_em_yjbb,way='byboot'):
 def update_allow_basic_information(way='byboot'):
     dict = {
         'tb_ak_bi_yjbb': ak.stock_em_yjbb,
-        'tb_ak_bi_quick_report': ak.stock_em_yjkb,
         'tb_ak_bi_forecast_report': ak.stock_em_yjyg,
+        'tb_ak_bi_quick_report': ak.stock_em_yjkb,
         'tb_ak_bi_disclosure_time': ak.stock_em_yysj,
         'tb_ak_bi_balance_sheet': ak.stock_em_zcfz,
         'tb_ak_bi_interst': ak.stock_em_lrb,
@@ -123,6 +123,9 @@ def update_allow_basic_information(way='byboot'):
     }
     for k,v in dict.items():
         update_yjbb_to_db(tablename=k,fun=v,way=way)
+
+def update_forecast(way='byboot'):
+    update_yjbb_to_db(tablename='tb_ak_bi_forecast_report',fun=ak.stock_em_yjyg,way=way)
 if __name__=='__main__':
     update_allow_basic_information('tb_bi_akshare_yjbb')
 

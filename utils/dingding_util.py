@@ -1,4 +1,5 @@
 import datetime
+import os
 
 import pandas as pd
 from dingtalkchatbot.chatbot import DingtalkChatbot
@@ -41,8 +42,8 @@ def send_messsage_byexcel(data:pd.DataFrame):
         msg += '\r\n'
     ding.send_text(msg=msg, is_at_all=True)
     i = i + 1
-def send_recent_forecat_byexcel(days=[3,7]):
-    msg='老大'
+def send_recent_forecat_by_sql(days=[1,3]):
+    resstr='老大\r\n'
     for day in days:
         sql="select * from tb_ak_bi_forecast_report where" \
             "(code like 'sh.%%' or code like 'sz.%%')  and" \
@@ -52,16 +53,19 @@ def send_recent_forecat_byexcel(days=[3,7]):
         data=pd.read_sql(sql=sql,con=engine)
         data['业绩变动幅度'].fillna(0,inplace=True)
         data.sort_values(by=['业绩变动幅度'],inplace=True,ascending=False)
+        data.to_excel(os.path.join('近{}日业绩报告.xlsx'.format(day),configger.default_save_path))
         count=data['业绩变动幅度'].count()
         print(count)
         data['temp']=data['股票简称']+'('+data['code']+')'
-        str1=','.join(data['temp'].tolist())
-        resstr='今天(%{}),近{}天更新的业绩共有{}条，详细如下:\r\n'.format(datetime.datetime.now().date(),day,count)
+        str1=','.join(data[0:10]['temp'].tolist())
+        resstr+='今天(%{}),近{}天更新的业绩共有{}条，详细如下:\r\n'.format(datetime.datetime.now().date(),day,count)
         resstr+=str1
-        data['res']=data['temp']+':'+data['业绩变动幅度'].str
+        data['res']=data['temp']+':'+data['业绩变动幅度'].apply(str)
         res=data[0:3]
         str2='，'.join(res['res'].tolist())
         resstr+='业绩增幅前三的股票有{}'.format(str2)
+        print(resstr)
         ding.send_text(msg=resstr)
-
-send_recent_forecat_byexcel()
+        resstr='老大\r\n'
+if __name__=='__main__':
+    send_recent_forecat_by_sql()

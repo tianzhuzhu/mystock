@@ -1,0 +1,6 @@
+2021-07-20 08:38:46,682 root  INFO   49 7388 MainThread 4876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-20 08:38:46,682 root  INFO   51 7388 MainThread 4876 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-20 08:40:24,997 root  INFO   49 13568 MainThread 1956 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-20 08:40:24,997 root  INFO   51 13568 MainThread 1956 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
+2021-07-20 08:41:10,286 root  INFO   49 8164 MainThread 5104 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a start
+2021-07-20 08:41:10,286 root  INFO   51 8164 MainThread 5104 D:\onedrive\OneDrive - ncist.edu.cn\project\mystock\logger\my_logger.py a finshed
