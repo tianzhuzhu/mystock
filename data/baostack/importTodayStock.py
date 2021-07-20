@@ -39,7 +39,7 @@ def insertTotalData(code,startDate,endate,engine):
         return
     pelist=[]
     # print(startDate,endate)
-    print('获取代码',code,'数据')
+    print('获取代码',code,'文件')
     try:
         data=GetStockHistory(code,startDate,endate)
         # data['code']=code 52126772
