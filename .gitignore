@@ -7,4 +7,6 @@
 /importdata.bat
 /log.txt
 **.txt
+*.txt
+*.log
 **.log
