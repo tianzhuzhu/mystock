@@ -26,10 +26,11 @@ def send_recent_forecat(operation):
             saveOperationTime(operation)
         time.sleep(1800)
 if __name__=='__main__':
-    operation='dingding_notice'
+    operation1='dingding_notice'
     threads = []
-    t1=threading.Thread(target=notice_concept,args=(operation,))
-    t2=threading.Thread(target=send_recent_forecat(),args=('dingding_forecast_notice',))
+    t1=threading.Thread(target=notice_concept,args=(operation1,))
+    operation2='dingding_forecast_notice'
+    t2=threading.Thread(target=send_recent_forecat,args=(operation2,))
     threads.append(t1)
     for t in threads:
         t.setDaemon(False)
