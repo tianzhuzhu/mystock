@@ -60,7 +60,7 @@ def get_weight_average(data,sort_column='date',value_column='净利润-季度环
     tmp=data.loc[data['code'].isin(is_all.index)]
     # last_date=tmp.groupby('code').apply(lambda x:x[sort_column].min()).max()
 
-
+    print(tmp)
     valuecounts=tmp.groupby('code').apply(lambda x:x[sort_column].min()).value_counts()
     last_date=valuecounts.nlargest(1).index[0]
 

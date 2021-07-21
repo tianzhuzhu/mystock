@@ -57,8 +57,7 @@ def send(filepath):
 def send_file_email(filename,filepath,title='概念-行业股票推荐',content='这是今日计算数据，请查收！'):
     print('send', '邮件开始')
     date = datetime.datetime.now().date()
-
-
+    title=str(date)+title
 
     mail_host = "smtp.163.com"  # 设置服务器
     mail_user = "lujin19950917@163.com"  # 用户名
@@ -78,6 +77,17 @@ def send_file_email(filename,filepath,title='概念-行业股票推荐',content=
     message.attach(txt)
     pdffile = MIMEApplication(open(filepath,'rb').read())
     pdffile.add_header('Content-Disposition','attachment',filename=filename)
+    try:
+        smtpObj = smtplib.SMTP()
+        smtpObj.connect(mail_host,25)
+        smtpObj.login(mail_user,mail_pass)
+        smtpObj.sendmail(
+            sender,receivers,message.as_string())
+        print('success')
+        smtpObj.quit()
+    except smtplib.SMTPException as e:
+        print('error',e)
+
 
 def send_general_email(namelist,datalist,data,title='行业股票推荐',content='这是{}各个行业的股票统计列表数据，请查收！',filename='行业股票.xlsx'):
     print('send','邮件开始')

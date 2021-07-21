@@ -47,13 +47,13 @@ def send_recent_forecat_by_sql(days=[1,3]):
     for day in days:
         sql="select * from tb_ak_bi_forecast_report where" \
             "(code like 'sh.%%' or code like 'sz.%%')  and" \
-            " TIMESTAMPDIFF(DAY ,公告日期,(select max(公告日期) from tb_ak_bi_forecast_report )) >={}" .format(day)
+            " TIMESTAMPDIFF(DAY ,公告日期,(select max(公告日期) from tb_ak_bi_forecast_report )) <={}" .format(day)
         print(sql)
         engine=configger.getEngine()
         data=pd.read_sql(sql=sql,con=engine)
         data['业绩变动幅度'].fillna(0,inplace=True)
         data.sort_values(by=['业绩变动幅度'],inplace=True,ascending=False)
-        data.to_excel(os.path.join('近{}日业绩报告.xlsx'.format(day),configger.default_save_path))
+        data.to_excel(os.path.join(configger.default_save_path,'近{}日业绩报告.xlsx'.format(day)))
         count=data['业绩变动幅度'].count()
         print(count)
         data['temp']=data['股票简称']+'('+data['code']+')'
