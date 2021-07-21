@@ -7,6 +7,7 @@ from dataHandler.akshare.growth_data_handler import select_growth_data, get_weig
 from dataHandler.baostack import marketHandler
 from mathUtils.average import findWeightAverage
 from mathUtils.general import findMax, find_top_n
+from myEmail.send import send_file_email
 from utils.excelUtil import save_excel
 from utils.pdUtil import getRecnetN
 def select_all_CI(key):#key : 行业/概念
@@ -70,6 +71,8 @@ def get_weight_average_data():
     a6=cocept_weight_average(key='行业',value_column='营业收入-季度环比增长')
     a7=cocept_weight_average(key='行业',value_column='净利润-同比增长',n=4)
     a8=cocept_weight_average(key='行业',value_column='净利润-同比增长',n=4,forecast=True)
+    a9=cocept_forecast_report()
+    a10=cocept_forecast_report(key='行业')
     res={'概念-净利润-季度环比增长':a1,
          '概念-营业收入-季度环比增长':a2,
          '概念-净利润-同比增长':a3,
@@ -78,13 +81,18 @@ def get_weight_average_data():
          '行业-营业收入-季度环比增长': a6,
          '行业-净利润-同比增长': a7,
          '行业-业绩预告净利润-同比增长': a8,
+         '概念-预告最高': a9,
+         '行业-与该最高': a10,
     }
+
     return res
 def save_top():
+    cocept_forecast_report()
+    cocept_forecast_report(key='行业')
 
-    # cocept_forecast_report()
-    # cocept_forecast_report(key='行业')
-    save_top()
+
 if __name__=='__main__':
     res=get_weight_average_data()
-    save_excel(os.path.join(configger.default_save_path,'概念-业绩报告.xlsx'),res)
+    path=os.path.join(configger.default_save_path,'概念-业绩报告.xlsx')
+    save_excel(path,res)
+    send_file_email('概念-业绩报告.xlsx',path)

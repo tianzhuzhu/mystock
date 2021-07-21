@@ -28,7 +28,7 @@ def saveOperationTime(name):
     operation.loc[0,'updateTime']=datetime.datetime.now()
     operation.to_sql(name='tb_operation_time',con=con,if_exists='append',index=False)
     return True
-def tableNeedUpdate(tableName,days=1):
+def tableNeedUpdate(tableName,days=1,isWorkDay=True):
     configger.init()
     # 显示登陆返回信息
     # 结果集输出到csv文件
@@ -43,9 +43,9 @@ def tableNeedUpdate(tableName,days=1):
     if(lastTime==None):
         return True
     if(days==1):
-        if(needUpdate(lastTime,now,isWorkDay=True)==False):
+        if(needUpdate(lastTime,now,isWorkDay=isWorkDay)==False):
             return False
-        return needUpdate(lastTime,now,isWorkDay=True)
+        return needUpdate(lastTime,now,isWorkDay=isWorkDay)
     else:
         return (pd.to_datetime(now.date())-pd.to_datetime(lastTime)).days>days
 

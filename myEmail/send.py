@@ -53,6 +53,32 @@ def send(filepath):
         smtpObj.quit()
     except smtplib.SMTPException as e:
         print('error',e)
+
+def send_file_email(filename,filepath,title='概念-行业股票推荐',content='这是今日计算数据，请查收！'):
+    print('send', '邮件开始')
+    date = datetime.datetime.now().date()
+
+
+
+    mail_host = "smtp.163.com"  # 设置服务器
+    mail_user = "lujin19950917@163.com"  # 用户名
+    mail_pass = "SAQCPCVSXLCVKHDT"  # 口令
+    today = datetime.datetime.now().date()
+    sender = 'lujin19950917@163.com'  # 发送方
+    receivers = ['lujin19950917@163.com', '532978773@qq.com', '893573580@qq.com']  # 接收方
+
+    # 三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
+    message = MIMEMultipart()
+    message['From'] = sender
+    message['To'] = receivers[0]
+    message['Subject'] = title.format(today)
+    # 推荐使用html格式的正文内容，这样比较灵活，可以附加图片地址，调整格式等
+    # 邮件内容
+    txt = MIMEText(content.format(today), 'plain', 'utf-8')
+    message.attach(txt)
+    pdffile = MIMEApplication(open(filepath,'rb').read())
+    pdffile.add_header('Content-Disposition','attachment',filename=filename)
+
 def send_general_email(namelist,datalist,data,title='行业股票推荐',content='这是{}各个行业的股票统计列表数据，请查收！',filename='行业股票.xlsx'):
     print('send','邮件开始')
     klinePath=data['path']['default-kLine']
