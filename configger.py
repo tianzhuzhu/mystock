@@ -27,6 +27,13 @@ default_save_path=os.path.join(cur_path,r'选股\文件\{}'.format(date))
 if(not os.path.exists(default_save_path)):
     os.mkdir(default_save_path)
 T=2
+class myEngine():
+    def __init__(self):
+        self.engine=create_engine(db)
+    def get_engine(self):
+        return getEngine()
+    def close_engine(self):
+        colseEngine(self.engine)
 if(PC_util.getname().find('G15')>0):
     db=data['db']['local_g15']
 else:

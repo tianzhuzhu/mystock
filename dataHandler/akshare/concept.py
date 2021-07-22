@@ -25,6 +25,7 @@ def cocept_weight_average(n=4,value_column='净利润-季度环比增长',is_abo
     print(key)
     print(data)
     growth_data=select_growth_data(n=n)
+    print()
     marketvalue= marketHandler.getmarketValue(lowTh=50, highTh=20000)
     data=data.loc[data['code'].isin(marketvalue.index)]
     res=get_weight_average(growth_data,value_column=value_column,n=n,is_above_zero=is_above_zero,forecast=forecast)

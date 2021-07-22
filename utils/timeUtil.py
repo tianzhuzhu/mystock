@@ -2,10 +2,10 @@ import datetime
 import pandas as pd
 
 import configger
-def get_this_end_quarter_day(date):
+def get_this_end_quarter_day(date)->datetime.datetime:
     date = date + pd.tseries.offsets.DateOffset(months=3 - ((date.month - 1) % 3), days=-date.day)  # 当季最后一天
     return date
-def get_last_end_quarter_day(date):
+def get_last_end_quarter_day(date) ->datetime.datetime:
     date = date + pd.tseries.offsets.DateOffset(months=-((date.month - 1) % 3), days=-date.day)  # 当季最后一天
     return date
 
